@@ -1,6 +1,16 @@
 # Dominion Card API
 
-Full-featured Dominion Card API using Django's REST framework. Includes a command function to ingest Dominion Card data from a CSV file.
+Full-featured Dominion Kingdom Card API using Django's REST framework. 
+This API is intended to power companion apps for the board game Dominion and allows you to quickly 
+and easily obtain card sets and card details for the Kingdom Cards used to play the game.
+
+API functions include:
+* Obtain a set of 10 unique random Dominion Kingdom Cards
+* Retrieve a list of Dominion Kingdom Cards based on filter criteria (name, cost, etc.)
+* Add custom Dominion Kingdom Cards
+* Get the information for a single Dominion Kingdom Card (random or specified)
+
+This app includes a command function to ingest Dominion Kingdom Card data from a provided CSV file.
 
 ## Getting Started
 

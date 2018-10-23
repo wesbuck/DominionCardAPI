@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.urls import path
 from rest_framework import routers
-from cards.views import CardList
+from cards.views import CardList, CardSet, Random
 from rest_framework.authtoken import views
 
 router = routers.DefaultRouter()
@@ -23,6 +23,8 @@ router.register(r'^cards', CardList, base_name='cards')
 
 urlpatterns = [
     path('get_auth_token/', views.obtain_auth_token, name='get_auth_token'),
+    path('random/', Random.as_view(), name='Random'),
+    path('cardset/', CardSet.as_view(), name='CardSet'),
 ]
 
 urlpatterns += router.urls
