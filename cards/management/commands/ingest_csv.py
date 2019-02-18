@@ -11,7 +11,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         csv_file = options['csv_file']
-        with open(csv_file) as datafile:
+        with open(csv_file, encoding="latin-1") as datafile:
             reader = csv.DictReader(datafile)
             for row in reader:
                 card = Card()
