@@ -42,7 +42,7 @@ python manage.py migrate
 python manage.py ingest_csv dominion_cards.csv
 ```
 
-Note that you can import any properly-formatted data set by specifying a file other than `challenge_data.csv` when 
+Note that you can import any properly-formatted data set by specifying a file other than `dominion_cards.csv` when 
 running the `ingest_csv` function.
 
 ### Create a User
