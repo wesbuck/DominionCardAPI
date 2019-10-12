@@ -4,7 +4,7 @@ Full-featured Dominion Kingdom Card API using Django's REST framework.
 This API is intended to power companion apps for the board game Dominion and allows you to quickly 
 and easily obtain card sets and card details for the Kingdom Cards used to play the game.
 
-API functions include:
+[API functions](https://documenter.getpostman.com/view/5603098/RWguxcDR) include:
 * Obtain a set of 10 unique random Dominion Kingdom Cards
 * Retrieve a list of Dominion Kingdom Cards based on filter criteria (name, cost, etc.)
 * Add custom Dominion Kingdom Cards
@@ -58,10 +58,28 @@ Then enter the credentials you wish to use.
 
 ## Running the program
 
+### Development
+
 Test run the program on your local machine by executing:
 
 ```
 python3 manage.py runserver
+```
+
+### Production
+
+It is likely that you will need to add the server URL to `ALLOWED_HOSTS` in `DominionCardAPI/settings.py`
+
+```
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+```
+
+If you are using Apache, it is likely that you will need to change the name of the root directory of this project to something other than `DominionCardAPI` (this will solve "ImportError: No module named DominionCardAPI.settings" error in the Apache error.log).
+
+Additionally, if using Apache, you will likely need to configure mod_wsgi to pass the required headers through to the application. Add the following to either server config (e.g. `/etc/apache2/apache.conf`), virtual host, directory or .htaccess
+
+```
+WSGIPassAuthorization On
 ```
 
 ## Generate Authentication Token
