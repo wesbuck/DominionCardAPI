@@ -20,26 +20,26 @@ These instructions will get you a copy of the API server up and running on your 
 
 These tools are required before installation :
 
-- [Python](https://www.python.org/)
+- [Python 3](https://www.python.org/)
 - [django](https://www.djangoproject.com/)
-- pip
+- [pip](https://pip.pypa.io/en/stable/)
 
 ### Installing
 
 Install required django tools: 
 
 ```
-pip install djangorestframework
-pip install django-filter
-pip install httpie
+pip3 install djangorestframework
+pip3 install django-filter
+pip3 install httpie
 ```
 
 Browse to the local directory containing the project files and execute the following commands:
 
 ```
-python manage.py makemigrations
-python manage.py migrate
-python manage.py ingest_csv dominion_cards.csv
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py ingest_csv dominion_cards.csv
 ```
 
 Note that you can import any properly-formatted data set by specifying a file other than `dominion_cards.csv` when 
@@ -51,17 +51,17 @@ You must generate a Token using username/password credentials in order to use th
 Create the username/password credentials using the `createsuperuser` function: 
 
 ```
-python manage.py createsuperuser
+python3 manage.py createsuperuser
 ```
 
 Then enter the credentials you wish to use.
 
 ## Running the program
 
-Start the program by executing:
+Test run the program on your local machine by executing:
 
 ```
-python manage.py runserver
+python3 manage.py runserver
 ```
 
 ## Generate Authentication Token
