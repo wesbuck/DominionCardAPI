@@ -3,12 +3,26 @@ from cards.serializers import CardSerializer
 from cards.filters import CardFilter
 from rest_framework import viewsets, mixins
 
+from rest_framework.decorators import api_view # for api_view
+from rest_framework.response import Response # for api_view
+from rest_framework.reverse import reverse # for api_view
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from random import randint
 from django.core import serializers
 from django.forms.models import model_to_dict
 import json
+
+
+# show API entry points
+@api_view(['GET']) # new
+def api_root(request, format=None):
+    return Response({
+        'documentation': 'https://documenter.getpostman.com/view/5603098/RWguxcDR',
+        'random': reverse('Random', request=request, format=format),
+        'cardset': reverse('CardSet', request=request, format=format),
+    })
 
 
 # card 'id' must be sequential from 1 to [count] number of cards
