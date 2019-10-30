@@ -21,10 +21,8 @@ These instructions will get you a copy of the API server up and running on your 
 These tools are required before installation :
 
 - [Python 3](https://www.python.org/)
-- [django](https://www.djangoproject.com/)
 - [pip](https://pip.pypa.io/en/stable/)
-
-### Installing
+- [django](https://www.djangoproject.com/)
 
 Install required django tools: 
 
@@ -33,8 +31,15 @@ pip3 install djangorestframework
 pip3 install django-filter
 pip3 install httpie
 ```
+### Installing
 
-Browse to the local directory containing the project files and execute the following commands:
+Browse to the local directory containing the project files and make a local copy of the `DominionCardAPI/settings.py` file by executing the following:
+
+```
+cp DominionCardAPI/settings-sample.py DominionCardAPI/settings.py
+```
+
+Execute the following commands while still in the project directory:
 
 ```
 python3 manage.py makemigrations
@@ -68,11 +73,29 @@ python3 manage.py runserver
 
 ### Production
 
+You should change `DEBUG` from `True` to `False` in `DominionCardAPI/settings.py` before deploying for production.
+
 It is likely that you will need to add the server URL to `ALLOWED_HOSTS` in `DominionCardAPI/settings.py`:
 
 ```
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 ```
+
+#### Static Files
+
+You will likely need to make static files (css, etc) available to make the API look properly pretty in the browser. Add the following to the bottom of `DominionCardAPI/settings.py` (under `STATIC_URL = '/static/'`), specifying the path to your project directory:
+
+```
+STATIC_ROOT = '[path-to-project-directory]/static'
+```
+
+And then run the following command to copy the files:
+
+```
+python3 manage.py collectstatic
+```
+
+#### Apache
 
 If you are using Apache, it is likely that you will need to change the name of the root directory of this project to something other than `DominionCardAPI` (this will solve "ImportError: No module named DominionCardAPI.settings" error in the Apache error.log).
 
@@ -89,9 +112,9 @@ Generate an authentication token by POSTING your username/password to
 `/get_auth_token/`.
 
 More information is located in the 
-[documentation](https://documenter.getpostman.com/view/5603098/RWguxcDR#474a6d68-c6b0-475a-b768-15e721cd5652).
+[documentation](https://documenter.getpostman.com/view/5603098/RWguxcDR).
 
-### Disable Authentication
+### Disable Authentication (Optional)
 
 You can disable the requirement for authentication by commenting out lines 81 & 82 of `DominionCardAPI/settings.py`:
 
