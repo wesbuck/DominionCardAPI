@@ -19,9 +19,10 @@ import json
 @api_view(['GET']) # new
 def api_root(request, format=None):
     return Response({
-        'documentation': 'https://documenter.getpostman.com/view/5603098/RWguxcDR',
-        'random': reverse('Random', request=request, format=format),
-        'cardset': reverse('CardSet', request=request, format=format),
+        'Documentation': 'https://documenter.getpostman.com/view/5603098/RWguxcDR',
+        'Get a Random Card': reverse('Random', request=request, format=format),
+        'Get a Set of 10 Cards': reverse('CardSet', request=request, format=format),
+        'Get All Cards': reverse('All', request=request, format=format),
     })
 
 
