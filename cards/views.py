@@ -61,3 +61,12 @@ class CardSet(APIView):
         raw_data = json.loads(serializers.serialize('json', cards))
         output = [d['fields'] for d in raw_data]  # extract inner 'fields' dicts
         return Response(json.loads(json.dumps(output)))
+
+# get all cards
+class All(APIView):
+
+    def get(self, request):
+        cards = Card.objects.all()
+        raw_data = json.loads(serializers.serialize('json', cards))
+        output = [d['fields'] for d in raw_data]  # extract inner 'fields' dicts
+        return Response(json.loads(json.dumps(output)))
