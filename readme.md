@@ -31,6 +31,11 @@ pip install djangorestframework
 pip install django-filter
 pip install httpie
 ```
+#### VS Code
+If you plan to use VS Code with the Python extension installed, you'll also want to install `pylint-django`:
+```
+pip install pylint-django
+```
 
 ### Installing
 
