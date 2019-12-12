@@ -26,10 +26,8 @@ def api_root(request, format=None):
 
 
 # card 'id' must be sequential from 1 to [count] number of cards
-# TODO: update this method so it does not rely on card 'id' being in sequential order starting at 1
 def get_random_card_pk():
-    num_cards = Card.objects.all().count()
-    return randint(1, num_cards)
+    return Card.objects.order_by("?").first().pk
 
 
 # only extend the parts of ModelViewSet we want (omit Update & Destroy)
