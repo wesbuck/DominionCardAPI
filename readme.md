@@ -18,33 +18,38 @@ These instructions will get you a copy of the API server up and running on your 
 
 ### Prerequisites
 
-These tools are required before installation :
+Make sure [Python](https://www.python.org/downloads/) version 3.8 or newer is installed.
 
-- [Python 3](https://www.python.org/)
-- [pip](https://pip.pypa.io/en/stable/)
-- [django](https://www.djangoproject.com/)
+Install [django](https://www.djangoproject.com/download/):
+```
+pip install Django==3.0
+```
 
 Install required django tools: 
+```
+pip install djangorestframework
+pip install django-filter
+pip install httpie
+```
 
-```
-pip3 install djangorestframework
-pip3 install django-filter
-pip3 install httpie
-```
 ### Installing
 
-Browse to the local directory containing the project files and make a local copy of the `DominionCardAPI/settings.py` file by executing the following:
+Clone the repository and browse to the local directory containing the project files:
+```
+git clone https://github.com/wesbuck/DominionCardAPI
+cd DominionCardAPI
+```
 
+Make a local copy of the `DominionCardAPI/settings.py` file by executing the following:
 ```
 cp DominionCardAPI/settings-sample.py DominionCardAPI/settings.py
 ```
 
 Execute the following commands while still in the project directory:
-
 ```
-python3 manage.py makemigrations
-python3 manage.py migrate
-python3 manage.py ingest_csv dominion_cards.csv
+python manage.py makemigrations
+python manage.py migrate
+python manage.py ingest_csv dominion_cards.csv
 ```
 
 Note that you can import any properly-formatted data set by specifying a file other than `dominion_cards.csv` when 
@@ -54,9 +59,8 @@ running the `ingest_csv` function.
 
 You must generate a Token using username/password credentials in order to use this API. 
 Create the username/password credentials using the `createsuperuser` function: 
-
 ```
-python3 manage.py createsuperuser
+python manage.py createsuperuser
 ```
 
 Then enter the credentials you wish to use.
@@ -66,9 +70,8 @@ Then enter the credentials you wish to use.
 ### Development
 
 Test run the program on your local machine by executing:
-
 ```
-python3 manage.py runserver
+python manage.py runserver
 ```
 
 ### Production
@@ -76,7 +79,6 @@ python3 manage.py runserver
 You should change `DEBUG` from `True` to `False` in `DominionCardAPI/settings.py` before deploying for production.
 
 It is likely that you will need to add the server URL to `ALLOWED_HOSTS` in `DominionCardAPI/settings.py`:
-
 ```
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 ```
@@ -84,15 +86,13 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 #### Static Files
 
 You will likely need to make static files (css, etc) available to make the API look properly pretty in the browser. Add the following to the bottom of `DominionCardAPI/settings.py` (under `STATIC_URL = '/static/'`), specifying the path to your project directory:
-
 ```
 STATIC_ROOT = '[path-to-project-directory]/static'
 ```
 
 And then run the following command to copy the files:
-
 ```
-python3 manage.py collectstatic
+python manage.py collectstatic
 ```
 
 #### Apache
@@ -100,7 +100,6 @@ python3 manage.py collectstatic
 If you are using Apache, it is likely that you will need to change the name of the root directory of this project to something other than `DominionCardAPI` (this will solve "ImportError: No module named DominionCardAPI.settings" error in the Apache error.log).
 
 Additionally, if using Apache, you will likely need to configure mod_wsgi to pass the required headers through to the application. Add the following to either server config (e.g. `/etc/apache2/apache.conf`), virtual host, directory or .htaccess:
-
 ```
 WSGIPassAuthorization On
 ```
@@ -117,7 +116,6 @@ More information is located in the
 ### Disable Authentication (Optional)
 
 You can disable the requirement for authentication by commenting out lines 81 & 82 of `DominionCardAPI/settings.py`:
-
 ```
 #    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAuthenticated',),
 #    'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework.authentication.TokenAuthentication',),
