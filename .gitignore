@@ -1,6 +1,9 @@
 # cp settings-sample.py settings.py after installation
 DominionCardAPI/settings.py
 
+# Hide VS Code settings file
+.vscode/
+
 
 # Created by https://www.gitignore.io/api/django
 # Edit at https://www.gitignore.io/?templates=django
