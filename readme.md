@@ -36,6 +36,12 @@ If you plan to use VS Code with the Python extension installed, you'll also want
 ```
 pip install pylint-django
 ```
+And add this to your `settings.json`:
+```
+"python.linting.pylintArgs": [
+    "--load-plugins=pylint_django"
+]
+```
 
 ### Installing
 
@@ -77,6 +83,12 @@ Then enter the credentials you wish to use.
 Test run the program on your local machine by executing:
 ```
 python manage.py runserver
+```
+
+#### Flush Database
+If you need to ingest the CSV file again, you should first flush the database:
+```
+python manage.py flush
 ```
 
 ### Production
