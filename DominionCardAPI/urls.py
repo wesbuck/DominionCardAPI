@@ -19,7 +19,7 @@ from cards.views import CardList, CardSet, Random, All, api_root
 from rest_framework.authtoken import views
 
 router = routers.DefaultRouter()
-router.register(r'^cards', CardList)
+router.register(r'^cards', CardList, base_name='cards')
 
 urlpatterns = [
     path('get_auth_token/', views.obtain_auth_token, name='get_auth_token'),
