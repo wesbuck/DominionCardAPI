@@ -1,6 +1,6 @@
 # Dominion Card API
 
-Full-featured Dominion Kingdom Card API using Django's REST framework. 
+Full-featured Dominion Kingdom Card API written in Python using Django's REST framework. 
 This API is intended to power companion apps for the board game Dominion and allows you to quickly 
 and easily obtain card sets and card details for the Kingdom Cards used to play the game.
 
@@ -9,6 +9,7 @@ and easily obtain card sets and card details for the Kingdom Cards used to play 
 * Retrieve a list of Dominion Kingdom Cards based on filter criteria (name, cost, etc.)
 * Add custom Dominion Kingdom Cards
 * Get the information for a single Dominion Kingdom Card (random or specified)
+* Get the complete list of all Dominion Kingdom Cards
 
 This app includes a command function to ingest Dominion Kingdom Card data from a provided CSV file.
 
@@ -18,29 +19,11 @@ These instructions will get you a copy of the API server up and running on your 
 
 ### Prerequisites
 
-Make sure [Python](https://www.python.org/downloads/) version 3.8 or newer is installed.
+Make sure [Python](https://www.python.org/downloads/) version 3.7 or newer is installed. Python 3.8 is recommended.
 
-Install [django](https://www.djangoproject.com/download/):
+You will also need the `virtualenv` package if you want to work in a Virtual Environment (recommended):
 ```
-pip install Django==3.0
-```
-
-Install required django tools: 
-```
-pip install djangorestframework
-pip install django-filter
-pip install httpie
-```
-#### VS Code
-If you plan to use VS Code with the Python extension installed, you'll also want to install `pylint-django`:
-```
-pip install pylint-django
-```
-And add this to your `settings.json`:
-```
-"python.linting.pylintArgs": [
-    "--load-plugins=pylint_django"
-]
+pip install virtualenv 
 ```
 
 ### Installing
@@ -51,20 +34,31 @@ git clone https://github.com/wesbuck/DominionCardAPI
 cd DominionCardAPI
 ```
 
+If you want to work in a Virtual Environment (recommended), create it and activate it:
+
+```
+virtualenv venv
+source venv/bin/activate
+```
+
+Install required packages (or do it the [old fashioned way](#manually-install-packages)):
+
+```
+pip install -r requirements.txt
+```
+
 Make a local copy of the `DominionCardAPI/settings.py` file by executing the following:
 ```
 cp DominionCardAPI/settings-sample.py DominionCardAPI/settings.py
 ```
 
-Execute the following commands while still in the project directory:
+Execute the following commands to prepare the database:
 ```
-python manage.py makemigrations
 python manage.py migrate
 python manage.py ingest_csv dominion_cards.csv
 ```
 
-Note that you can import any properly-formatted data set by specifying a file other than `dominion_cards.csv` when 
-running the `ingest_csv` function.
+>NOTE: You can import any properly-formatted data set by specifying a file other than `dominion_cards.csv` when running the `ingest_csv` function.
 
 ### Create a User
 
@@ -76,22 +70,35 @@ python manage.py createsuperuser
 
 Then enter the credentials you wish to use.
 
-## Running the program
+## Development
 
-### Development
+### Running the program
 
 Test run the program on your local machine by executing:
 ```
 python manage.py runserver
 ```
 
-#### Flush Database
+### Flush Database
 If you need to ingest the CSV file again, you should first flush the database:
 ```
 python manage.py flush
 ```
 
-### Production
+### VS Code
+
+If you plan to use VS Code with the Python extension installed, you'll also want to install `pylint-django`:
+```
+pip install pylint-django
+```
+And add this to your `settings.json`:
+```
+"python.linting.pylintArgs": [
+    "--load-plugins=pylint_django"
+]
+```
+
+## Production
 
 You should change `DEBUG` from `True` to `False` in `DominionCardAPI/settings.py` before deploying for production.
 
@@ -100,19 +107,22 @@ It is likely that you will need to add the server URL to `ALLOWED_HOSTS` in `Dom
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 ```
 
-#### Static Files
+### Static Files
 
-You will likely need to make static files (css, etc) available to make the API look properly pretty in the browser. Add the following to the bottom of `DominionCardAPI/settings.py` (under `STATIC_URL = '/static/'`), specifying the path to your project directory:
+You will likely need to make static files (css, etc) available to make the API look properly pretty in the browser. If you use the default URL for static files, just uncomment line 133 (under `STATIC_URL = '/static/'`) of `DominionCardAPI/settings.py`:
+
 ```
-STATIC_ROOT = '[path-to-project-directory]/static'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 ```
 
-And then run the following command to copy the files:
+If you change `STATIC_URL` to something other than `/static/` then you will need to update `STATIC_ROOT` accordingly.
+
+Run the following command to prepare the files:
 ```
 python manage.py collectstatic
 ```
 
-#### Apache
+### Apache
 
 If you are using Apache, it is likely that you will need to change the name of the root directory of this project to something other than `DominionCardAPI` (this will solve "ImportError: No module named DominionCardAPI.settings" error in the Apache error.log).
 
@@ -130,12 +140,30 @@ Generate an authentication token by POSTING your username/password to
 More information is located in the 
 [documentation](https://documenter.getpostman.com/view/5603098/RWguxcDR).
 
-### Disable Authentication (Optional)
 
-You can disable the requirement for authentication by commenting out lines 81 & 82 of `DominionCardAPI/settings.py`:
+## Optional
+
+### Disable Authentication
+
+You can choose to disable the requirement for authentication by commenting out lines 81 & 82 of `DominionCardAPI/settings.py`:
 ```
 #    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAuthenticated',),
 #    'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework.authentication.TokenAuthentication',),
+```
+### Manually Install Packages
+
+If you don't want to use the `requirements.txt` option [detailed above](#installing), you can manually install the python packages using these instructions.
+
+Install [django](https://www.djangoproject.com/download/):
+```
+pip install Django==3.0
+```
+
+Install required django tools: 
+```
+pip install djangorestframework
+pip install django-filter
+pip install httpie
 ```
 
 ## API Documentation
@@ -144,10 +172,11 @@ View the complete [documentation for this API](https://documenter.getpostman.com
 
 ## Built With
 
-* [PyCharm](https://www.jetbrains.com/pycharm/) - The Python IDE used
+* [PyCharm](https://www.jetbrains.com/pycharm/) - The Python IDE used for initial project creation
 * [Postman](https://www.getpostman.com/) - API development testing & documentation
+* [VS Code](https://code.visualstudio.com/) - The code editor used for continued development
 
 ## Authors
 
-* Wes Buck
+* [Wes Buck](https://github.com/wesbuck)
 

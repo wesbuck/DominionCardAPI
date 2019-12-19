@@ -22,9 +22,9 @@
       "/get_auth_token": {
         "post": {
           "tags": [
-            "Misc"
+            "Authorization"
           ],
-          "summary": "/get_auth_token/",
+          "summary": "Get Auth Token",
           "description": "Send credentials to obtain an authentication token. A token is required to use this API.",
           "operationId": "/get_auth_token/",
           "parameters": [
@@ -81,9 +81,6 @@
                       "token": {
                         "type": "string"
                       }
-                    },
-                    "example": {
-                      "token": "0b4b13fa0a972c198b52efa63d9224b182f0af6c"
                     }
                   },
                   "example": {
@@ -99,9 +96,9 @@
       "/cardset": {
         "get": {
           "tags": [
-            "Misc"
+            "Methods"
           ],
-          "summary": "/cardset/",
+          "summary": "Get a Set of 10 Cards",
           "description": "Get a set of 10 unique random Dominion Kingdom Cards. This function is intended to power \"deck builder\" or \"card picker\" applications.",
           "operationId": "/cardset/",
           "parameters": [
@@ -160,15 +157,6 @@
                         "card_text": {
                           "type": "string"
                         }
-                      },
-                      "example": {
-                        "uuid": "af88b62d-03fc-4173-a80c-97e36bcad123",
-                        "card_name": "Island",
-                        "set_num": 3,
-                        "set_name": "Seaside",
-                        "type": "Action-Victory",
-                        "cost": "$4",
-                        "card_text": "Set aside this and another card from your hand. Return them to your deck at the end of the game.\\dWorth 2VP"
                       }
                     }
                   },
@@ -275,9 +263,9 @@
       "/random": {
         "get": {
           "tags": [
-            "Misc"
+            "Methods"
           ],
-          "summary": "/random/",
+          "summary": "Get a Random Card",
           "description": "Get a single random Dominion Kingdom Card.",
           "operationId": "/random/",
           "parameters": [
@@ -339,16 +327,6 @@
                       "card_text": {
                         "type": "string"
                       }
-                    },
-                    "example": {
-                      "id": 344,
-                      "uuid": "87e1c253-4a53-4c5b-9bac-cd1161bfde34",
-                      "card_name": "Colonnade",
-                      "set_num": 12,
-                      "set_name": "Empires",
-                      "type": "Landmark",
-                      "cost": "$0",
-                      "card_text": "When you buy an Action card, if you have a copy of it in play, take 2 Victory from here.\\dSetup: Put 6 Victory here per player."
                     }
                   },
                   "example": {
@@ -372,9 +350,9 @@
       "/all": {
         "get": {
           "tags": [
-            "Misc"
+            "Methods"
           ],
-          "summary": "/all/",
+          "summary": "Get All Cards",
           "description": "Get the list of **all** Dominion Kingdom Card(s). Alias of `/cards/`.",
           "operationId": "/all/",
           "parameters": [
@@ -434,15 +412,6 @@
                         "card_text": {
                           "type": "string"
                         }
-                      },
-                      "example": {
-                        "uuid": "b9fd8c92-e79e-4656-af5e-d4f6d1de6c09",
-                        "card_name": "Black Market",
-                        "set_num": 0,
-                        "set_name": "Promo",
-                        "type": "Action",
-                        "cost": "$3",
-                        "card_text": "+$2\\nReveal the top 3 cards of the Black Market deck. You may buy one of them immediately. Put the unbought cards on the bottom of the Black Market deck in any order.\\d(Before the game, make a Black Market deck out of one copy of each Kingdom card not in "
                       }
                     }
                   },
@@ -3690,9 +3659,9 @@
       "/cards": {
         "get": {
           "tags": [
-            "Misc"
+            "Methods"
           ],
-          "summary": "/cards/?",
+          "summary": "Filter Cards",
           "description": "Get a set of Dominion Kingdom Card(s) based on the filter parameters.",
           "operationId": "/cards/?",
           "parameters": [
@@ -3799,16 +3768,6 @@
                         "card_text": {
                           "type": "string"
                         }
-                      },
-                      "example": {
-                        "id": 9,
-                        "uuid": "8f106915-c4ba-4440-bc27-619c1961cc1d",
-                        "card_name": "Bureaucrat",
-                        "set_num": 1,
-                        "set_name": "Dominion",
-                        "type": "Action-Attack",
-                        "cost": "$4",
-                        "card_text": "Gain a silver card; put it on top of your deck. Each other player reveals a Victory card from his hand and puts it on his deck (or reveals a hand with no Victory cards)."
                       }
                     }
                   },
@@ -3863,9 +3822,9 @@
         },
         "post": {
           "tags": [
-            "Misc"
+            "Methods"
           ],
-          "summary": "/cards/",
+          "summary": "Add a Card",
           "description": "Add a new Dominion Kingdom Card to the database.",
           "operationId": "/cards/",
           "parameters": [
@@ -3985,16 +3944,6 @@
                       "card_text": {
                         "type": "string"
                       }
-                    },
-                    "example": {
-                      "id": 359,
-                      "uuid": null,
-                      "card_name": "New Card",
-                      "set_num": 0,
-                      "set_name": "New Set",
-                      "type": "Action",
-                      "cost": "$2Þ",
-                      "card_text": "The new card's body text goes here."
                     }
                   },
                   "example": {
@@ -4018,9 +3967,9 @@
       "/cards/1": {
         "get": {
           "tags": [
-            "Misc"
+            "Methods"
           ],
-          "summary": "/cards/[id]/",
+          "summary": "Get a Card by ID",
           "description": "Request the details of a single Dominion Kingdom Card.",
           "operationId": "/cards/[id]/",
           "parameters": [
@@ -4082,16 +4031,6 @@
                       "card_text": {
                         "type": "string"
                       }
-                    },
-                    "example": {
-                      "id": 1,
-                      "uuid": "b9fd8c92-e79e-4656-af5e-d4f6d1de6c09",
-                      "card_name": "Black Market",
-                      "set_num": 0,
-                      "set_name": "Promo",
-                      "type": "Action",
-                      "cost": "$3",
-                      "card_text": "+$2\\nReveal the top 3 cards of the Black Market deck. You may buy one of them immediately. Put the unbought cards on the bottom of the Black Market deck in any order.\\d(Before the game, make a Black Market deck out of one copy of each Kingdom card not in "
                     }
                   },
                   "example": {
@@ -4113,331 +4052,23 @@
         }
       }
     },
-    "components": {
-      "schemas": {
-        "/get_auth_token/": {
-          "title": "/get_auth_token/",
-          "required": [
-            "token"
-          ],
-          "type": "object",
-          "properties": {
-            "token": {
-              "type": "string"
-            }
-          },
-          "example": {
-            "token": "0b4b13fa0a972c198b52efa63d9224b182f0af6c"
-          }
-        },
-        "/cardset/": {
-          "title": "/cardset/",
-          "required": [
-            "uuid",
-            "card_name",
-            "set_num",
-            "set_name",
-            "type",
-            "cost",
-            "card_text"
-          ],
-          "type": "object",
-          "properties": {
-            "uuid": {
-              "type": "string"
-            },
-            "card_name": {
-              "type": "string"
-            },
-            "set_num": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "set_name": {
-              "type": "string"
-            },
-            "type": {
-              "type": "string"
-            },
-            "cost": {
-              "type": "string"
-            },
-            "card_text": {
-              "type": "string"
-            }
-          },
-          "example": {
-            "uuid": "af88b62d-03fc-4173-a80c-97e36bcad123",
-            "card_name": "Island",
-            "set_num": 3,
-            "set_name": "Seaside",
-            "type": "Action-Victory",
-            "cost": "$4",
-            "card_text": "Set aside this and another card from your hand. Return them to your deck at the end of the game.\\dWorth 2VP"
-          }
-        },
-        "/random/": {
-          "title": "/random/",
-          "required": [
-            "id",
-            "uuid",
-            "card_name",
-            "set_num",
-            "set_name",
-            "type",
-            "cost",
-            "card_text"
-          ],
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "uuid": {
-              "type": "string"
-            },
-            "card_name": {
-              "type": "string"
-            },
-            "set_num": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "set_name": {
-              "type": "string"
-            },
-            "type": {
-              "type": "string"
-            },
-            "cost": {
-              "type": "string"
-            },
-            "card_text": {
-              "type": "string"
-            }
-          },
-          "example": {
-            "id": 344,
-            "uuid": "87e1c253-4a53-4c5b-9bac-cd1161bfde34",
-            "card_name": "Colonnade",
-            "set_num": 12,
-            "set_name": "Empires",
-            "type": "Landmark",
-            "cost": "$0",
-            "card_text": "When you buy an Action card, if you have a copy of it in play, take 2 Victory from here.\\dSetup: Put 6 Victory here per player."
-          }
-        },
-        "/all/": {
-          "title": "/all/",
-          "required": [
-            "uuid",
-            "card_name",
-            "set_num",
-            "set_name",
-            "type",
-            "cost",
-            "card_text"
-          ],
-          "type": "object",
-          "properties": {
-            "uuid": {
-              "type": "string",
-              "nullable": true
-            },
-            "card_name": {
-              "type": "string"
-            },
-            "set_num": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "set_name": {
-              "type": "string"
-            },
-            "type": {
-              "type": "string"
-            },
-            "cost": {
-              "type": "string"
-            },
-            "card_text": {
-              "type": "string"
-            }
-          },
-          "example": {
-            "uuid": "b9fd8c92-e79e-4656-af5e-d4f6d1de6c09",
-            "card_name": "Black Market",
-            "set_num": 0,
-            "set_name": "Promo",
-            "type": "Action",
-            "cost": "$3",
-            "card_text": "+$2\\nReveal the top 3 cards of the Black Market deck. You may buy one of them immediately. Put the unbought cards on the bottom of the Black Market deck in any order.\\d(Before the game, make a Black Market deck out of one copy of each Kingdom card not in "
-          }
-        },
-        "/cards/?set_name=Dominion&type=Action-Attack&cost=4": {
-          "title": "/cards/?set_name=Dominion&type=Action-Attack&cost=4",
-          "required": [
-            "id",
-            "uuid",
-            "card_name",
-            "set_num",
-            "set_name",
-            "type",
-            "cost",
-            "card_text"
-          ],
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "uuid": {
-              "type": "string"
-            },
-            "card_name": {
-              "type": "string"
-            },
-            "set_num": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "set_name": {
-              "type": "string"
-            },
-            "type": {
-              "type": "string"
-            },
-            "cost": {
-              "type": "string"
-            },
-            "card_text": {
-              "type": "string"
-            }
-          },
-          "example": {
-            "id": 9,
-            "uuid": "8f106915-c4ba-4440-bc27-619c1961cc1d",
-            "card_name": "Bureaucrat",
-            "set_num": 1,
-            "set_name": "Dominion",
-            "type": "Action-Attack",
-            "cost": "$4",
-            "card_text": "Gain a silver card; put it on top of your deck. Each other player reveals a Victory card from his hand and puts it on his deck (or reveals a hand with no Victory cards)."
-          }
-        },
-        "/cards/": {
-          "title": "/cards/",
-          "required": [
-            "id",
-            "uuid",
-            "card_name",
-            "set_num",
-            "set_name",
-            "type",
-            "cost",
-            "card_text"
-          ],
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "uuid": {
-              "type": "string",
-              "nullable": true
-            },
-            "card_name": {
-              "type": "string"
-            },
-            "set_num": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "set_name": {
-              "type": "string"
-            },
-            "type": {
-              "type": "string"
-            },
-            "cost": {
-              "type": "string"
-            },
-            "card_text": {
-              "type": "string"
-            }
-          },
-          "example": {
-            "id": 359,
-            "uuid": null,
-            "card_name": "New Card",
-            "set_num": 0,
-            "set_name": "New Set",
-            "type": "Action",
-            "cost": "$2Þ",
-            "card_text": "The new card's body text goes here."
-          }
-        },
-        "/cards/[id]/": {
-          "title": "/cards/[id]/",
-          "required": [
-            "id",
-            "uuid",
-            "card_name",
-            "set_num",
-            "set_name",
-            "type",
-            "cost",
-            "card_text"
-          ],
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "uuid": {
-              "type": "string"
-            },
-            "card_name": {
-              "type": "string"
-            },
-            "set_num": {
-              "type": "integer",
-              "format": "int32"
-            },
-            "set_name": {
-              "type": "string"
-            },
-            "type": {
-              "type": "string"
-            },
-            "cost": {
-              "type": "string"
-            },
-            "card_text": {
-              "type": "string"
-            }
-          },
-          "example": {
-            "id": 1,
-            "uuid": "b9fd8c92-e79e-4656-af5e-d4f6d1de6c09",
-            "card_name": "Black Market",
-            "set_num": 0,
-            "set_name": "Promo",
-            "type": "Action",
-            "cost": "$3",
-            "card_text": "+$2\\nReveal the top 3 cards of the Black Market deck. You may buy one of them immediately. Put the unbought cards on the bottom of the Black Market deck in any order.\\d(Before the game, make a Black Market deck out of one copy of each Kingdom card not in "
-          }
-        }
-      }
-    },
     "tags": [
       {
-        "name": "Misc",
+        "name": "Methods",
         "description": ""
+      },
+      {
+        "name": "Authorization",
+        "description": "You must use a Token with this API."
       }
-    ]
+    ],
+    "components": {
+      "securitySchemes": {
+        "Authorization Token": {
+          "type": "http",
+          "scheme": "Bearer",
+          "description": "An Authorization Token is required to use this API."
+        }
+      }
+    }
   }
