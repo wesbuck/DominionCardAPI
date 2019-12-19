@@ -3,8 +3,14 @@
     "info": {
       "title": "Dominion Card API",
       "description": "Full-featured Dominion Kingdom Cards API.\n\nThis API is intended to power companion apps for the board game Dominion and allows you to quickly and easily obtain card sets and card details for the Kingdom Cards used to play the  game.\n\n## Data Information ##\n\n* In the cost, `Þ` means \"potion\".\n* In the description, `\\\\n` denotes where a new line should be inserted.\n* In the description, `\\\\d` denotes where a horizontal break should be inserted.\n\n## Public GitHub Repository ##\n\nSee https://github.com/wesbuck/DominionCardAPI for more information.",
-      "contact": {},
-      "version": "1.0"
+      "contact": {
+        "name": "Wes Buck",
+        "url": "https://github.com/wesbuck/DominionCardAPI"
+      },
+      "version": "1.0",
+      "license": {
+        "name": "MIT"
+      }
     },
     "servers": [
       {
