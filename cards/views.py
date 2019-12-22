@@ -34,7 +34,7 @@ def get_random_card_pk():
 # only extend the parts of ModelViewSet we want (omit Update & Destroy)
 class CardList(mixins.CreateModelMixin, mixins.RetrieveModelMixin, mixins.ListModelMixin, viewsets.GenericViewSet):
     serializer_class = CardSerializer
-    filter_class = CardFilter
+    filterset_class = CardFilter
     queryset = Card.objects.all()
 
 
