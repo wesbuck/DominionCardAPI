@@ -1,0 +1,4656 @@
+[
+{
+    "model": "cards.card",
+    "pk": 1791,
+    "fields": {
+        "uuid": "ad13d548-c718-4d05-9439-e44d64feae12",
+        "card_name": "Black Market",
+        "set_num": 0,
+        "set_name": "Promo",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "+$2\\nReveal the top 3 cards of the Black Market deck. You may buy one of them immediately. Put the unbought cards on the bottom of the Black Market deck in any order.\\d(Before the game, make a Black Market deck out of one copy of each Kingdom card not in "
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1792,
+    "fields": {
+        "uuid": "b29d7b6f-63f0-434e-bd63-d8508ec3c695",
+        "card_name": "Envoy",
+        "set_num": 0,
+        "set_name": "Promo",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "Reveal the top 5 cards of your deck. The player to your left chooses one for you to discard. Draw the rest."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1793,
+    "fields": {
+        "uuid": "24f8126b-aa43-499f-a3a7-d9c44f41451b",
+        "card_name": "Governor",
+        "set_num": 0,
+        "set_name": "Promo",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Action\\nChoose one; you get the version in parentheses: Each player gets +1 (+3) Cards; or each player gains a Silver (Gold); or each player may trash a card from his hand and gain a card costing exactly $1 ($2) more."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1794,
+    "fields": {
+        "uuid": "415903a6-a71b-4c0f-9ae7-d78cb885d953",
+        "card_name": "Prince",
+        "set_num": 0,
+        "set_name": "Promo",
+        "type": "Action",
+        "cost": "$8",
+        "card_text": "You may set this aside. If you do, set aside an Action card from your hand costing up to $4. At the start of each of your turns, play that Action, setting it aside again when you discard it from play. (Stop playing it if you fail to set it aside on a turn you play it.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1795,
+    "fields": {
+        "uuid": "cada5d07-2eca-4287-a863-1467b962af80",
+        "card_name": "Stash",
+        "set_num": 0,
+        "set_name": "Promo",
+        "type": "Treasure",
+        "cost": "$5",
+        "card_text": "Worth $2\\dWhen you shuffle, you may put this anywhere in your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1796,
+    "fields": {
+        "uuid": "d5d596ea-3d02-4fb5-bfd2-5c17b9726c5a",
+        "card_name": "Summon",
+        "set_num": 0,
+        "set_name": "Promo",
+        "type": "Event",
+        "cost": "$?",
+        "card_text": "Allows the buyer to gain a cheap Action card and play it immediately at the start of their next turn."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1797,
+    "fields": {
+        "uuid": "7bce7b61-7bf1-4fd4-9ee6-d81715a1395b",
+        "card_name": "Walled Village",
+        "set_num": 0,
+        "set_name": "Promo",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Card\\n+2 Actions\\dAt the start of Clean-up, if you have this and no more than one other Action card in play, you may put this on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1798,
+    "fields": {
+        "uuid": "1243d2ae-3348-4e70-b992-3d39ceae016b",
+        "card_name": "Adventurer",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$6",
+        "card_text": "Reveal cards from your deck until you reveal 2 Treasure cards. Put those Treasure cards in your hand and discard the other revealed cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1799,
+    "fields": {
+        "uuid": "2186a41e-36fd-4e7d-9bbc-8dd69673b2da",
+        "card_name": "Bureaucrat",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action-Attack",
+        "cost": "$4",
+        "card_text": "Gain a silver card; put it on top of your deck. Each other player reveals a Victory card from his hand and puts it on his deck (or reveals a hand with no Victory cards)."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1800,
+    "fields": {
+        "uuid": "a2c3f48a-703f-430c-a83b-5b690e8f3e47",
+        "card_name": "Cellar",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "+1 Action\\nDiscard any number of cards.\\n+1 Card per card discarded."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1801,
+    "fields": {
+        "uuid": "19db77fa-6f8d-40e6-b473-2cf78d905061",
+        "card_name": "Chancellor",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "+$2\\nYou may immediately put your deck into your discard pile."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1802,
+    "fields": {
+        "uuid": "4f48f2de-db04-4a6f-a55c-b2e43cf41cc4",
+        "card_name": "Chapel",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "Trash up to 4 cards from your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1803,
+    "fields": {
+        "uuid": "d16a8121-762a-4efc-898f-6eb7e5602541",
+        "card_name": "Council Room",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+4 Cards\\n+1 Buy\\nEach other player draws a card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1804,
+    "fields": {
+        "uuid": "f2a6be37-5a24-4b8e-a152-a4621aa6744d",
+        "card_name": "Feast",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "Trash this card. Gain a card costing up to $5."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1805,
+    "fields": {
+        "uuid": "1c00d47f-70d8-4c39-bf36-f1a2daadc5b9",
+        "card_name": "Festival",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+2 Actions\\n+1 Buy\\n+$2."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1806,
+    "fields": {
+        "uuid": "3b6856e5-d028-46f3-9502-fd78a6bb5aa9",
+        "card_name": "Gardens",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Victory",
+        "cost": "$4",
+        "card_text": "Worth 1VP for every 10 cards in your deck (rounded down)."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1807,
+    "fields": {
+        "uuid": "14e64115-c98c-44bb-a62b-a581b5a3b01e",
+        "card_name": "Laboratory",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+2 Cards\\n+1 Action."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1808,
+    "fields": {
+        "uuid": "c9f968df-d349-4c48-af9f-90c0e74be435",
+        "card_name": "Library",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "Draw until you have 7 cards in hand. You may set aside any Action cards drawn this way, as you draw them; discard the set aside cards after you finish drawing."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1809,
+    "fields": {
+        "uuid": "3bd75462-de95-48a7-b3c4-2a9f47833300",
+        "card_name": "Market",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Card\\n+1 Action\\n+1 Buy\\n+$1."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1810,
+    "fields": {
+        "uuid": "2a693484-6563-41cb-a926-91a02d561e65",
+        "card_name": "Militia",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action-Attack",
+        "cost": "$4",
+        "card_text": "+$2\\nEach other player discards down to 3 cards in his hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1811,
+    "fields": {
+        "uuid": "15e80727-9dbe-4407-be3d-ba70b38651fe",
+        "card_name": "Mine",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "Trash a Treasure card from your hand. Gain a Treasure card costing up to $3 more; put it into your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1812,
+    "fields": {
+        "uuid": "c871001e-820a-49aa-9ffb-e408f8cad641",
+        "card_name": "Moat",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action-Reaction",
+        "cost": "$2",
+        "card_text": "+2 Cards\\dWhen another player plays an Attack card, you may reveal this from your hand. If you do, you are unaffected by that Attack."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1813,
+    "fields": {
+        "uuid": "288db503-b11d-4ba5-9ec3-b78b62cd3003",
+        "card_name": "Moneylender",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "Trash a Copper from your hand. If you do, +$3."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1814,
+    "fields": {
+        "uuid": "2bb5e4d0-f1f2-4a99-bcc7-313fe09d2f56",
+        "card_name": "Remodel",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "Trash a card from your hand. Gain a card costing up to $2 more than the trashed card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1815,
+    "fields": {
+        "uuid": "67005953-be1b-4928-a1d7-00569437f06b",
+        "card_name": "Smithy",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+3 Cards"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1816,
+    "fields": {
+        "uuid": "e51f7c98-43e7-4656-a165-7fcec841f4f3",
+        "card_name": "Spy",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action-Attack",
+        "cost": "$4",
+        "card_text": "+1 Card\\n+1 Action\\nEach player (including you) reveals the top card of his deck and either discards it or puts it back, your choice."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1817,
+    "fields": {
+        "uuid": "5b9a8603-d4eb-4db4-ab79-d15f962a1a1a",
+        "card_name": "Thief",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action-Attack",
+        "cost": "$4",
+        "card_text": "Each other player reveals the top 2 cards of his deck. If they revealed any Treasure cards, they trash one of them that you choose. You may gain any or all of these trashed cards. They discard the other revealed cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1818,
+    "fields": {
+        "uuid": "92c30ff0-ef87-4b0e-a0d0-6ca9982c284f",
+        "card_name": "Throne Room",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "Choose an Action card in your hand. Play it twice."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1819,
+    "fields": {
+        "uuid": "393d31c3-5d62-4a70-87c4-a0d81f06a885",
+        "card_name": "Village",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "+1 Card\\n+2 Actions"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1820,
+    "fields": {
+        "uuid": "f6397258-e2cf-44bb-b77a-5f408e0fa080",
+        "card_name": "Witch",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action-Attack",
+        "cost": "$5",
+        "card_text": "+2 Cards\\nEach other player gains a Curse card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1821,
+    "fields": {
+        "uuid": "cb39aef8-cef7-4042-80f7-df7aecc45b7c",
+        "card_name": "Woodcutter",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "+1 Buy\\n+$2"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1822,
+    "fields": {
+        "uuid": "f536c846-9260-4d80-a01d-888edb01a9af",
+        "card_name": "Workshop",
+        "set_num": 1,
+        "set_name": "Dominion",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "Gain a card costing up to $4."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1823,
+    "fields": {
+        "uuid": "bb8a6d31-e9f8-4b60-a212-0156cc1ea532",
+        "card_name": "Baron",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Buy\\nYou may discard an Estate card. If you do, +$4.\\nOtherwise, gain an Estate card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1824,
+    "fields": {
+        "uuid": "95aff0b4-b4af-4d75-ad60-05d5e398e3b1",
+        "card_name": "Bridge",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Buy\\n+$1\\nAll cards (including cards in players' hands) cost $1 less this turn, but not less than $0."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1825,
+    "fields": {
+        "uuid": "98e6fdc9-a5ec-421c-8787-e1f72bb5f205",
+        "card_name": "Conspirator",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+$2\\nIf you've played 3 or more Actions this turn (counting this): +1 Card; +1 Action."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1826,
+    "fields": {
+        "uuid": "bb908443-cfa4-4e2b-93b6-28653cbd2469",
+        "card_name": "Coppersmith",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "Copper produces an extra $1 this turn."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1827,
+    "fields": {
+        "uuid": "a11c7824-cba1-4040-8aaa-063258b87acb",
+        "card_name": "Courtyard",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "+3 Cards\\nPut a card from your hand on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1828,
+    "fields": {
+        "uuid": "96cdff17-1253-497e-aa6a-a98146e218e1",
+        "card_name": "Duke",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Victory",
+        "cost": "$5",
+        "card_text": "Worth 1VP per Duchy you have."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1829,
+    "fields": {
+        "uuid": "337dab79-650e-425d-acd1-1294015437ee",
+        "card_name": "Great Hall",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action-Victory",
+        "cost": "$3",
+        "card_text": "+1 Card\\n+1 Action\\dWorth 1VP"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1830,
+    "fields": {
+        "uuid": "b4a51375-bb1a-4017-9aa3-388259b06eb3",
+        "card_name": "Harem",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Treasure-Victory",
+        "cost": "$6",
+        "card_text": "Worth $2\\nWorth 2VP"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1831,
+    "fields": {
+        "uuid": "da915479-93d3-4b2d-a24f-e0587967cffb",
+        "card_name": "Ironworks",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "Gain a card costing up to $4. If it is an...\\nAction card, +1 Action\\nTreasure card, +$1\\nVictory card, +1 Card"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1832,
+    "fields": {
+        "uuid": "e1df832c-7904-4d85-80f4-acd991c8551a",
+        "card_name": "Masquerade",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "+2 Cards\\nEach player passes a card in their hand to the player on their left. Then you may trash a card from your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1833,
+    "fields": {
+        "uuid": "b80398f3-416f-4ea7-b5e7-cdb4705846ac",
+        "card_name": "Mining Village",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Card\\n+2 Actions\\nYou may trash this card immediately. If you do, +$2."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1834,
+    "fields": {
+        "uuid": "289f3934-7b67-4c96-9029-f05b15e807a5",
+        "card_name": "Minion",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action-Attack",
+        "cost": "$5",
+        "card_text": "+1 Action\\nChoose one: +$2; or discard your hand, +4 Cards, and each other player with at least 5 cards in hand discards his hand and draws 4 cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1835,
+    "fields": {
+        "uuid": "6e7e9af8-b710-4010-8403-a0cb56d36066",
+        "card_name": "Nobles",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action-Victory",
+        "cost": "$6",
+        "card_text": "Choose one: +3 Cards; or +2 Actions.\\dWorth 2VP"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1836,
+    "fields": {
+        "uuid": "c8354c46-9052-4c05-9cba-f43d94a0cf08",
+        "card_name": "Pawn",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "Choose two: +1 Card; +1 Action; +1 Buy; +$1.\\n(The choices must be different.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1837,
+    "fields": {
+        "uuid": "d4605aa7-f1ab-4234-9cce-40abe798f5c5",
+        "card_name": "Saboteur",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action-Attack",
+        "cost": "$5",
+        "card_text": "Each other player reveals cards from the top of his deck until revealing one costing $3 or more. He trashes that card and may gain a card costing at most $2 less than it. He discards the other revealed cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1838,
+    "fields": {
+        "uuid": "83ece192-a10f-4fec-b6cb-11bdd8f9aac0",
+        "card_name": "Scout",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Action\\nReveal the top 4 cards of your deck. Put the revealed Victory cards into your hand. Put the other cards on top of your deck in any order."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1839,
+    "fields": {
+        "uuid": "6933d805-11af-4e87-a688-a7664f4a3c49",
+        "card_name": "Secret Chamber",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action-Reaction",
+        "cost": "$2",
+        "card_text": "Discard any number of cards. +$1 per card discarded.\\dWhen another player plays an Attack card, you may reveal this from your hand. If you do, +2 cards, then put 2 cards from your hand on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1840,
+    "fields": {
+        "uuid": "aeaced82-65a1-4d0e-9896-f855641ec43a",
+        "card_name": "Shanty Town",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "+2 Actions\\nReveal your hand.\\nIf you have no Action cards in hand, +2 Cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1841,
+    "fields": {
+        "uuid": "d55f9754-22b4-4b95-acc4-37ae2b9278d5",
+        "card_name": "Steward",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "Choose one: +2 Cards; or +$2; or trash 2 cards from your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1842,
+    "fields": {
+        "uuid": "ab60f135-c543-4be3-98ef-a4b5e3f5112e",
+        "card_name": "Swindler",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action-Attack",
+        "cost": "$3",
+        "card_text": "+$2\\nEach other player trashes the top card of his deck and gains a card with the same cost that you choose."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1843,
+    "fields": {
+        "uuid": "e29f4e74-3a65-4ff2-af0f-208f49030f1e",
+        "card_name": "Torturer",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action-Attack",
+        "cost": "$5",
+        "card_text": "+3 Cards\\nEach other player chooses one: he discards 2 cards; or he gains a Curse card, putting it in his hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1844,
+    "fields": {
+        "uuid": "94189e8c-4e74-4c1b-b11e-6df5dcb570a5",
+        "card_name": "Trading Post",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "Trash 2 cards from your hand. If you do, gain a silver card; put it into your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1845,
+    "fields": {
+        "uuid": "9a85d44c-3dd8-4241-838d-6a6aadf164a5",
+        "card_name": "Tribute",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "The player to your left reveals then discards the top 2 cards of his deck. For each differently named card revealed, if it is an...\\nAction Card, +2 Actions\\nTreasure Card, +$2\\nVictory Card, +2 Cards"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1846,
+    "fields": {
+        "uuid": "18da67fe-0a56-4cea-9af5-80bd181e35d8",
+        "card_name": "Upgrade",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Card\\n+1 Action\\nTrash a card from your hand. Gain a card costing exactly $1 more than it."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1847,
+    "fields": {
+        "uuid": "eb6f22bf-b47b-4dbb-bd28-b5a3891862f3",
+        "card_name": "Wishing Well",
+        "set_num": 2,
+        "set_name": "Intrigue",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "+1 Card\\n+1 Action\\nName a card, then reveal the top card of your deck. If it is the named card, put it in your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1848,
+    "fields": {
+        "uuid": "0ffc865e-97be-47b8-83c5-d0c256074f1d",
+        "card_name": "Ambassador",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action-Attack",
+        "cost": "$3",
+        "card_text": "Reveal a card from your hand. Return up to 2 copies of it from your hand to the Supply.\\nThen each other player gains a copy of it."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1849,
+    "fields": {
+        "uuid": "904916ed-9e50-40cb-a2b6-12691d9f1a38",
+        "card_name": "Bazaar",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Card\\n+2 Actions\\n+$1."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1850,
+    "fields": {
+        "uuid": "417a84d6-f3c8-49d6-914c-d608f30ea4e6",
+        "card_name": "Caravan",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action-Duration",
+        "cost": "$4",
+        "card_text": "+1 Card\\n+1 Action\\nAt the start of your next turn, +1 Card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1851,
+    "fields": {
+        "uuid": "7a7f73a5-3a20-41e2-9bc9-d36b178d6255",
+        "card_name": "Cutpurse",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action-Attack",
+        "cost": "$4",
+        "card_text": "+$2\\nEach other player discards a Copper card (or reveals a hand with no Copper)."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1852,
+    "fields": {
+        "uuid": "6a3f06e9-d2e2-458a-87ec-52e4180f78bd",
+        "card_name": "Embargo",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "+$2\\nTrash this card. Put an Embargo token on top of a Supply pile.\\dWhen a player buys a card, he gains a Curse card per Embargo token on that pile."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1853,
+    "fields": {
+        "uuid": "bb4b61b6-1b03-4ccb-998a-2e1166c626ca",
+        "card_name": "Explorer",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "You may reveal a Province card from your hand. If you do, gain a Gold card, putting it into your hand. Otherwise, gain a Silver card, putting it into your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1854,
+    "fields": {
+        "uuid": "fb80b650-f2f5-4103-bd37-3ffb050776f5",
+        "card_name": "Fishing Village",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action-Duration",
+        "cost": "$3",
+        "card_text": "+2 Actions\\n+$1\\nAt the start of your next turn: +1 Action; +$1."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1855,
+    "fields": {
+        "uuid": "07beed52-0ef8-44ae-bd37-74ddb5891234",
+        "card_name": "Ghost Ship",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action-Attack",
+        "cost": "$5",
+        "card_text": "+2 Cards\\nEach other player with 4 or more cards in hand puts cards from his hand on top of his deck until he has 3 cards in his hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1856,
+    "fields": {
+        "uuid": "c1c602a2-ad54-4fd5-b7c7-8347b3bfd847",
+        "card_name": "Haven",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action-Duration",
+        "cost": "$2",
+        "card_text": "+1 Card\\n+1 Action\\nSet aside a card from your hand face down. At the start of your next turn, put it into your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1857,
+    "fields": {
+        "uuid": "10213853-03a5-418b-828d-e7aa6b37c84e",
+        "card_name": "Island",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action-Victory",
+        "cost": "$4",
+        "card_text": "Set aside this and another card from your hand. Return them to your deck at the end of the game.\\dWorth 2VP"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1858,
+    "fields": {
+        "uuid": "2eb56418-82d0-4e5b-ada4-74fea643999e",
+        "card_name": "Lighthouse",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action-Duration",
+        "cost": "$2",
+        "card_text": "+1 Action\\nNow and at the start of your next turn: +$1.\\dWhile this is in play, when another player plays an Attack card, it doesn't affect you."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1859,
+    "fields": {
+        "uuid": "6ce9b71c-f0a4-4e86-a275-13eeeb3dc133",
+        "card_name": "Lookout",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "+1 Action\\nLook at the top 3 cards of your deck. Trash one of them. Discard one of them. Put the other one on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1860,
+    "fields": {
+        "uuid": "149611d4-f78b-419e-80b8-bcf35a745bc2",
+        "card_name": "Merchant Ship",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action-Duration",
+        "cost": "$5",
+        "card_text": "Now and at the start of your next turn: +$2."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1861,
+    "fields": {
+        "uuid": "f9f2cfa8-fce9-4a71-a636-6b3ece376985",
+        "card_name": "Native Village",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "+2 Actions\\nChoose one: Set aside the top card of your deck face down on your Native Village mat; or put all the cards from your mat into your hand.\\nYou may look at the cards on your mat at any time; return them to your deck at the end of the game."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1862,
+    "fields": {
+        "uuid": "778170c4-3f7d-4d49-9eb4-da0d44e0c26d",
+        "card_name": "Navigator",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+$2\\nLook at the top 5 cards of your deck. Either discard all of them, or put them back on top of your deck in any order."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1863,
+    "fields": {
+        "uuid": "f86ccde5-b926-4fd6-af2d-a9c67108fcc1",
+        "card_name": "Outpost",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action-Duration",
+        "cost": "$5",
+        "card_text": "You only draw 3 cards (instead of 5) in this turn's Clean-up phase. Take an extra turn after this one. This can't cause you to take more than two consecutive turns."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1864,
+    "fields": {
+        "uuid": "8e512efd-93c5-4d15-baef-5613eac0b088",
+        "card_name": "Pearl Diver",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "+1 Card\\n+1 Action\\nLook at the bottom card of your deck. You may put it on top."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1865,
+    "fields": {
+        "uuid": "795457e7-7fdd-48ae-95c9-69554c07c03a",
+        "card_name": "Pirate Ship",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action-Attack",
+        "cost": "$4",
+        "card_text": "Choose one: Each other player reveals the top 2 cards of his deck, trashes a revealed Treasure that you choose, discards the rest, and if anyone trashed a Treasure you take a Coin token; or, +$1 per Coin token you've taken with Pirate Ships this game."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1866,
+    "fields": {
+        "uuid": "e8c47757-2235-4f87-a64c-a6025e2db916",
+        "card_name": "Salvager",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Buy\\nTrash a card from your hand. +$ equal to its cost."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1867,
+    "fields": {
+        "uuid": "4a478eca-2296-4ac9-9f39-067f941411fb",
+        "card_name": "Sea Hag",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action-Attack",
+        "cost": "$4",
+        "card_text": "Each other player discards the top card of his deck, then gains a Curse card, putting it on top of his deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1868,
+    "fields": {
+        "uuid": "658b781d-0969-49c0-a96c-ee30f9a07cbf",
+        "card_name": "Smugglers",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "Gain a copy of a card costing up to $6 that the player to your right gained on his last turn."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1869,
+    "fields": {
+        "uuid": "b8c2d85a-4caa-4cf1-94fe-5eda49a18398",
+        "card_name": "Tactician",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action-Duration",
+        "cost": "$5",
+        "card_text": "Discard your hand. If you discarded any cards this way, then at the start of your next turn, +5 Cards; +1 Buy; and +1 Action."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1870,
+    "fields": {
+        "uuid": "6b77278d-1033-4310-878d-5ef7c01cdc5c",
+        "card_name": "Treasure Map",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "Trash this and another copy of Treasure Map from your hand. If you do trash two Treasure Maps, gain 4 Gold cards, putting them on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1871,
+    "fields": {
+        "uuid": "b7e3997f-b5b9-4cf6-bead-e57e9741b4b3",
+        "card_name": "Treasury",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Card\\n+1 Action\\n+$1\\dWhen you discard this from play, if you didn't buy a Victory card this turn, you may put this on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1872,
+    "fields": {
+        "uuid": "fce5ceb1-f70c-4007-b44c-b46b359a2e15",
+        "card_name": "Warehouse",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "+3 Cards\\n +1 Action\\nDiscard 3 cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1873,
+    "fields": {
+        "uuid": "62379ca5-f928-4163-938a-e18241fee15b",
+        "card_name": "Wharf",
+        "set_num": 3,
+        "set_name": "Seaside",
+        "type": "Action-Duration",
+        "cost": "$5",
+        "card_text": "Now and at the start of your next turn: +2 Cards\\n+1 Buy."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1874,
+    "fields": {
+        "uuid": "ec98dfc5-a986-48b8-afeb-662e9e1e6100",
+        "card_name": "Alchemist",
+        "set_num": 4,
+        "set_name": "Alchemy",
+        "type": "Action",
+        "cost": "$3\u00de",
+        "card_text": "+2 Cards\\n+1 Action\\dWhen you discard this from play, you may put this on top of your deck if you have a Potion in play."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1875,
+    "fields": {
+        "uuid": "23714ed7-1f88-427e-8fa4-819c93bd582a",
+        "card_name": "Apothecary",
+        "set_num": 4,
+        "set_name": "Alchemy",
+        "type": "Action",
+        "cost": "$2\u00de",
+        "card_text": "+1 Card\\n+1 Action\\nReveal the top 4 cards of your deck. Put the revealed Coppers and Potions into your hand. Put the other cards back on top in any order."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1876,
+    "fields": {
+        "uuid": "cb3d1b86-b892-4adb-a803-4f8ad1e0a505",
+        "card_name": "Apprentice",
+        "set_num": 4,
+        "set_name": "Alchemy",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Action\\nTrash a card from your hand. +1 Card per Coin it costs. +2 Cards if it has \u00de in its cost."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1877,
+    "fields": {
+        "uuid": "aa7644f8-f225-4048-8410-99f727752a83",
+        "card_name": "Familiar",
+        "set_num": 4,
+        "set_name": "Alchemy",
+        "type": "Action-Attack",
+        "cost": "$3\u00de",
+        "card_text": "+1 Card\\n+1 Action\\nEach other player gains a curse."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1878,
+    "fields": {
+        "uuid": "f65608ba-0170-4e93-abc6-61863a868762",
+        "card_name": "Golem",
+        "set_num": 4,
+        "set_name": "Alchemy",
+        "type": "Action",
+        "cost": "$4\u00de",
+        "card_text": "Reveal cards from your deck until you reveal 2 Action cards other than Golem Cards. Discard the other cards, then play the Action cards in either order."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1879,
+    "fields": {
+        "uuid": "1b08d098-1a84-464b-afaa-31d778f6c624",
+        "card_name": "Herbalist",
+        "set_num": 4,
+        "set_name": "Alchemy",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "+1 Buy\\n+$1\\dWhen you discard this from play, you may put one of your Treasures from play on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1880,
+    "fields": {
+        "uuid": "2926fb45-222c-4557-bdb4-85f8218db77e",
+        "card_name": "Philosopher's Stone",
+        "set_num": 4,
+        "set_name": "Alchemy",
+        "type": "Treasure",
+        "cost": "$3\u00de",
+        "card_text": "When you play this, count your deck and discard pile. Worth $1 per 5 cards total between them (rounded down)."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1881,
+    "fields": {
+        "uuid": "58bf064e-cc0e-4206-85a0-078d22ce680c",
+        "card_name": "Possession",
+        "set_num": 4,
+        "set_name": "Alchemy",
+        "type": "Action",
+        "cost": "$6\u00de",
+        "card_text": "The player to your left takes an extra turn after this one, in which you can see all cards he can and make all decisions for him. Any cards he would gain on that turn, you gain instead; any cards of his that are trashed are set aside and returned to his discard pile at end of turn."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1882,
+    "fields": {
+        "uuid": "670e1f96-0365-4e4b-83f2-ae19c26fc0a8",
+        "card_name": "Scrying Pool",
+        "set_num": 4,
+        "set_name": "Alchemy",
+        "type": "Action-Attack",
+        "cost": "$2\u00de",
+        "card_text": "+1 Action\\nEach player (including you) reveals the top card of his deck and either discards it or puts it back, your choice. Then reveal cards from the top of your deck until revealing one that isn't an Action. Put all of your revealed cards into your han"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1883,
+    "fields": {
+        "uuid": "24af646d-7899-474c-83ce-a993ffe9faee",
+        "card_name": "Transmute",
+        "set_num": 4,
+        "set_name": "Alchemy",
+        "type": "Action",
+        "cost": "$0\u00de",
+        "card_text": "Trash a card from your hand. If it is an... Action card, gain a Duchy\\nTreasure card, gain a Transmute\\nVictory card, gain a Gold"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1884,
+    "fields": {
+        "uuid": "e24d52f6-9aae-4e56-91e5-bd6167ed4c0a",
+        "card_name": "University",
+        "set_num": 4,
+        "set_name": "Alchemy",
+        "type": "Action",
+        "cost": "$2\u00de",
+        "card_text": "+2 Actions\\nYou may gain an Action card costing up to $5."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1885,
+    "fields": {
+        "uuid": "8be6f8b2-4df1-462c-a9bb-863342a310c6",
+        "card_name": "Vineyard",
+        "set_num": 4,
+        "set_name": "Alchemy",
+        "type": "Victory",
+        "cost": "$0\u00de",
+        "card_text": "Worth 1VP for every 3 Action cards in your deck (rounded down)."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1886,
+    "fields": {
+        "uuid": "59405c3d-0d33-4578-815a-f6dbb535400b",
+        "card_name": "Bank",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Treasure",
+        "cost": "$7",
+        "card_text": "When you play this, it's worth $1 per Treasure card you have in play (counting this)."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1887,
+    "fields": {
+        "uuid": "57deb2bc-cda5-4c35-a34b-0a9e800fc49e",
+        "card_name": "Bishop",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+$1\\n+1VP\\nTrash a card from your hand. +VP equal to half its cost in coins, rounded down. Each other player may trash a card from his hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1888,
+    "fields": {
+        "uuid": "a0c78663-a7b0-4ec1-8eb5-de7d848997ed",
+        "card_name": "City",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Card\\n+2 Actions\\nIf there are one or more empty Supply piles, +1 Card. If there are two or more, +$1 and +1 Buy."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1889,
+    "fields": {
+        "uuid": "ca5d2468-c460-4a91-aecd-fba7f0b126e9",
+        "card_name": "Contraband",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Treasure",
+        "cost": "$5",
+        "card_text": "Worth $3\\n+1 Buy\\nWhen you play this, the player to your left names a card. You can't buy that card this turn."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1890,
+    "fields": {
+        "uuid": "5ccd4f33-b348-4d3c-b157-9d4fa8b7eda2",
+        "card_name": "Counting House",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "Look through your discard pile, reveal any number of Copper cards from it, and put them into your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1891,
+    "fields": {
+        "uuid": "6eaa1dea-9b83-4cb8-bcf5-56be8a25481d",
+        "card_name": "Expand",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Action",
+        "cost": "$7",
+        "card_text": "Trash a card from your hand. Gain a card costing up to $3 more than the trashed card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1892,
+    "fields": {
+        "uuid": "54e847ff-3b67-4c35-a0b9-3a4ed73cf93c",
+        "card_name": "Forge",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Action",
+        "cost": "$7",
+        "card_text": "Trash any number of cards from your hand. Gain a card with cost exactly equal to the total cost in coins of the trashed cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1893,
+    "fields": {
+        "uuid": "7e15e145-6dda-40b7-a01b-36884c3c9f3f",
+        "card_name": "Goons",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Action-Attack",
+        "cost": "$6",
+        "card_text": "+1 Buy\\n+$2\\nEach other player discards down to 3 cards in hand.\\dWhile this is in play, when you buy a card, +1VP."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1894,
+    "fields": {
+        "uuid": "dac28bb4-a6be-4a30-bef3-932af4d1fb1f",
+        "card_name": "Grand Market",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Action",
+        "cost": "$6",
+        "card_text": "+1 Card\\n+1 Action\\n+1 Buy\\n+$2\\dYou can't buy this if you have any Copper in play."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1895,
+    "fields": {
+        "uuid": "bc16f438-1dc4-4700-84bf-3da288f6b350",
+        "card_name": "Hoard",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Treasure",
+        "cost": "$6",
+        "card_text": "Worth $2\\dWhile this is in play, when you buy a Victory card, gain a Gold."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1896,
+    "fields": {
+        "uuid": "89fded99-8e09-470d-b3d1-88c90fef3f2e",
+        "card_name": "King's Court",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Action",
+        "cost": "$7",
+        "card_text": "You may choose an Action card in your hand. Play it three times."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1897,
+    "fields": {
+        "uuid": "d597ea0a-00cd-4fd7-bc2b-5d67c619b94b",
+        "card_name": "Loan",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Treasure",
+        "cost": "$3",
+        "card_text": "Worth $1\\nWhen you play this, reveal cards from your deck until you reveal a Treasure. Discard it or trash it. Discard the other cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1898,
+    "fields": {
+        "uuid": "42a8f4df-d3dd-486f-89f9-b235e9921b44",
+        "card_name": "Mint",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "You may reveal a Treasure card from your hand. Gain a copy of it.\\dWhen you buy this, trash all Treasures you have in play."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1899,
+    "fields": {
+        "uuid": "5fb142ac-ed4b-4ee8-adbb-830d8d6ff289",
+        "card_name": "Monument",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+$2\\n+1VP"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1900,
+    "fields": {
+        "uuid": "f09b688d-c60c-4b46-b0cc-48d03bbae451",
+        "card_name": "Mountebank",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Action-Attack",
+        "cost": "$5",
+        "card_text": "+$2\\nEach other player may discard a Curse. If he doesn't, he gains a Curse and a Copper."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1901,
+    "fields": {
+        "uuid": "0ca99747-604c-48e7-9c78-94eecdd0c3a6",
+        "card_name": "Peddler",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Action",
+        "cost": "$8*",
+        "card_text": "+1 Card\\n+1 Action\\n+$1\\dDuring your Buy phase, this costs $2 less per Action card you have in play, but not less than $0."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1902,
+    "fields": {
+        "uuid": "1b751600-2b8a-4ac8-b2a2-a2fa424766e4",
+        "card_name": "Quarry",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Treasure",
+        "cost": "$4",
+        "card_text": "Worth $1\\dWhile this is in play, Action cards cost $2 less, but not less than $0."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1903,
+    "fields": {
+        "uuid": "2c3102dd-e916-4ab9-b365-6c189c459318",
+        "card_name": "Rabble",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Action-Attack",
+        "cost": "$5",
+        "card_text": "+3 Cards\\nEach other player reveals the top 3 cards of his deck, discards the revealed Actions and Treasures, and puts the rest back on top in any order he chooses."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1904,
+    "fields": {
+        "uuid": "6afd3cff-2a1a-472f-a008-3ec1291b1f61",
+        "card_name": "Royal Seal",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Treasure",
+        "cost": "$5",
+        "card_text": "Worth $2\\dWhile this is in play, when you gain a card, you may put that card on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1905,
+    "fields": {
+        "uuid": "2e6d8718-984e-4b90-bd0e-90375efdaf39",
+        "card_name": "Talisman",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Treasure",
+        "cost": "$4",
+        "card_text": "Worth $1\\dWhile this is in play, when you buy a card costing $4 or less that is not a Victory card, gain a copy of it."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1906,
+    "fields": {
+        "uuid": "34a620ca-0607-433c-b7e4-da38c5765c8c",
+        "card_name": "Trade Route",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "+1 Buy\\n+$1 per token on the Trade Route mat.\\nTrash a card from your hand.\\dSetup: Put a token on each Victory card Supply pile. When a card is gained from that pile, move the token to the Trade Route mat."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1907,
+    "fields": {
+        "uuid": "a3ae7eda-fbea-4632-bf74-18c189ae08fa",
+        "card_name": "Vault",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+2 Cards\\nDiscard any number of cards. +$1 per card discarded. Each other player may discard 2 cards. If he does, he draws a card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1908,
+    "fields": {
+        "uuid": "8f4ad841-cc65-4f9b-80fb-60a40f8b4729",
+        "card_name": "Venture",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Treasure",
+        "cost": "$5",
+        "card_text": "Worth $1\\nWhen you play this, reveal cards from your deck until you reveal a Treasure. Discard the other cards. Play that Treasure."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1909,
+    "fields": {
+        "uuid": "c3eb97c8-64b4-456e-b024-a3bf827b1fbd",
+        "card_name": "Watchtower",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Action-Reaction",
+        "cost": "$3",
+        "card_text": "Draw until you have 6 cards in hand.\\dWhen you gain a card, you may reveal this from your hand. If you do, either trash that card, or put it on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1910,
+    "fields": {
+        "uuid": "455d222b-6db6-44e5-91d8-c8d51dbb22d6",
+        "card_name": "Worker's Village",
+        "set_num": 5,
+        "set_name": "Prosperity",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Card\\n+2 Actions\\n+1 Buy"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1911,
+    "fields": {
+        "uuid": "748f730c-9401-488c-8365-bac2f93e9f28",
+        "card_name": "Bag of Gold",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Action-Prize",
+        "cost": "$0*",
+        "card_text": "+1 Action\\nGain a Gold, putting it on top of your deck.\\n(This is not in the Supply.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1912,
+    "fields": {
+        "uuid": "8e35b6c0-c95a-4b0c-add5-bf3aaa0ae887",
+        "card_name": "Diadem",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Treasure-Prize",
+        "cost": "$0*",
+        "card_text": "Worth $2\\nWhen you play this, +$1 per unused Action you have (Action, not Action card).\\n(This is not in the Supply.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1913,
+    "fields": {
+        "uuid": "989c2609-9945-43ec-856a-f647a1057456",
+        "card_name": "Fairgrounds",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Victory",
+        "cost": "$6",
+        "card_text": "Worth 2VP for every 5 differently named cards in your deck (round down)."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1914,
+    "fields": {
+        "uuid": "9dfee512-7d6e-41ab-b711-166c4b85c9e0",
+        "card_name": "Farming Village",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+2 Actions\\nReveal cards from the top of your deck until you reveal an Action or Treasure card. Put that card into your hand and discard the other cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1915,
+    "fields": {
+        "uuid": "ee8087fd-685e-47d1-a1ec-6b57a4f92147",
+        "card_name": "Followers",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Action-Attack-Prize",
+        "cost": "$0*",
+        "card_text": "+2 Cards\\nGain an Estate. Each other player gains a Curse and discards down to 3 cards in hand.\\n(This is not in the Supply.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1916,
+    "fields": {
+        "uuid": "f7ce7f44-2cfa-4dfb-9208-faa99c814516",
+        "card_name": "Fortune Teller",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Action-Attack",
+        "cost": "$3",
+        "card_text": "+$2\\nEach other player reveals cards from the top of his deck until he reveals a Victory or Curse card. He puts it on top and discards the other revealed cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1917,
+    "fields": {
+        "uuid": "631ef167-3059-4f09-ba2f-94869bfc2c0d",
+        "card_name": "Hamlet",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "+1 Card\\n+1 Action\\nYou may discard a card; if you do, +1 Action.\\nYou may discard a card; if you do, +1 Buy."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1918,
+    "fields": {
+        "uuid": "4c5f177a-2968-48c9-8362-a41ae783bb0a",
+        "card_name": "Harvest",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "Reveal the top 4 cards of your deck, then discard them. +$1 per differently named card revealed."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1919,
+    "fields": {
+        "uuid": "905e6666-7b9f-4ec7-ac0c-9db9a04c378c",
+        "card_name": "Horn of Plenty",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Treasure",
+        "cost": "$5",
+        "card_text": "Worth $0\\nWhen you play this, gain a card costing up to $1 per differently named card you have in play, counting this. If it's a Victory card, trash this."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1920,
+    "fields": {
+        "uuid": "13cb031a-8280-47e9-aea9-4b074a70bfea",
+        "card_name": "Horse Traders",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Action-Reaction",
+        "cost": "$4",
+        "card_text": "+1 Buy\\n+$3\\nDiscard 2 cards.\\dWhen another player plays an Attack card, you may set this aside from your hand. If you do, then at the start of your next turn, +1 Card and return this to your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1921,
+    "fields": {
+        "uuid": "07643224-a057-496c-b139-86426b5a5461",
+        "card_name": "Hunting Party",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Card\\n+1 Action\\nReveal your hand. Reveal cards from your deck until you reveal a card that isn't a duplicate of one in your hand. Put it into your hand and discard the rest."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1922,
+    "fields": {
+        "uuid": "5044a06f-0794-4ec6-8881-3a0a5dacdf57",
+        "card_name": "Jester",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Action-Attack",
+        "cost": "$5",
+        "card_text": "+$2\\nEach other player discards the top card of his deck. If it's a Victory card he gains a Curse. Otherwise either he gains a copy of the discarded card or you do, your choice."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1923,
+    "fields": {
+        "uuid": "2ae1d191-b0df-4cc3-bd52-6555a87681a4",
+        "card_name": "Menagerie",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "+1 Action\\nReveal your hand. If there are no duplicate cards in it, +3 Cards. Otherwise, +1 Card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1924,
+    "fields": {
+        "uuid": "51429806-8e9a-4a63-9f8c-81cb7e289d74",
+        "card_name": "Princess",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Action-Prize",
+        "cost": "$0*",
+        "card_text": "+1 Buy\\dWhile this is in play, cards cost $2 less, but not less than $0.\\n(This is not in the Supply.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1925,
+    "fields": {
+        "uuid": "659bbd88-3b0e-4438-a82b-4e14ceb8bd4f",
+        "card_name": "Remake",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "Do this twice: Trash a card from your hand, then gain a card costing exactly $1 more than the trashed card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1926,
+    "fields": {
+        "uuid": "2755dde0-4431-4fa6-9107-3e0244ddc670",
+        "card_name": "Tournament",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Action\\nEach player may reveal a Province from his hand.\\nIf you do, discard it and gain a Prize (from the Prize pile) or a Duchy, putting it on top of your deck.\\nIf no-one else does, +1 Card, +$1."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1927,
+    "fields": {
+        "uuid": "03b65540-c0ae-4a66-9e8f-977b5bcecd43",
+        "card_name": "Trusty Steed",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Action-Prize",
+        "cost": "$0*",
+        "card_text": "Choose two: +2 Cards; or +2 Actions; or +$2; gain 4 Silvers and put your deck into your discard pile."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1928,
+    "fields": {
+        "uuid": "e574b574-5ee5-4be5-9427-938272c36ade",
+        "card_name": "Young Witch",
+        "set_num": 6,
+        "set_name": "Cornucopia",
+        "type": "Action-Attack",
+        "cost": "$4",
+        "card_text": "+2 Cards\\nDiscard 2 cards. Each other player may reveal a Bane card from his hand. If he doesn't, he gains a Curse.\\dSetup: Add an extra Kingdom card pile costing $2 or $3 to the Supply. Cards from that pile are Bane cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1929,
+    "fields": {
+        "uuid": "6c05210e-aacf-4838-913e-5550fe87a0af",
+        "card_name": "Border Village",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action",
+        "cost": "$6",
+        "card_text": "+1 Card\\n+2 Actions\\dWhen you gain this, gain a card costing less than this."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1930,
+    "fields": {
+        "uuid": "383a1570-2de9-400c-9141-3f3acd08e659",
+        "card_name": "Cache",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Treasure",
+        "cost": "$5",
+        "card_text": "Worth $3\\dWhen you gain this, gain two Coppers."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1931,
+    "fields": {
+        "uuid": "f840d6b9-3338-4bf4-9ac4-64c83aa9e556",
+        "card_name": "Cartographer",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Card\\n+1 Action\\nLook at the top 4 cards of your deck. Discard any number of them. Put the rest back on top in any order."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1932,
+    "fields": {
+        "uuid": "9050fa93-3455-4af7-b6bd-caf87dfc1a60",
+        "card_name": "Crossroads",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "Reveal your hand.\\n+1 Card per Victory card revealed. If this is the first time you played a Crossroads this turn, +3 Actions."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1933,
+    "fields": {
+        "uuid": "967b5c12-df30-4dca-b54f-60f48354bcd1",
+        "card_name": "Develop",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "Trash a card from your hand.\\nGain a card costing exactly $1 more than it and a card costing exactly $1 less than it, in either order, putting them on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1934,
+    "fields": {
+        "uuid": "025ac3d1-cea1-4eb1-aacc-8a3e76b29181",
+        "card_name": "Duchess",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "+$2\\nEach player (including you) looks at the top card of his deck, and discards it or puts it back.\\dIn games using this, when you gain a Duchy, you may gain a Duchess."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1935,
+    "fields": {
+        "uuid": "8728454d-36fd-461c-8124-600ca040c245",
+        "card_name": "Embassy",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+5 Cards\\nDiscard 3 cards.\\dWhen you gain this, each other player gains a Silver."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1936,
+    "fields": {
+        "uuid": "cced5871-2129-473c-9773-ed22fcc73c72",
+        "card_name": "Farmland",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Victory",
+        "cost": "$6",
+        "card_text": "Worth 2VP\\dWhen you buy this, trash a card from your hand. Gain a card costing exactly $2 more than the trashed card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1937,
+    "fields": {
+        "uuid": "c22ba60b-e02a-4450-9209-8db52638184d",
+        "card_name": "Fool's Gold",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Treasure-Reaction",
+        "cost": "$2",
+        "card_text": "If this is the first time you played a Fool's Gold this turn, this is worth $1, otherwise it's worth $4.\\dWhen another player gains a Province, you may trash this from your hand. If you do, gain a Gold, putting it on your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1938,
+    "fields": {
+        "uuid": "1735df2d-dd19-4da3-8b11-1f915f564596",
+        "card_name": "Haggler",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+$2\\dWhile this is in play, when you buy a card, gain a card costing less than it that is not a Victory card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1939,
+    "fields": {
+        "uuid": "0d5e6503-e4c2-45f4-9719-d1a20ac80501",
+        "card_name": "Highway",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Card\\n+1 Action\\dWhile this is in play, cards cost $1 less, but not less than $0."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1940,
+    "fields": {
+        "uuid": "b369608b-3201-4ba3-854f-d2e4cabf725e",
+        "card_name": "Ill-Gotten Gains",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Treasure",
+        "cost": "$5",
+        "card_text": "Worth $1\\nWhen you play this, you may gain a Copper, putting it into your hand.\\dWhen you gain this, each other player gains a Curse."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1941,
+    "fields": {
+        "uuid": "fbb32fb9-5b9b-4e2b-a564-ecfee610136b",
+        "card_name": "Inn",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+2 Cards\\n+2 Actions\\nDiscard 2 cards.\\dWhen you gain this, look through your discard pile (including this), reveal any number of Action cards from it, and shuffle them into your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1942,
+    "fields": {
+        "uuid": "e368494c-2fc3-4abe-8c47-ea57c874e1a5",
+        "card_name": "Jack of All Trades",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "Gain a Silver.\\nLook at the top card of your deck; discard it or put it back.\\nDraw until you have 5 cards in hand.\\nYou may trash a card from your hand that is not a Treasure."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1943,
+    "fields": {
+        "uuid": "29d8fe8e-e079-41eb-ba79-332058dde377",
+        "card_name": "Mandarin",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+$3\\nPut a card from your hand on top of your deck.\\dWhen you gain this, put all Treasures you have in play on top of your deck in any order."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1944,
+    "fields": {
+        "uuid": "9370dbfa-53c0-4696-a3dc-726a299fef76",
+        "card_name": "Margrave",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action-Attack",
+        "cost": "$5",
+        "card_text": "+3 Cards\\n+1 Buy\\nEach other player draws a card, then discards down to 3 cards in hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1945,
+    "fields": {
+        "uuid": "87b8463f-cfae-454a-8db2-73771765aaf8",
+        "card_name": "Noble Brigand",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action-Attack",
+        "cost": "$4",
+        "card_text": "+$1\\nWhen you buy this or play it, each other player reveals the top 2 cards of his deck, trashes a revealed Silver or Gold you choose, and discards the rest. If he didn't reveal a Treasure, he gains a Copper. You gain the trashed cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1946,
+    "fields": {
+        "uuid": "bb28ce12-91e8-43ab-9a05-b107065ac925",
+        "card_name": "Nomad Camp",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Buy\\n+$2\\dWhen you gain this, put it on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1947,
+    "fields": {
+        "uuid": "f06fb705-2fd8-4e59-85fc-abdc51d08d4d",
+        "card_name": "Oasis",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "+1 Card\\n+1 Action\\n+$1\\nDiscard a card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1948,
+    "fields": {
+        "uuid": "f1695d75-2cd2-4205-a809-466c881c6c4a",
+        "card_name": "Oracle",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action-Attack",
+        "cost": "$3",
+        "card_text": "Each player (including you) reveals the top 2 cards of his deck, and you choose one: either he discards them, or he puts them back on top in an order he chooses.\\n+2 Cards"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1949,
+    "fields": {
+        "uuid": "ebb7d3c5-3824-4897-a8aa-195eec0db52f",
+        "card_name": "Scheme",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "+1 Card\\n+1 Action\\nAt the start of Clean-up this turn, you may choose an Action card you have in play. If you discard it from play this turn, put it on your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1950,
+    "fields": {
+        "uuid": "b4274536-c82f-4484-9a6f-3cb5bd5085d2",
+        "card_name": "Silk Road",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Victory",
+        "cost": "$4",
+        "card_text": "Worth 1VP for every 4 Victory cards in your deck (round down)."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1951,
+    "fields": {
+        "uuid": "51845398-1c3c-43b6-b631-81e664ec80ee",
+        "card_name": "Spice Merchant",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "You may trash a Treasure from your hand. If you do, choose one:\\n+2 Cards and +1 Action;\\nor +$2 and +1 Buy."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1952,
+    "fields": {
+        "uuid": "346dc6e9-4f7c-44cf-8e9a-91bed0bdb972",
+        "card_name": "Stables",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "You may discard a Treasure. If you do, +3 Cards and +1 Action."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1953,
+    "fields": {
+        "uuid": "e1b91134-1fe7-4bc3-90ff-d9d1ec2790c4",
+        "card_name": "Trader",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Action-Reaction",
+        "cost": "$4",
+        "card_text": "Trash a card from your hand. Gain a number of Silvers equal to its cost in coins.\\dWhen you would gain a card, you may reveal this from your hand. If you do, instead, gain a silver."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1954,
+    "fields": {
+        "uuid": "4d13c86b-496a-4f88-86fe-6c0f6704ce07",
+        "card_name": "Tunnel",
+        "set_num": 7,
+        "set_name": "Hinterlands",
+        "type": "Victory-Reaction",
+        "cost": "$3",
+        "card_text": "Worth 2VP\\dWhen you discard this other than during a Clean-up phase, you may reveal it. If you do, gain a Gold."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1955,
+    "fields": {
+        "uuid": "e00a288d-597a-4226-ad4a-40da933a4d17",
+        "card_name": "Colony",
+        "set_num": 8,
+        "set_name": "Base Cards",
+        "type": "Victory",
+        "cost": "$11",
+        "card_text": "Worth 10VP"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1956,
+    "fields": {
+        "uuid": "da74138b-36db-4585-adbf-007c36c036c1",
+        "card_name": "Copper",
+        "set_num": 8,
+        "set_name": "Base Cards",
+        "type": "Treasure",
+        "cost": "$0",
+        "card_text": "Worth $1"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1957,
+    "fields": {
+        "uuid": "69eaad4d-3260-461d-be14-ec7f10eb5532",
+        "card_name": "Curse",
+        "set_num": 8,
+        "set_name": "Base Cards",
+        "type": "Curse",
+        "cost": "$0",
+        "card_text": "Worth -1VP"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1958,
+    "fields": {
+        "uuid": "7f8c5dc0-3c2a-455e-aa41-fb264b56e06e",
+        "card_name": "Duchy",
+        "set_num": 8,
+        "set_name": "Base Cards",
+        "type": "Victory",
+        "cost": "$5",
+        "card_text": "Worth 3VP"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1959,
+    "fields": {
+        "uuid": "edf7ab26-30dc-45f8-a92c-50720e31e294",
+        "card_name": "Estate",
+        "set_num": 8,
+        "set_name": "Base Cards",
+        "type": "Victory",
+        "cost": "$2",
+        "card_text": "Worth 1VP"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1960,
+    "fields": {
+        "uuid": "1e116d08-41b4-4e0c-86f7-36cb59578ea5",
+        "card_name": "Gold",
+        "set_num": 8,
+        "set_name": "Base Cards",
+        "type": "Treasure",
+        "cost": "$6",
+        "card_text": "Worth $3"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1961,
+    "fields": {
+        "uuid": "121f329e-5616-4c5d-9a87-912dbfc5d3b7",
+        "card_name": "Platinum",
+        "set_num": 8,
+        "set_name": "Base Cards",
+        "type": "Treasure",
+        "cost": "$9",
+        "card_text": "Worth $5"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1962,
+    "fields": {
+        "uuid": "b1932a3e-1fc0-4fb6-9839-037105a5dbbb",
+        "card_name": "Potion",
+        "set_num": 8,
+        "set_name": "Base Cards",
+        "type": "Treasure",
+        "cost": "$4",
+        "card_text": "Worth \u00de"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1963,
+    "fields": {
+        "uuid": "8dc311c5-8589-4638-8c38-bcc1612d57b7",
+        "card_name": "Province",
+        "set_num": 8,
+        "set_name": "Base Cards",
+        "type": "Victory",
+        "cost": "$8",
+        "card_text": "Worth 6VP"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1964,
+    "fields": {
+        "uuid": "0423a8f5-44ec-422d-9b2f-dd96c5825492",
+        "card_name": "Silver",
+        "set_num": 8,
+        "set_name": "Base Cards",
+        "type": "Treasure",
+        "cost": "$3",
+        "card_text": "Worth $2"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1965,
+    "fields": {
+        "uuid": "c1d7ee2d-ded0-48f4-b6f9-3ff0f0e2c6ec",
+        "card_name": "Abandoned Mine",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Ruins",
+        "cost": "$0",
+        "card_text": "$1 "
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1966,
+    "fields": {
+        "uuid": "34def50f-7cc2-442d-9e4f-ada3bb87f246",
+        "card_name": "Altar",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$6",
+        "card_text": "Trash a card from your hand. Gain a card costing up to $5."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1967,
+    "fields": {
+        "uuid": "7938ad09-c3ec-486b-84c8-c9de95fc62bc",
+        "card_name": "Armory",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "Gain a card costing up to $4. Put it on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1968,
+    "fields": {
+        "uuid": "d6266faa-6c0f-4ab9-b05e-1c4a50cda778",
+        "card_name": "Band of Misfits",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "Play this as if it were an Action card in the Supply costing less than it that you choose.\\nThis is that card until it leaves play."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1969,
+    "fields": {
+        "uuid": "df675e10-e052-4e57-89dc-e514138b5627",
+        "card_name": "Bandit Camp",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Card\\n+2 Actions\\nGain a Spoils from the Spoils pile."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1970,
+    "fields": {
+        "uuid": "e6e825af-17f3-4828-91db-603cfd67feaf",
+        "card_name": "Beggar",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Reaction",
+        "cost": "$2",
+        "card_text": "Gain 3 Coppers, putting them into your hand.\\dWhen another player plays an Attack card, you may discard this. If you do, gain two Silvers, putting one on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1971,
+    "fields": {
+        "uuid": "bec32976-5340-43a9-90fe-9af73e99a050",
+        "card_name": "Catacombs",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "Look at the top 3 cards of your deck. Choose one: Put them into your hand; or discard them and +3 Cards.\\dWhen you trash this, gain a cheaper card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1972,
+    "fields": {
+        "uuid": "3e5330e5-4089-49b2-9836-d4e627bc49a7",
+        "card_name": "Count",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "Choose one: Discard 2 cards; put a card from your hand on top of your deck; or gain a Copper.\\nChoose one: +$3; trash your hand; or gain a Duchy."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1973,
+    "fields": {
+        "uuid": "8ee5d001-317c-4177-a74f-aaea109af32d",
+        "card_name": "Counterfeit",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Treasure",
+        "cost": "$5",
+        "card_text": "Worth $1\\n+1 Buy\\nWhen you play this, you may play a treasure from your hand twice. If you do, trash that treasure."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1974,
+    "fields": {
+        "uuid": "b538cd4f-ef5e-43e1-8680-913bad641bc0",
+        "card_name": "Cultist",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Attack-Looter",
+        "cost": "$5",
+        "card_text": "+2 Cards\\nEach other player gains a Ruins. You may play a Cultist from your hand.\\dWhen you trash this, +3 Cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1975,
+    "fields": {
+        "uuid": "892ae0b3-adfd-4516-b20d-8ec52cd302c7",
+        "card_name": "Dame Anna",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Attack-Knight",
+        "cost": "$5",
+        "card_text": "You may trash up to 2 cards from your hand.\\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1976,
+    "fields": {
+        "uuid": "01fcb6ea-8e10-40a5-84fe-828cf26f3387",
+        "card_name": "Dame Josephine",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Attack-Knight-Victory",
+        "cost": "$5",
+        "card_text": "Worth 2VP\\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1977,
+    "fields": {
+        "uuid": "527597bc-4467-43fa-81b1-92286cf9d9dc",
+        "card_name": "Dame Molly",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Attack-Knight",
+        "cost": "$5",
+        "card_text": "+2 Actions.\\nEach other player discards the top 2 cards of his deck, and trashes one of them costing from $3 to $6. If a Knight is trashed by this, trash this card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1978,
+    "fields": {
+        "uuid": "d7a7345b-8d6c-4eba-94cb-7763d0471c29",
+        "card_name": "Dame Natalie",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Attack-Knight",
+        "cost": "$5",
+        "card_text": "You may gain a card costing up to $3.\\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1979,
+    "fields": {
+        "uuid": "79f10891-d100-4890-9aa7-92f4307bda7c",
+        "card_name": "Dame Sylvia",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Attack-Knight",
+        "cost": "$5",
+        "card_text": "+$2\\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1980,
+    "fields": {
+        "uuid": "1427569d-8cf3-403e-8574-1b069fb489a2",
+        "card_name": "Death Cart",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Looter",
+        "cost": "$4",
+        "card_text": "+$5\\nYou may trash an Action card from your hand. If you don't, trash this.\\dWhen you gain this, gain 2 Ruins."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1981,
+    "fields": {
+        "uuid": "8026f48c-06ac-49d1-ba02-f8a364fa80ba",
+        "card_name": "Feodum",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Victory",
+        "cost": "$4",
+        "card_text": "Worth 1VP for every 3 Silvers in your deck.\\dWhen you trash this, gain 3 Silvers."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1982,
+    "fields": {
+        "uuid": "d6825718-bd1a-4a13-a29f-2f0749c91e19",
+        "card_name": "Forager",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "+1 Action\\n+1 Buy\\nTrash a card from your hand. +$1 per differently named Treasure in the trash."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1983,
+    "fields": {
+        "uuid": "8479f522-d9e6-495b-82f1-5e8cae538d0c",
+        "card_name": "Fortress",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Card\\n+2 Actions\\dWhen you trash this, put it into your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1984,
+    "fields": {
+        "uuid": "975f5953-ead6-4ca8-95d8-9914c5549190",
+        "card_name": "Graverobber",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "Choose one: Gain a card from the trash costing from $3 to $6, putting it on top of your deck; or trash an Action card from your hand and gain a card costing up to $3 more than it."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1985,
+    "fields": {
+        "uuid": "fee4a035-077a-4046-a327-72452190fec4",
+        "card_name": "Hermit",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "Look through your discard pile. You may trash a card from your discard pile or hand that is not a Treasure. Gain a card costing up to $3.\\dWhen you discard this from play, if you didn't buy any cards this turn, trash this and gain a Madman from the Madman pile."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1986,
+    "fields": {
+        "uuid": "1c4c3e6f-3bf0-4e9e-9508-a886d7a0d32a",
+        "card_name": "Hovel",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Reaction-Shelter",
+        "cost": "$1",
+        "card_text": "When you buy a Victory card, you may trash this from your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1987,
+    "fields": {
+        "uuid": "59420884-85fc-4c99-bc99-558c9816362e",
+        "card_name": "Hunting Grounds",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$6",
+        "card_text": "+4 Cards\\dWhen you trash this, gain a Duchy or 3 Estates"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1988,
+    "fields": {
+        "uuid": "13460879-b1a1-4b2f-862f-7d790511a9b1",
+        "card_name": "Ironmonger",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Card\\n+1 Action\\nReveal the top card of your deck; you may discard it. Either way, if it is an...\\nAction card, +1 Action\\na Treasure card, +$1\\na Victory card, +1 Card"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1989,
+    "fields": {
+        "uuid": "1b66a2be-9319-4553-805e-b98cd9c8ad2d",
+        "card_name": "Junk Dealer",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Card\\n+1 Action\\n+$1\\nTrash a card from your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1990,
+    "fields": {
+        "uuid": "fbee7445-2e83-4eaf-950c-b451fa233bad",
+        "card_name": "Madman",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$0*",
+        "card_text": "+2 Actions\\nReturn this to the Madman pile. If you do, +1 Card per card in your hand.\\n(This is not in the Supply.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1991,
+    "fields": {
+        "uuid": "cc9231d1-656f-4b49-9bee-3f46d730d557",
+        "card_name": "Marauder",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Attack-Looter",
+        "cost": "$4",
+        "card_text": "Gain a Spoils from the Spoils pile. Each other player gains a Ruins."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1992,
+    "fields": {
+        "uuid": "d01666a0-e4d3-46c1-a4fa-675c120dbca3",
+        "card_name": "Market Square",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Reaction",
+        "cost": "$3",
+        "card_text": "+1 Card\\n+1 Action\\n+1 Buy\\dWhen one of your cards is trashed, you may discard this from your hand. If you do, gain a Gold."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1993,
+    "fields": {
+        "uuid": "f818f79d-92f6-47ce-b50e-9dbe04aa6d66",
+        "card_name": "Mercenary",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Attack",
+        "cost": "$0*",
+        "card_text": "You may trash 2 cards from your hand. If you do, +2 Cards, + $2, and each other player discards down to 3 cards in hand.\\n(This is not in the Supply.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1994,
+    "fields": {
+        "uuid": "1f690714-4393-4ccd-a0f6-f03fdfe3a1b5",
+        "card_name": "Mystic",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Action\\n+$2\\nName a card.\\nReveal the top card of your deck. If it's the named card, put it into your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1995,
+    "fields": {
+        "uuid": "3fe93ff4-7c1d-453f-a536-9fb7b00a8017",
+        "card_name": "Necropolis",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Shelter",
+        "cost": "$1",
+        "card_text": "+2 Actions"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1996,
+    "fields": {
+        "uuid": "340e0ad3-7f7a-4e06-82aa-68d641474fbe",
+        "card_name": "Overgrown Estate",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Victory-Shelter",
+        "cost": "$1",
+        "card_text": "Worth 0 VP\\dWhen you trash this, +1 Card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1997,
+    "fields": {
+        "uuid": "ee26444f-8260-46b6-a5d3-79f55f62b3be",
+        "card_name": "Pillage",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Attack",
+        "cost": "$5",
+        "card_text": "Trash this. Each other player with 5 or more cards in hand reveals his hand and discards a card that you choose. Gain 2 Spoils."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1998,
+    "fields": {
+        "uuid": "ead35765-33b7-4a13-8596-1df1cb32aec2",
+        "card_name": "Poor House",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$1",
+        "card_text": "+$4\\nReveal your hand. -$1 per Treasure card in your hand, to a minimum of $0."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 1999,
+    "fields": {
+        "uuid": "77827815-6f51-4489-beea-ed61bbe1334c",
+        "card_name": "Procession",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "You may play an Action card from your hand twice. Trash it. Gain an Action card costing exactly $1 more than it."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2000,
+    "fields": {
+        "uuid": "090591cd-4967-4020-b074-d741771bcd48",
+        "card_name": "Rats",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Card\\n+1 Action\\nGain a Rats. Trash a card from your hand other than a Rats (or reveal a hand of all Rats).\\dWhen you trash this, +1 Card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2001,
+    "fields": {
+        "uuid": "de451bde-4abf-4a62-a679-a03c9b8b3637",
+        "card_name": "Rebuild",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Action\\nName a card. Reveal cards from the top of your deck until you reveal a Victory card that is not the named card. Discard the other cards. Trash the Victory card and gain a Victory card costing up to $3 more than it."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2002,
+    "fields": {
+        "uuid": "27f2cb31-0786-455c-bbd7-3665b082287e",
+        "card_name": "Rogue",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Attack",
+        "cost": "$5",
+        "card_text": "+$2\\nIf there are any cards in the trash costing from $3 to $6, gain one of them. Otherwise, each other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2003,
+    "fields": {
+        "uuid": "0cb2c838-15b3-4b02-b33b-d1ae7bed9243",
+        "card_name": "Ruined Library",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Ruins",
+        "cost": "$0",
+        "card_text": "+1 Card"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2004,
+    "fields": {
+        "uuid": "9e14bc8e-d675-415d-806c-80c2eab8977d",
+        "card_name": "Ruined Market",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Ruins",
+        "cost": "$0",
+        "card_text": "+1 Buy"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2005,
+    "fields": {
+        "uuid": "7c59f57e-ce40-4f69-bfdf-ee8aa88d2b19",
+        "card_name": "Ruined Village",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Ruins",
+        "cost": "$0",
+        "card_text": "+1 Action"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2006,
+    "fields": {
+        "uuid": "cfcb98ca-68f9-4bae-9687-934b2bd8d44e",
+        "card_name": "Sage",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "+1 Action\\nReveal cards from the top of your deck until you reveal one costing $3 or more. Put that card into your hand and discard the rest."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2007,
+    "fields": {
+        "uuid": "519f3af8-8885-49cf-bd05-f6a2343254f0",
+        "card_name": "Scavenger",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+$2\\nYou may put your deck into your discard pile. Look through your discard pile and put one card from it on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2008,
+    "fields": {
+        "uuid": "f1291718-9d61-41d6-a475-5607fcf9e33a",
+        "card_name": "Sir Bailey",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Attack-Knight",
+        "cost": "$5",
+        "card_text": "+1 Card\\n+1 Action\\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2009,
+    "fields": {
+        "uuid": "e5406c93-b42e-4e08-b3ab-1f460bf769bf",
+        "card_name": "Sir Destry",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Attack-Knight",
+        "cost": "$5",
+        "card_text": "+2 Cards\\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2010,
+    "fields": {
+        "uuid": "20c7b0ad-9586-4fbc-a1fe-3245114c6af1",
+        "card_name": "Sir Martin",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Attack-Knight",
+        "cost": "$4",
+        "card_text": "+2 Buys\\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2011,
+    "fields": {
+        "uuid": "4792e869-26ff-477a-b699-5274f51ba013",
+        "card_name": "Sir Michael",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Attack-Knight",
+        "cost": "$5",
+        "card_text": "Each other player discards down to 3 cards in hand.\\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2012,
+    "fields": {
+        "uuid": "6f809093-2130-4539-ba5d-50658f6f4252",
+        "card_name": "Sir Vander",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Attack-Knight",
+        "cost": "$5",
+        "card_text": "Each other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card.\\dWhen you trash this, gain a Gold."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2013,
+    "fields": {
+        "uuid": "d4ef2077-4293-4775-b527-44d5fdbb9440",
+        "card_name": "Spoils",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Treasure",
+        "cost": "$0*",
+        "card_text": "Worth $3\\nWhen you play this, return it to the pile.\\n(This is not in the Supply.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2014,
+    "fields": {
+        "uuid": "b3c9b7a6-ef8f-4631-8db8-1f9e9df131ab",
+        "card_name": "Squire",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "+$1\\nChoose one: +2 Actions; or +2 Buys; or gain a Silver.\\dWhen you trash this, gain an Attack card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2015,
+    "fields": {
+        "uuid": "accd3147-bf7d-4aed-956d-7d8458a37622",
+        "card_name": "Storeroom",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "+1 Buy\\nDiscard any number of cards. +1 Card per card discarded. Discard any number of cards. +$1 per card discarded the second time."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2016,
+    "fields": {
+        "uuid": "baaadcc2-cfa6-47e9-a8fc-97be749c6723",
+        "card_name": "Survivors",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Ruins",
+        "cost": "$0",
+        "card_text": "Look at the top 2 cards of your deck. Discard them or put them back in any order."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2017,
+    "fields": {
+        "uuid": "ed632773-70ff-4454-a61e-b0d9b2234e9a",
+        "card_name": "Urchin",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action-Attack",
+        "cost": "$3",
+        "card_text": "+1 Card\\n+1 Action\\nEach other player discards down to 4 cards in hand.\\dWhen you play another Attack card with this in play, you may trash this. If you do, gain a Mercenary from the Mercenary pile."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2018,
+    "fields": {
+        "uuid": "879779c1-727e-4fd6-9973-c7435139d179",
+        "card_name": "Vagrant",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "+1 Card\\n+1 Action\\nReveal the top card of your deck. If it's a Victory card, Curse, Ruins, or Shelter, put it into your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2019,
+    "fields": {
+        "uuid": "b7b1febb-feab-42dc-ade1-ff86a13759b4",
+        "card_name": "Wandering Minstrel",
+        "set_num": 9,
+        "set_name": "Dark Ages",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Card\\n+2 Actions\\nReveal the top 3 cards of your deck. Put the Actions back on top in any order and discard the rest."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2020,
+    "fields": {
+        "uuid": "7ec2b63e-d2cc-466c-834f-5e66e3529cab",
+        "card_name": "Advisor",
+        "set_num": 10,
+        "set_name": "Guilds",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Action\\nReveal the top 3 cards of your deck. The player to your left chooses one of them. Discard that card. Put the other cards into your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2021,
+    "fields": {
+        "uuid": "1472fdf3-cab1-44eb-974a-4a0e8ac55697",
+        "card_name": "Baker",
+        "set_num": 10,
+        "set_name": "Guilds",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Card\\n+1 Action\\nTake a Coin token.\\dSetup: Each player takes a Coin token."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2022,
+    "fields": {
+        "uuid": "2d36d494-492f-45e8-ab43-260fb579a0b1",
+        "card_name": "Butcher",
+        "set_num": 10,
+        "set_name": "Guilds",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "Take 2 Coin tokens. You may trash a card from your hand and then pay any number of Coin tokens. If you did trash a card, gain a card with a cost of up to the cost of the trashed card plus the number of Coin tokens you paid."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2023,
+    "fields": {
+        "uuid": "54312a94-4aae-4e83-9b56-c6e9a5247ebd",
+        "card_name": "Candlestick Maker",
+        "set_num": 10,
+        "set_name": "Guilds",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "+1 Action\\n+1 Buy\\nTake a Coin token."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2024,
+    "fields": {
+        "uuid": "a1e85707-d0c0-4382-8da7-9552f170eb89",
+        "card_name": "Doctor",
+        "set_num": 10,
+        "set_name": "Guilds",
+        "type": "Action",
+        "cost": "$3+",
+        "card_text": "Name a card. Reveal the top 3 cards of your deck. Trash the matches. Put the rest back on top in any order.\\dWhen you buy this, you may overpay for it. For each $1 you overpaid, look at the top card of your deck; trash it, discard it, or put it back."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2025,
+    "fields": {
+        "uuid": "683477bd-46a4-4617-b80f-ca6dab914ec0",
+        "card_name": "Herald",
+        "set_num": 10,
+        "set_name": "Guilds",
+        "type": "Action",
+        "cost": "$4+",
+        "card_text": "+1 Card\\n+1 Action\\nReveal the top card of your deck. If it is an Action, play it.\\dWhen you buy this, you may overpay for it. For each $1 you overpaid, look through your discard pile and put a card from it on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2026,
+    "fields": {
+        "uuid": "e124d604-79df-48f6-b83f-40358e0a95c5",
+        "card_name": "Journeyman",
+        "set_num": 10,
+        "set_name": "Guilds",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "Name a card. Reveal cards from the top of your deck until you reveal 3 cards that are not the named card. Put those cards into your hand and discard the rest."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2027,
+    "fields": {
+        "uuid": "a775037f-e563-4aa5-baa1-0e67a65182e8",
+        "card_name": "Masterpiece",
+        "set_num": 10,
+        "set_name": "Guilds",
+        "type": "Treasure",
+        "cost": "$3+",
+        "card_text": "Worth $1\\dWhen you buy this, you may overpay for it. If you do, gain a Silver per $1 you overpaid."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2028,
+    "fields": {
+        "uuid": "543f1caa-708e-4904-b484-b6b953b93d8c",
+        "card_name": "Merchant Guild",
+        "set_num": 10,
+        "set_name": "Guilds",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Buy\\n+$1.\\dWhile this is in play, when you buy a card, take a Coin token."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2029,
+    "fields": {
+        "uuid": "3387c966-dec0-41f1-8f15-c17f88d7c8bc",
+        "card_name": "Plaza",
+        "set_num": 10,
+        "set_name": "Guilds",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Card. +2 Actions. You may discard a Treasure card. If you do, take a Coin token."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2030,
+    "fields": {
+        "uuid": "1430f19b-9b2e-42b4-a68f-7b1e471ca426",
+        "card_name": "Soothsayer",
+        "set_num": 10,
+        "set_name": "Guilds",
+        "type": "Action-Attack",
+        "cost": "$5",
+        "card_text": "Gain a Gold. Each other player gains a Curse. Each player who did draws a card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2031,
+    "fields": {
+        "uuid": "338dce62-7807-4329-8325-ab6f579c3a3a",
+        "card_name": "Stonemason",
+        "set_num": 10,
+        "set_name": "Guilds",
+        "type": "Action",
+        "cost": "$2+",
+        "card_text": "Trash a card from your hand. Gain 2 cards each costing less than it.\\dWhen you buy this, you may overpay for it. If you do, gain 2 Action cards each costing the amount you overpaid."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2032,
+    "fields": {
+        "uuid": "05838b59-a01a-4ebd-add6-7dcd09657f77",
+        "card_name": "Taxman",
+        "set_num": 10,
+        "set_name": "Guilds",
+        "type": "Action-Attack",
+        "cost": "$4",
+        "card_text": "You may trash a Treasure from your hand. Each other player with 5 or more cards in hand discards a copy of it (or reveals a hand without it). Gain a Treasure card costing up to $3 more than the trashed card, putting it on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2033,
+    "fields": {
+        "uuid": "f6ed206e-cde4-4b20-b8df-13baee811fdc",
+        "card_name": "Alms",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$0",
+        "card_text": "Once per turn: If you have no Treasures in play, gain a card costing up to $4."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2034,
+    "fields": {
+        "uuid": "eb1adde1-b5ae-4eeb-83e8-9c468ae8cdb4",
+        "card_name": "Amulet",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Duration",
+        "cost": "$3",
+        "card_text": "Now and at the start of your next turn, choose one: +$1; or trash a card from your hand; or gain a Silver."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2035,
+    "fields": {
+        "uuid": "2434049b-4785-416a-8feb-872c205f6d3f",
+        "card_name": "Artificer",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Action\\n+1 Card\\n+$1\\nDiscard any number of cards. You may gain a card costing exactly $1 per card discarded, putting it on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2036,
+    "fields": {
+        "uuid": "949ab80b-551f-4457-b643-291beb1c5f65",
+        "card_name": "Ball",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$5",
+        "card_text": "Take your -$1 token. Gain 2 cards each costing up to $4."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2037,
+    "fields": {
+        "uuid": "dde16278-0aff-40df-9f2f-75a46494fce2",
+        "card_name": "Bonfire",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$3",
+        "card_text": "Trash up to 2 cards you have in play."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2038,
+    "fields": {
+        "uuid": "2c116779-c0f7-4963-8548-f408e7c060ef",
+        "card_name": "Borrow",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$0",
+        "card_text": "+1 Buy\\nOnce per turn: If your -1 Card token isn't on your deck, put it there and +$1."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2039,
+    "fields": {
+        "uuid": "a3c62b97-3b15-492a-a4e4-47e753082df8",
+        "card_name": "Bridge Troll",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Attack-Duration",
+        "cost": "$5",
+        "card_text": "Each other player takes his -$1 token. Now and at the start of your next turn:\\n+1 Buy\\dWhile this is in play, cards cost $1 less on your turns, but not less than $0."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2040,
+    "fields": {
+        "uuid": "907a7637-67ef-4524-8503-6fecd7053224",
+        "card_name": "Caravan Guard",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Duration-Reaction",
+        "cost": "$3",
+        "card_text": "+1 Card\\n+1 Action\\nAt the start of your next turn, +$1.\\dWhen another player plays an Attack card, you may play this from your hand. (+1 Action has no effect if it's not your turn.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2041,
+    "fields": {
+        "uuid": "9bf23aed-c0ea-48fd-8f70-b71567ee8cf4",
+        "card_name": "Champion",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Duration",
+        "cost": "$6*",
+        "card_text": "+1 Action\\nFor the rest of the game, when another player plays an Attack, it doesn't affect you, and when you play an Action, +1 Action.\\n(This stays in play. This is not in the Supply.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2042,
+    "fields": {
+        "uuid": "25084086-e80b-4198-bc20-b79e726687f6",
+        "card_name": "Coin of the Realm",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Treasure-Reserve",
+        "cost": "$2",
+        "card_text": "Worth $1\\nWhen you play this, put it on your Tavern mat.\\dDirectly after resolving an Action, you may call this, for +2 Actions."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2043,
+    "fields": {
+        "uuid": "32e2b0aa-18ca-49a8-b9db-86adb5903477",
+        "card_name": "Disciple",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Traveller",
+        "cost": "$5*",
+        "card_text": "You may play an Action card from your hand twice. Gain a copy of it.\\dWhen you discard this from play, you may exchange it for a Teacher.\\n(This is not in the Supply.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2044,
+    "fields": {
+        "uuid": "bd1fa19c-f638-45a8-b04f-c15a68021e76",
+        "card_name": "Distant Lands",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Reserve-Victory",
+        "cost": "$5",
+        "card_text": "Put this on your Tavern mat.\\dWorth 4VP if on your Tavern mat at the end of the game (otherwise worth 0VP)."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2045,
+    "fields": {
+        "uuid": "c5cb65bf-49d2-4128-82e2-22c67b268f66",
+        "card_name": "Dungeon",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Duration",
+        "cost": "$3",
+        "card_text": "+1 Action\\nNow and at the start of your next turn: +2 Cards, then discard 2 cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2046,
+    "fields": {
+        "uuid": "5bbf89d3-5473-4ddd-a1a4-9fa599afb00a",
+        "card_name": "Duplicate",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Reserve",
+        "cost": "$4",
+        "card_text": "Put this on your Tavern mat.\\dWhen you gain a card costing up to $6, you may call this, to gain a copy of that card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2047,
+    "fields": {
+        "uuid": "5bfc4b46-b5e8-4f49-a5c5-9125b58a7e0f",
+        "card_name": "Expedition",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$3",
+        "card_text": "Draw 2 extra cards for your next hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2048,
+    "fields": {
+        "uuid": "1916ebbf-3a6d-412a-80ee-578b6c43f712",
+        "card_name": "Ferry",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$3",
+        "card_text": "Move your -$2 cost token to an Action Supply pile (cards from that pile cost $2 less on your turns, but not less than $0)."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2049,
+    "fields": {
+        "uuid": "f588dd9b-399c-4cb7-98cc-0ea4e46e070e",
+        "card_name": "Fugitive",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Traveller",
+        "cost": "$4*",
+        "card_text": "+2 Cards\\n+1 Action\\nDiscard a card.\\dWhen you discard this from play, you may exchange it for a Disciple.\\n(This is not in the Supply.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2050,
+    "fields": {
+        "uuid": "2db10357-41f4-4b91-a2a7-3aa5c436fb05",
+        "card_name": "Gear",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Duration",
+        "cost": "$3",
+        "card_text": "+2 Cards\\nSet aside up to 2 cards from your hand face down. At the start of your next turn, put them into your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2051,
+    "fields": {
+        "uuid": "d5891e72-ad29-4102-b843-8e651342a011",
+        "card_name": "Giant",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Attack",
+        "cost": "$5",
+        "card_text": "Turn your Journey token over (it starts face up). If it's face down, +$1. If it's face up, +$5, and each other player reveals the top card of his deck, trashes it if it costs from $3 to $6, and otherwise discards it and gains a Curse."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2052,
+    "fields": {
+        "uuid": "981fb166-dc5a-4281-abff-8af668c1c979",
+        "card_name": "Guide",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Reserve",
+        "cost": "$3",
+        "card_text": "+1 Card\\n+1 Action\\nPut this on your Tavern mat.\\dAt the start of your turn, you may call this, to discard your hand and draw 5 cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2053,
+    "fields": {
+        "uuid": "24c281b3-fb82-4cdd-9c14-6676812e19c1",
+        "card_name": "Haunted Woods",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Attack-Duration",
+        "cost": "$5",
+        "card_text": "Until you next turn, when any other player buys a card, he puts his hand on top of his deck in any order.\\nAt the start of your next turn:\\n+3 Cards"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2054,
+    "fields": {
+        "uuid": "e0cabdfa-9d19-41f9-a9b9-2814cd168b24",
+        "card_name": "Hero",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Traveller",
+        "cost": "$5*",
+        "card_text": "+$2\\nGain a Treasure.\\dWhen you discard this from play, you may exchange it for a Champion.\\n(This is not in the Supply.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2055,
+    "fields": {
+        "uuid": "69127bbe-8974-467c-ae29-739890cd2fa1",
+        "card_name": "Hireling",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Duration",
+        "cost": "$6",
+        "card_text": "At the start of each of your turns for the rest of the game:\\d+1 Card\\d(This stays in play.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2056,
+    "fields": {
+        "uuid": "a19a1b47-0bf3-4d01-9ff6-decccd8e2c09",
+        "card_name": "Inheritance",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$7",
+        "card_text": "Once per game: Set aside a non-Victory Action card from the Supply costing up to $4. Move your Estate token to it (your Estates gain the abilities and types of that card)."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2057,
+    "fields": {
+        "uuid": "9679dd56-8dd5-4dba-aa44-beea64412a8a",
+        "card_name": "Lost Arts",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$5",
+        "card_text": "Move your +1 Action token to an Action Supply pile (when you play a card from that pile, you first get +1 Action)."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2058,
+    "fields": {
+        "uuid": "1bf7a06b-5be4-4229-9b9c-00798fd8b68a",
+        "card_name": "Lost City",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+2 Cards\\n+2 Actions\\dWhen you gain this, each other player draws a card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2059,
+    "fields": {
+        "uuid": "db0ecd74-e2de-4255-9031-658318871572",
+        "card_name": "Magpie",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Card\\n+1 Action\\nReveal the top card of your deck. If it's a Treasure, put it into your hand. If it's an Action or Victory card, gain a Magpie."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2060,
+    "fields": {
+        "uuid": "99f9bf2f-e870-46ff-b828-7098a92773cd",
+        "card_name": "Messenger",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Buy\\n+$2\\nYou may put your deck into your discard pile.\\dWhen this is your first buy in a turn, gain a card costing up to $4, and each other player gains a copy of it."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2061,
+    "fields": {
+        "uuid": "d1facd95-6870-4718-b73a-2ee81272a5dc",
+        "card_name": "Miser",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "Choose one: Put a Copper from your hand onto your Tavern mat; or +$1 per Copper on your Tavern mat."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2062,
+    "fields": {
+        "uuid": "466d0e7f-1b01-4a16-bfd5-af81c09648dc",
+        "card_name": "Mission",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$4",
+        "card_text": "Once per turn: If the previous turn wasn't yours, take another turn after this one, in which you can't buy cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2063,
+    "fields": {
+        "uuid": "52f0f86f-0c06-4268-b3d1-60125cf3e1e9",
+        "card_name": "Page",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Traveller",
+        "cost": "$2",
+        "card_text": "+1 Card\\n+1 Action\\dWhen you discard this from play, you may exchange it for a Treasure Hunter."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2064,
+    "fields": {
+        "uuid": "9084d31c-a17b-4a8c-90a7-549b7179a37a",
+        "card_name": "Pathfinding",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$8",
+        "card_text": "Move your +1 Card token to an Action Supply pile (when you play a card from that pile, you first get +1 Card)."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2065,
+    "fields": {
+        "uuid": "43874f86-b298-46cf-9611-f99f6667c95f",
+        "card_name": "Peasant",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Traveller",
+        "cost": "$2",
+        "card_text": "+1 Buy\\n+$1\\dWhen you discard this from play, you may exchange it for a Soldier."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2066,
+    "fields": {
+        "uuid": "5df1c20a-b274-4b44-9024-0c92993402ef",
+        "card_name": "Pilgrimage",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$4",
+        "card_text": "Once per turn: Turn your Journey token over (it starts face up); then if it's face up, choose up to 3 differently named cards you have in play and gain a copy of each."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2067,
+    "fields": {
+        "uuid": "8ace75e4-eb2a-43df-9b55-b6f944277de8",
+        "card_name": "Plan",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$3",
+        "card_text": "Move your Trashing token to an Action Supply pile (when you buy a card from that pile, you may trash a card from your hand.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2068,
+    "fields": {
+        "uuid": "1c6247b5-8d79-4de5-b1c6-19e995ac3e71",
+        "card_name": "Port",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Card\\n+2 Actions\\dWhen you buy this, gain another Port."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2069,
+    "fields": {
+        "uuid": "7ee2645f-a4d0-4c1e-b3d7-ce707911e65f",
+        "card_name": "Quest",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$0",
+        "card_text": "You may discard an Attack, two Curses, or six cards. If you do, gain a Gold."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2070,
+    "fields": {
+        "uuid": "fa5c9854-bbfb-46e7-8ad1-1b691b46234f",
+        "card_name": "Raid",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$5",
+        "card_text": "Gain a Silver per Silver you have in play. Each other player puts his -1 Card token on his deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2071,
+    "fields": {
+        "uuid": "7ba486e2-1001-4bcc-a1a8-d644134f4716",
+        "card_name": "Ranger",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+1 Buy\\nTurn your Journey token over (it starts face up). If it's face up, +5 Cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2072,
+    "fields": {
+        "uuid": "180c12a8-8b2c-4abf-b1f6-1fe36c5d067f",
+        "card_name": "Ratcatcher",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Reserve",
+        "cost": "$2",
+        "card_text": "+1 Card\\n+1 Action\\nPut this on your Tavern mat.\\dAt the start of your turn, you may call this to trash a card from your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2073,
+    "fields": {
+        "uuid": "3b9b5a79-46c4-42d7-8f66-144e9b20ec1f",
+        "card_name": "Raze",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "+1 Action\\nTrash this or a card from your hand. Look at a number of cards from the top of your deck equal to the cost in $ of the trashed card. Put one into your hand and discard the rest."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2074,
+    "fields": {
+        "uuid": "fd50a1b7-6fc9-48d3-a2d7-fd79e3ce6974",
+        "card_name": "Relic",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Treasure-Attack",
+        "cost": "$5",
+        "card_text": "Worth $2\\nWhen you play this, each other player puts his -1 Card token on his deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2075,
+    "fields": {
+        "uuid": "34d10097-5e12-410d-b1c1-f7ef97e6d33a",
+        "card_name": "Royal Carriage",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Reserve",
+        "cost": "$5",
+        "card_text": "+1 Action\\nPut this on your Tavern mat.\\dDirectly after resolving an Action, if it's still in play, you may call this, to replay that Action."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2076,
+    "fields": {
+        "uuid": "923d0913-2896-4be0-a858-22caf93a0c48",
+        "card_name": "Save",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$1",
+        "card_text": "+1 Buy\\nOnce per turn: Set aside a card from your hand, and put it into your hand at end of turn (after drawing)."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2077,
+    "fields": {
+        "uuid": "708b1a40-d39b-4864-a723-eea8b59644a3",
+        "card_name": "Scouting Party",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$2",
+        "card_text": "+1 Buy\\nLook at the top 5 cards of your deck. Discard 3 of them and put the rest back on top of your deck in any order."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2078,
+    "fields": {
+        "uuid": "7a06c520-c841-44d6-9fae-35894d358d36",
+        "card_name": "Seaway",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$5",
+        "card_text": "Gain an Action card costing up to $4. Move your +1 Buy token to its pile (when you play a card from that pile, you first get +1 Buy)."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2079,
+    "fields": {
+        "uuid": "72c7ffa5-66c7-4a36-9544-ccd106d7a936",
+        "card_name": "Soldier",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Attack-Traveller",
+        "cost": "$3*",
+        "card_text": "+$2\\n+$1 per other Attack you have in play. Each other player with 4 or more cards in hand discards a card.\\dWhen you discard this from play, you may exchange it for a Fugitive.\\n(This is not in the Supply)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2080,
+    "fields": {
+        "uuid": "0c7700a6-c00a-414a-bc4e-a3cdcfff2227",
+        "card_name": "Storyteller",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Action\\n+$1\\nPlay up to 3 Treasures from your hand. Pay all of your $; +1 Card per $ paid."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2081,
+    "fields": {
+        "uuid": "ea41e1a6-355f-4156-9a15-d29ed7713b6b",
+        "card_name": "Swamp Hag",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Attack-Duration",
+        "cost": "$5",
+        "card_text": "Until your next turn, when any other player buys a card, he gains a Curse.\\nAt the start of your next turn:\\n+$3"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2082,
+    "fields": {
+        "uuid": "3c56fe92-f4e2-43dd-9643-5078c0b4194b",
+        "card_name": "Teacher",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Reserve",
+        "cost": "$6*",
+        "card_text": "Put this on your Tavern mat.\\dAt the start of your turn, you may call this, to move your +1 Card, +1 Action, +1 Buy, or +$1 token to an Action Supply pile you have no token on (when you play a card from that pile you first get that bonus).\\n(This is not in the Supply.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2083,
+    "fields": {
+        "uuid": "9ac4d29e-1c56-4a9f-aaeb-ea5f45b58684",
+        "card_name": "Trade",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$5",
+        "card_text": "Trash up to 2 cards from your hand.\\nGain a Silver per card you trashed."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2084,
+    "fields": {
+        "uuid": "93d63121-a6b8-4b18-bd68-989ded3dfa99",
+        "card_name": "Training",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$6",
+        "card_text": "Move your +$1 token to an Action Supply pile (when you play a card from that pile, you first get +$1)."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2085,
+    "fields": {
+        "uuid": "33e3dd41-379c-4ad7-bdbe-f328ae7e2657",
+        "card_name": "Transmogrify",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Reserve",
+        "cost": "$4",
+        "card_text": "+1 Action\\nPut this on your Tavern mat.\\nAt the start of your turn, you may call this, to trash a card from your hand, gain a card costing up to $1 more than it, and put that card into your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2086,
+    "fields": {
+        "uuid": "79883dab-f184-4004-aded-3ca988617ce3",
+        "card_name": "Travelling Fair",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Event",
+        "cost": "$2",
+        "card_text": "+2 Buys\\nWhen you gain a card this turn, you may put it on top of your deck."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2087,
+    "fields": {
+        "uuid": "5aa23391-1eb5-4d0e-a6f1-56070bf77a45",
+        "card_name": "Treasure Hunter",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Traveller",
+        "cost": "$3*",
+        "card_text": "+1 Action\\n+$1\\nGain a Silver per card the player to your right gained in his last turn.\\dWhen you discard this from play, you may exchange it for a Warrior.\\n(This is not in the Supply.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2088,
+    "fields": {
+        "uuid": "9aa1aa47-3366-4ed0-8deb-d88fabc699ed",
+        "card_name": "Treasure Trove",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Treasure",
+        "cost": "$5",
+        "card_text": "Worth $2\\nWhen you play this, gain a Gold and a Copper."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2089,
+    "fields": {
+        "uuid": "48ede1f5-d3ec-4ae7-b072-3afc41e8bf98",
+        "card_name": "Warrior",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Attack-Traveller",
+        "cost": "$4*",
+        "card_text": "+2 Cards\\nFor each Traveller you have in play (including this) each other player discards the top card of his deck and trashes it if it costs $3 or $4.\\dWhen you discard this from play, you may exchange it for a Hero.\\n(This is not in the Supply.)"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2090,
+    "fields": {
+        "uuid": "81d0cf82-7255-4f18-b901-aeff2ce23367",
+        "card_name": "Wine Merchant",
+        "set_num": 11,
+        "set_name": "Adventures",
+        "type": "Action-Reserve",
+        "cost": "$5",
+        "card_text": "+1 Buy\\n+$4\\nPut this on your Tavern mat.\\dAt the end of your Buy phase, if you have at least $2 unspent, you may discard this from your Tavern mat."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2091,
+    "fields": {
+        "uuid": "44c8fb13-95be-4073-840a-d3a8fc8d4e99",
+        "card_name": "City Quarter",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action",
+        "cost": "$0",
+        "card_text": "+2 Actions\\nReveal your hand. +1 Card per Action card revealed."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2092,
+    "fields": {
+        "uuid": "2655f186-f615-4358-b4eb-6a7a672e7b2e",
+        "card_name": "Engineer",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action",
+        "cost": "$0",
+        "card_text": "Gain a card costing up to 4 Coins. You may trash this. If you do, gain a card costing up to 4 Coins."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2093,
+    "fields": {
+        "uuid": "204e9b06-052c-4cf9-b7d6-ef680488c03b",
+        "card_name": "Overlord",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action",
+        "cost": "$0",
+        "card_text": "Play this as if it were an Action card in the Supply costing up to 5 Coins. This is that card until it leaves play."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2094,
+    "fields": {
+        "uuid": "711c5654-e420-402b-967a-25362b64380e",
+        "card_name": "Royal Blacksmith",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action",
+        "cost": "$0",
+        "card_text": "+5 Cards\\nReveal your hand; discard the Coppers."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2095,
+    "fields": {
+        "uuid": "35ce936a-ed93-4795-92eb-637dc7ae310c",
+        "card_name": "Encampment/Plunder",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "This pile starts the game with 5 copies of Encampment on top, then 5 copies of Plunder. Only the top card of the pile can be gained or bought."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2096,
+    "fields": {
+        "uuid": "e6ef8449-2088-4a64-9747-90dbd23ac040",
+        "card_name": "Patrician/Emporium",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "This pile starts the game with 5 copies of Patrician on top, then 5 copies of Emporium. Only the top card of the pile can be gained or bought."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2097,
+    "fields": {
+        "uuid": "6bab83d6-1c22-4011-9366-4a18b90ccb0d",
+        "card_name": "Settlers/Bustling Village",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action",
+        "cost": "$2",
+        "card_text": "This pile starts the game with 5 copies of Settlers on top, then 5 copies of Bustling Village. Only the top card of the pile can be gained or bought."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2098,
+    "fields": {
+        "uuid": "24d403f3-104d-422c-b502-7d708cbc3156",
+        "card_name": "Castles",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Victory - Castle",
+        "cost": "$3",
+        "card_text": "Sort the castle pile by cost, putting the more expensive Castles on the bottom. For a 2-player game, use only one of each Castle. Only the top card of the pile may be gained or bought."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2099,
+    "fields": {
+        "uuid": "118b5110-ef05-48e8-9054-257466070752",
+        "card_name": "Catapult/Rocks",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action - Attack",
+        "cost": "$3",
+        "card_text": "This pile starts the game with 5 copies of Catapult on top, then 5 copies of Rocks. Only the top card of the pile can be gained or bought."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2100,
+    "fields": {
+        "uuid": "492d76c1-c817-4ae7-a028-f7fd458cb1df",
+        "card_name": "Chariot Race",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "+1 Action"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2101,
+    "fields": {
+        "uuid": "7b11614d-184d-4c04-8143-229c6d58d527",
+        "card_name": "Enchantress",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action - Attack - Duration",
+        "cost": "$3",
+        "card_text": "Until your next turn, the first time each other player plays an Action card on their turn, they get +1 Card and +1 Action instead of following its instructions.\\nAt the start of your next turn,\\n+1 Cards"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2102,
+    "fields": {
+        "uuid": "35b6e492-2bf7-4b91-a2c4-a32b4938aa98",
+        "card_name": "Farmer's Market",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action - Gathering",
+        "cost": "$3",
+        "card_text": "+1 Buy\\nIf there are 4 Victory or more on the Farmer's Market Supply pile, take them and trash this. Otherwise, add 1 Victory to the pile and then +1 Coin per 1 Victory on the pile."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2103,
+    "fields": {
+        "uuid": "f35290f8-b222-4417-bfde-d9078ecde699",
+        "card_name": "Gladiator/Fortune",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action",
+        "cost": "$3",
+        "card_text": "This pile starts the game with 5 copies of Gladiator on top, then 5 copies of Fortune. Only the top card of the pile can be gained or bought."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2104,
+    "fields": {
+        "uuid": "13bb9d30-29c6-49f0-9865-a1b126803080",
+        "card_name": "Sacrifice",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "Trash a card from your hand. If it's an\u0085\\nAction card, +1 Cards, +2 Actions\\nTreasure card, +2 Coins\\nVictory card, +2 Victory"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2105,
+    "fields": {
+        "uuid": "c3354d04-4e6f-42d3-ab45-fc6b27de9ecf",
+        "card_name": "Temple",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action - Gathering",
+        "cost": "$4",
+        "card_text": "+1 Victory\\nTrash from 1 to 3 differently named cards from your hand. Add 1 Victory to the Temple Supply pile.\\dWhen you gain this, take all the Victory from the Temple Supply pile."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2106,
+    "fields": {
+        "uuid": "73a1fd83-ba2a-4e4c-8fd2-61c47415c3a1",
+        "card_name": "Villa",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action",
+        "cost": "$4",
+        "card_text": "+2 Actions\\n+1 Buy\\n+1 Coin\\dWhen you gain this, put it into your hand, +1 Action, and if it's your Buy phase return to your Action phase."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2107,
+    "fields": {
+        "uuid": "9b307c75-c87c-4caf-bd65-bead3b1501bf",
+        "card_name": "Archive",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action - Duration",
+        "cost": "$5",
+        "card_text": "+1 Action\\nSet aside the top 3 cards of your deck face down (you may look at them). Now and at the start of your next two turns, put one into your hand."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2108,
+    "fields": {
+        "uuid": "516b4fdf-4aa7-4d3f-a59d-9fec079b1925",
+        "card_name": "Capital",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Treasure",
+        "cost": "$5",
+        "card_text": "6 Coins\\n+1 Buy\\dWhen you discard this from play, take 6 Debt, and then you may pay off Debt."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2109,
+    "fields": {
+        "uuid": "14a53a51-f282-48e2-a7ba-f4049d52abd9",
+        "card_name": "Charm",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Treasure",
+        "cost": "$5",
+        "card_text": "When you play this, choose one: +1 Buy and +2 Coins; or the next time you buy a card this turn, you may also gain a differently named card with the same cost."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2110,
+    "fields": {
+        "uuid": "7c1001c2-3d99-4b10-ac7c-4fc606cb0c04",
+        "card_name": "Crown",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action - Treasure",
+        "cost": "$5",
+        "card_text": "If it's your Action phase, you may play an Action from your hand twice. If it's your Buy phase, you may play a Treasure from your hand twice."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2111,
+    "fields": {
+        "uuid": "bbe0c350-be07-49d9-9c26-dc39b0aadf4c",
+        "card_name": "Forum",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Card\\n+1 Action\\nDiscard 2 cards.\\dWhen you buy this, +1 Buy."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2112,
+    "fields": {
+        "uuid": "41afe0eb-0061-49c5-acd2-7c1876598563",
+        "card_name": "Groundskeeper",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action",
+        "cost": "$5",
+        "card_text": "+1 Card\\n+1 Action\\dWhile this is in play, when you gain a Victory card, +1 Victory."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2113,
+    "fields": {
+        "uuid": "498905bd-ab98-496d-b968-a13dbabc7fd8",
+        "card_name": "Legionary",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action - Attack",
+        "cost": "$5",
+        "card_text": "+3 Coins\\nYou may reveal a Gold from your hand. If you do, each other player discards down to 2 cards in hand, then draws a card."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2114,
+    "fields": {
+        "uuid": "151fde1b-ab14-48e1-8255-3fe68c89cecb",
+        "card_name": "Wild Hunt",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Action - Gathering",
+        "cost": "$5",
+        "card_text": "Choose one: +3 Cards and add 1 Victory to the Wild Hunt Supply pile; or gain an Estate, and if you do, take the Victory from the pile."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2115,
+    "fields": {
+        "uuid": "d21e2f0b-a858-457f-87c5-255b189be6b1",
+        "card_name": "Advance",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Event",
+        "cost": "$0",
+        "card_text": "You may trash an Action card from your hand. If you do, gain an Action card costing up to 6 Coins."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2116,
+    "fields": {
+        "uuid": "d8498c2f-6f72-41b7-8da5-67b5a1ac51a8",
+        "card_name": "Annex",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Event",
+        "cost": "$0",
+        "card_text": "Look through your discard pile. Shuffle all but up to 5 cards from it into your deck. Gain a Duchy."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2117,
+    "fields": {
+        "uuid": "4b0a16ef-b074-4658-94e4-f5671494f01c",
+        "card_name": "Donate",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Event",
+        "cost": "$0",
+        "card_text": "After this turn, put all cards from your deck and discard pile into your hand, trash any number, shuffle your hand into your deck, then draw 5 cards."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2118,
+    "fields": {
+        "uuid": "5d78ae4e-c85d-433f-9cba-214f53cd6bb4",
+        "card_name": "Triumph",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Event",
+        "cost": "$0",
+        "card_text": "Gain an Estate.\\nIf you did, +1 Victory per card you've gained this turn."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2119,
+    "fields": {
+        "uuid": "54c102e6-f1e6-4b28-a9b6-a3c61030f60a",
+        "card_name": "Delve",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Event",
+        "cost": "$2",
+        "card_text": "+1 Buy\\nGain a Silver."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2120,
+    "fields": {
+        "uuid": "3c49d3bb-4b9c-4c2c-abff-7d8d1a5d0726",
+        "card_name": "Tax",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Event",
+        "cost": "$2",
+        "card_text": "Add 2 Debt to a Supply pile.\\dSetup: Add 1 Debt to each Supply pile. When a player buys a card, they take the Debt from its pile."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2121,
+    "fields": {
+        "uuid": "f6b712c8-ec68-4181-bc60-a38276382791",
+        "card_name": "Banquet",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Event",
+        "cost": "$3",
+        "card_text": "Gain 2 Coppers and a non-Victory card costing up to 5 Coins."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2122,
+    "fields": {
+        "uuid": "15b95b28-e315-4d47-897c-ab69af3837fb",
+        "card_name": "Ritual",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Event",
+        "cost": "$4",
+        "card_text": "Gain a Curse. If you do, trash a card from your hand. +1 Victory per 1 Coin it cost."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2123,
+    "fields": {
+        "uuid": "d2338840-e0fc-470c-b8c6-f8c06a51da66",
+        "card_name": "Salt the Earth",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Event",
+        "cost": "$4",
+        "card_text": "+1 Victory\\nTrash a Victory card from the Supply."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2124,
+    "fields": {
+        "uuid": "eab97b5c-7de2-42da-ac1f-f2687fa84469",
+        "card_name": "Wedding",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Event",
+        "cost": "$4",
+        "card_text": "+1 Victory\\nGain a Gold."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2125,
+    "fields": {
+        "uuid": "701584df-ac1c-4236-90bf-c14095d873d0",
+        "card_name": "Windfall",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Event",
+        "cost": "$5",
+        "card_text": "If your deck and discard pile are empty, gain 3 Golds."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2126,
+    "fields": {
+        "uuid": "18242dd4-ff12-4978-9231-3a6f5d6fd66a",
+        "card_name": "Conquest",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Event",
+        "cost": "$6",
+        "card_text": "Gain 2 Silvers.\\n+1 Victory per Silver you've gained this turn."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2127,
+    "fields": {
+        "uuid": "923ba8e6-aca2-4410-931d-99585655da7c",
+        "card_name": "Dominate",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Event",
+        "cost": "$14",
+        "card_text": "Gain a Province. If you do, +9 Victory"
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2128,
+    "fields": {
+        "uuid": "d275b25b-419b-4982-9288-860251b55821",
+        "card_name": "Aqueduct",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When you gain a Treasure, move 1 Victory from its pile to this.\\nWhen you gain a Victory card, take the Victory from this.\\dSetup: Put 8 Victory on the Silver and Gold piles."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2129,
+    "fields": {
+        "uuid": "d222a330-426b-4f07-bfd9-0e5d7c4dc8c2",
+        "card_name": "Arena",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "At the start of your Buy phase, you may discard an Action card. If you do, take 2 Victory from here.\\dSetup: Put 6 Victory here per player."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2130,
+    "fields": {
+        "uuid": "299ad8fc-ea4d-4f31-b37e-0070cd7f7b51",
+        "card_name": "Bandit Fort",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When scoring, -2 Victory for each Silver and each Gold you have."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2131,
+    "fields": {
+        "uuid": "a756100e-407a-49de-9f67-6d19d86699ff",
+        "card_name": "Basilica",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When you buy a card, if you have 2 Coins or more left, take 2 Victory from here.\\dSetup: Plus 6 Victory here per player."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2132,
+    "fields": {
+        "uuid": "6aff4b83-6c63-4896-b279-0089ff634941",
+        "card_name": "Baths",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When you end your turn without having gained a card, take 2 Victory from here.\\dSetup: Put 6 Victory here per player."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2133,
+    "fields": {
+        "uuid": "97e316b7-ba4d-4932-8242-a2d22faddb0c",
+        "card_name": "Battlefield",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When you gain a Victory card, take 2 Victory from here.\\dSetup: Put 6 Victory here per player."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2134,
+    "fields": {
+        "uuid": "d7544a9f-d15c-401f-ad25-8cb01bd82972",
+        "card_name": "Colonnade",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When you buy an Action card, if you have a copy of it in play, take 2 Victory from here.\\dSetup: Put 6 Victory here per player."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2135,
+    "fields": {
+        "uuid": "54b31805-1bbd-4bad-bf42-588dd445ae33",
+        "card_name": "Defiled Shrine",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When you gain an Action, move 1 Victory from its pile to this. When you buy a Curse, take the Victory from this.\\dSetup: Put 2 Victory on each non-Gathering Action Supply pile."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2136,
+    "fields": {
+        "uuid": "3d069598-5c0e-4edb-8a69-75739fca51df",
+        "card_name": "Fountain",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When scoring, 15 Victory if you have at least 10 Coppers."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2137,
+    "fields": {
+        "uuid": "7c1e3acf-4e19-4793-bdc1-0c548b8f7415",
+        "card_name": "Keep",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When scoring, 5 Victory per differently named Treasure you have, that you have more copies of than each other player, or tied for most."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2138,
+    "fields": {
+        "uuid": "b182a8cd-fbed-4de6-bd54-af6852c76cd8",
+        "card_name": "Labyrinth",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When you gain a 2nd card in one of your turns, take 2 Victory from here.\\dSetup: Put 6 Victory here per player."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2139,
+    "fields": {
+        "uuid": "ebf4b43e-6e1a-4acc-b16a-da19db4fe593",
+        "card_name": "Mountain Pass",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When you are the first player to gain a Province, after that turn, each player bids once, up to 40 Debt, ending with you. High bidder gets +8 Victory and takes the Debt they bid."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2140,
+    "fields": {
+        "uuid": "ea803852-97fe-423d-a1de-827629c57a0a",
+        "card_name": "Museum",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When scoring, 2 Victory per differently named card you have."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2141,
+    "fields": {
+        "uuid": "ecd612ee-6a8e-4430-a9a5-922c28ea326b",
+        "card_name": "Obelisk",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When scoring, 2 Victory per card you have from the chosen pile.\\dSetup: Choose a random Action Supply pile."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2142,
+    "fields": {
+        "uuid": "b79104ee-2da9-4fa4-9c39-717fc06b3eaa",
+        "card_name": "Orchard",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When scoring, 4 Victory per differently named Action card you have 3 or more copies of."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2143,
+    "fields": {
+        "uuid": "67be91ba-c250-4de5-bc9f-882aaff76e2a",
+        "card_name": "Palace",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When scoring, 3 Victory per set you have of Copper - Silver - Gold."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2144,
+    "fields": {
+        "uuid": "a4b29bdc-bcf4-47a4-887c-aa49d5c7caf1",
+        "card_name": "Tomb",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When you trash a card, +1 Victory."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2145,
+    "fields": {
+        "uuid": "b0893d50-e415-4e09-a0cb-98f676dec610",
+        "card_name": "Tower",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When scoring, 1 Victory per non-Victory card you have from an empty Supply pile."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2146,
+    "fields": {
+        "uuid": "e0a82536-d772-4289-8ae2-37e6fb263878",
+        "card_name": "Triumphal Arch",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When scoring, 3 Victory per copy you have of the 2nd most common Action card among your cards (if it's a tie, count either)."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2147,
+    "fields": {
+        "uuid": "2533ad48-2182-443d-a8ef-dde55587a172",
+        "card_name": "Wall",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When scoring, -1 Victory per card you have after the first 15."
+    }
+},
+{
+    "model": "cards.card",
+    "pk": 2148,
+    "fields": {
+        "uuid": "ef4e0d68-3aa6-4b63-aa02-c9cdb9914115",
+        "card_name": "Wolf Den",
+        "set_num": 12,
+        "set_name": "Empires",
+        "type": "Landmark",
+        "cost": "$0",
+        "card_text": "When scoring, -3 Victory per card you have exactly one copy of."
+    }
+}
+]

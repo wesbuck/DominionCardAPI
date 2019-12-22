@@ -38,7 +38,8 @@ If you want to work in a Virtual Environment (recommended), create it and activa
 
 ```
 virtualenv venv
-source venv/bin/activate
+source venv/bin/activate (for Linux, Mac)
+source venv/Scripts/activate (for Windows)
 ```
 
 Install required packages (or do it the [old fashioned way](#manually-install-packages)):
@@ -72,11 +73,22 @@ Then enter the credentials you wish to use.
 
 ## Development
 
+You likely want to activate the Virtual Environment each time you work on the project with `source venv/Scripts/activate` for Windows or `source venv/bin/activate` for Linux and Mac.
+
+You can leave the Virtual Environment with the `deactivate` command.
+
 ### Running the program
 
 Test run the program on your local machine by executing:
 ```
 python manage.py runserver
+```
+
+### Adding Packages
+
+If you add a package (using `pip install [package-name]`) to this app, ensure it also gets added to `requirements.txt` file:
+```
+pip freeze > requirements.txt
 ```
 
 ### Flush Database
@@ -97,6 +109,24 @@ And add this to your `settings.json`:
     "--load-plugins=pylint_django"
 ]
 ```
+## Testing
+
+This app uses `pytest` with `pytest-django` to run automatic testing. You can run the test suite with the command:
+```
+pytest
+```
+
+### Generate Test Data
+
+To recreate the `testdata.json` file, run:
+```
+python manage.py dumpdata --natural-foreign --exclude auth.permission --exclude contenttypes --indent 4 > tests/testdata.json
+```
+> NOTE: You will likely need to update the tests in `test_basic.py` to work with your updated data.
+
+### Continuous Integration
+
+Continuous integration (CI) testing is provided by [Travis CI](https://travis-ci.org/) and is automatically run upon each git check-in and merge.
 
 ## Production
 
