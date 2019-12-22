@@ -31,6 +31,14 @@ def get_or_create_token(db, create_user):
    user = create_user()
    token, _ = Token.objects.get_or_create(user=user)
    return token
+   
+# Test for 401 Unauthorized Error when no Token is present
+from django.urls import reverse
+@pytest.mark.django_db
+def test_unauthed_request(api_client, get_or_create_token):
+   url = reverse('Random')
+   response = api_client.get(url)
+   assert response.status_code == 401
 
 # Test that Random gets some data and returns properly
 from django.urls import reverse
