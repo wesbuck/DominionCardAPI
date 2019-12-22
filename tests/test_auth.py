@@ -31,5 +31,4 @@ def test_get_auth_token_requests(username, password, status_code, api_client):
        'password': password
    }
    response = api_client.post(url, data=data)
-   print(response.data)
    assert response.status_code == status_code

@@ -48,6 +48,7 @@ def test_random_request(api_client, get_or_create_token):
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.get(url)
    assert response.status_code == 200
+   assert len(response.data) == 8
 
 # Test that CardSet gets 10 Cards
 @pytest.mark.django_db
@@ -56,6 +57,7 @@ def test_cardset_request(api_client, get_or_create_token):
    token = get_or_create_token
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.get(url)
+   assert response.status_code == 200
    assert len(response.data) == 10
    
 # Test that Card/[id] gets the correct stuff
@@ -65,4 +67,17 @@ def test_specific_card_request(api_client, get_or_create_token):
    token = get_or_create_token
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.get('/cards/1/')
+   assert response.status_code == 200
+   assert len(response.data) == 8
    assert response.data == should_be
+
+# Test that POST card works
+@pytest.mark.django_db
+def test_card_creation(api_client, get_or_create_token):
+   new_card = { 'uuid': '82f9bcc1-9ab9-4856-b04f-aace09668e21', 'card_name': 'New Card', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'cost': '$3', 'card_text': 'Sample Card Text'}
+   token = get_or_create_token
+   api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
+   response = api_client.post('/cards/')
+   print(response.data)
+   assert response.status_code == 201
+   assert len(response.data) == 8
