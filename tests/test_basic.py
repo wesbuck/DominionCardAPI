@@ -62,9 +62,9 @@ def test_cardset_request(api_client, get_or_create_token):
 # Test that Card/[id] gets the correct stuff
 @pytest.mark.django_db
 def test_specific_card_request(api_client, get_or_create_token):
-   should_be = {'id': 1791, 'uuid': 'ad13d548-c718-4d05-9439-e44d64feae12', 'card_name': 'Black Market', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'cost': '$3', 'card_text': '+$2\\nReveal the top 3 cards of the Black Market deck. You may buy one of them immediately. Put the unbought cards on the bottom of the Black Market deck in any order.\\d(Before the game, make a Black Market deck out of one copy of each Kingdom card not in '}
+   should_be = {'id': 1, 'uuid': '40f9bff1-9ab9-4856-b04f-aace09668e21', 'card_name': 'Black Market', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'cost': '$3', 'card_text': '+$2\\nReveal the top 3 cards of the Black Market deck. You may buy one of them immediately. Put the unbought cards on the bottom of the Black Market deck in any order.\\d(Before the game, make a Black Market deck out of one copy of each Kingdom card not in '}
    token = get_or_create_token
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
-   response = api_client.get('/cards/1791/')
+   response = api_client.get('/cards/1/')
    print(response.data)
    assert response.data == should_be
