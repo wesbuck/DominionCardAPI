@@ -118,11 +118,17 @@ pytest
 
 ### Generate Test Data
 
-To recreate the `testdata.json` file, run:
+To recreate the `test_data.json` file, run:
 ```
-python manage.py dumpdata --natural-foreign --exclude auth.permission --exclude contenttypes --indent 4 > tests/testdata.json
+python manage.py dumpdata --natural-foreign --exclude auth.permission --exclude contenttypes --indent 4 > tests/test_data.json
 ```
-> NOTE: You will likely need to update the tests in `test_basic.py` to work with your updated data.
+> NOTE: You will likely need to update the tests in `tests/test_api.py` to work with your updated database data.
+
+To recreate the `test_users.json` file, run:
+```
+python manage.py dumpdata auth.User --indent 4 > tests/test_users.json
+```
+> NOTE: You will likely need to update the tests in `tests/test_auth.py` to work with your updated user data.
 
 ### Continuous Integration
 

@@ -1,5 +1,13 @@
 import uuid
 import pytest
+from django.urls import reverse
+from django.core.management import call_command
+from rest_framework.authtoken.models import Token
+
+@pytest.fixture
+def api_client():
+   from rest_framework.test import APIClient
+   return APIClient()
 
 @pytest.fixture
 def test_password():
@@ -14,34 +22,25 @@ def create_user(db, django_user_model, test_password):
        return django_user_model.objects.create_user(**kwargs)
    return make_user
 
-@pytest.fixture
-def api_client():
-   from rest_framework.test import APIClient
-   return APIClient()
-
-from django.core.management import call_command
 @pytest.fixture(scope='session')
 def django_db_setup(django_db_setup, django_db_blocker):
     with django_db_blocker.unblock():
-        call_command('loaddata', 'tests/testdata.json')
+        call_command('loaddata', 'tests/test_data.json')
 
-from rest_framework.authtoken.models import Token
 @pytest.fixture
 def get_or_create_token(db, create_user):
    user = create_user()
    token, _ = Token.objects.get_or_create(user=user)
    return token
    
-# Test for 401 Unauthorized Error when no Token is present
-from django.urls import reverse
+# Test for 401 Unauthorized Error when no Token is not present
 @pytest.mark.django_db
-def test_unauthed_request(api_client, get_or_create_token):
+def test_unauthed_request(api_client):
    url = reverse('Random')
    response = api_client.get(url)
    assert response.status_code == 401
 
 # Test that Random gets some data and returns properly
-from django.urls import reverse
 @pytest.mark.django_db
 def test_random_request(api_client, get_or_create_token):
    url = reverse('Random')
@@ -66,5 +65,4 @@ def test_specific_card_request(api_client, get_or_create_token):
    token = get_or_create_token
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.get('/cards/1/')
-   print(response.data)
    assert response.data == should_be
