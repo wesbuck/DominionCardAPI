@@ -21,6 +21,7 @@ def api_root(request, format=None):
     return Response({
         'Documentation': 'https://documenter.getpostman.com/view/5603098/RWguxcDR',
         'Get a Random Card': reverse('Random', request=request, format=format),
+        'Get a Kingdom Card': reverse('Kingdom', request=request, format=format),
         'Get a Set of 10 Cards': reverse('CardSet', request=request, format=format),
         'Get All Cards': reverse('All', request=request, format=format),
     })
@@ -43,6 +44,15 @@ class Random(APIView):
 
     def get(self, request):
         rand = get_random_card_pk()
+        card = Card.objects.get(pk=rand)
+        return Response(json.loads(json.dumps(model_to_dict(card))))
+
+
+# get a single random kingdom card
+class Kingdom(APIView):
+
+    def get(self, request):
+        rand = get_random_kingdom_card_pk()
         card = Card.objects.get(pk=rand)
         return Response(json.loads(json.dumps(model_to_dict(card))))
 
