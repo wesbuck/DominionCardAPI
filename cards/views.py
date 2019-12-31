@@ -25,11 +25,11 @@ def api_root(request, format=None):
         'Get All Cards': reverse('All', request=request, format=format),
     })
 
-
-# card 'id' must be sequential from 1 to [count] number of cards
 def get_random_card_pk():
     return Card.objects.order_by("?").first().pk
-
+    
+def get_random_kingdom_card_pk():
+    return Card.objects.filter(is_kingdom_card=1).order_by("?").first().pk
 
 # only extend the parts of ModelViewSet we want (omit Update & Destroy)
 class CardList(mixins.CreateModelMixin, mixins.RetrieveModelMixin, mixins.ListModelMixin, viewsets.GenericViewSet):
@@ -47,13 +47,13 @@ class Random(APIView):
         return Response(json.loads(json.dumps(model_to_dict(card))))
 
 
-# get 10 unique random cards
+# get 10 unique random kingdom cards
 class CardSet(APIView):
 
     def get(self, request):
         arr = []  # list of cards
         while len(arr) < 10:
-            rand = get_random_card_pk()
+            rand = get_random_kingdom_card_pk()
             if rand not in arr:  # ensure no duplicates
                 arr.append(rand)
         cards = Card.objects.filter(pk__in=arr)
