@@ -1,359 +1,487 @@
-card_name,set_num,set_name,type,cost,card_text
-Black Market,0,Promo,Action,$3,"+$2\nReveal the top 3 cards of the Black Market deck. You may buy one of them immediately. Put the unbought cards on the bottom of the Black Market deck in any order.\d(Before the game, make a Black Market deck out of one copy of each Kingdom card not in "
-Envoy,0,Promo,Action,$4,Reveal the top 5 cards of your deck. The player to your left chooses one for you to discard. Draw the rest.
-Governor,0,Promo,Action,$5,+1 Action\nChoose one; you get the version in parentheses: Each player gets +1 (+3) Cards; or each player gains a Silver (Gold); or each player may trash a card from his hand and gain a card costing exactly $1 ($2) more.
-Prince,0,Promo,Action,$8,"You may set this aside. If you do, set aside an Action card from your hand costing up to $4. At the start of each of your turns, play that Action, setting it aside again when you discard it from play. (Stop playing it if you fail to set it aside on a turn you play it.)"
-Stash,0,Promo,Treasure,$5,"Worth $2\dWhen you shuffle, you may put this anywhere in your deck."
-Summon,0,Promo,Event,$?,Allows the buyer to gain a cheap Action card and play it immediately at the start of their next turn.
-Walled Village,0,Promo,Action,$4,"+1 Card\n+2 Actions\dAt the start of Clean-up, if you have this and no more than one other Action card in play, you may put this on top of your deck."
-Adventurer,1,Dominion,Action,$6,Reveal cards from your deck until you reveal 2 Treasure cards. Put those Treasure cards in your hand and discard the other revealed cards.
-Bureaucrat,1,Dominion,Action-Attack,$4,Gain a silver card; put it on top of your deck. Each other player reveals a Victory card from his hand and puts it on his deck (or reveals a hand with no Victory cards).
-Cellar,1,Dominion,Action,$2,+1 Action\nDiscard any number of cards.\n+1 Card per card discarded.
-Chancellor,1,Dominion,Action,$3,+$2\nYou may immediately put your deck into your discard pile.
-Chapel,1,Dominion,Action,$2,Trash up to 4 cards from your hand.
-Council Room,1,Dominion,Action,$5,+4 Cards\n+1 Buy\nEach other player draws a card.
-Feast,1,Dominion,Action,$4,Trash this card. Gain a card costing up to $5.
-Festival,1,Dominion,Action,$5,+2 Actions\n+1 Buy\n+$2.
-Gardens,1,Dominion,Victory,$4,Worth 1VP for every 10 cards in your deck (rounded down).
-Laboratory,1,Dominion,Action,$5,+2 Cards\n+1 Action.
-Library,1,Dominion,Action,$5,"Draw until you have 7 cards in hand. You may set aside any Action cards drawn this way, as you draw them; discard the set aside cards after you finish drawing."
-Market,1,Dominion,Action,$5,+1 Card\n+1 Action\n+1 Buy\n+$1.
-Militia,1,Dominion,Action-Attack,$4,+$2\nEach other player discards down to 3 cards in his hand.
-Mine,1,Dominion,Action,$5,Trash a Treasure card from your hand. Gain a Treasure card costing up to $3 more; put it into your hand.
-Moat,1,Dominion,Action-Reaction,$2,"+2 Cards\dWhen another player plays an Attack card, you may reveal this from your hand. If you do, you are unaffected by that Attack."
-Moneylender,1,Dominion,Action,$4,"Trash a Copper from your hand. If you do, +$3."
-Remodel,1,Dominion,Action,$4,Trash a card from your hand. Gain a card costing up to $2 more than the trashed card.
-Smithy,1,Dominion,Action,$4,+3 Cards
-Spy,1,Dominion,Action-Attack,$4,"+1 Card\n+1 Action\nEach player (including you) reveals the top card of his deck and either discards it or puts it back, your choice."
-Thief,1,Dominion,Action-Attack,$4,"Each other player reveals the top 2 cards of his deck. If they revealed any Treasure cards, they trash one of them that you choose. You may gain any or all of these trashed cards. They discard the other revealed cards."
-Throne Room,1,Dominion,Action,$4,Choose an Action card in your hand. Play it twice.
-Village,1,Dominion,Action,$3,+1 Card\n+2 Actions
-Witch,1,Dominion,Action-Attack,$5,+2 Cards\nEach other player gains a Curse card.
-Woodcutter,1,Dominion,Action,$3,+1 Buy\n+$2
-Workshop,1,Dominion,Action,$3,Gain a card costing up to $4.
-Baron,2,Intrigue,Action,$4,"+1 Buy\nYou may discard an Estate card. If you do, +$4.\nOtherwise, gain an Estate card."
-Bridge,2,Intrigue,Action,$4,"+1 Buy\n+$1\nAll cards (including cards in players' hands) cost $1 less this turn, but not less than $0."
-Conspirator,2,Intrigue,Action,$4,+$2\nIf you've played 3 or more Actions this turn (counting this): +1 Card; +1 Action.
-Coppersmith,2,Intrigue,Action,$4,Copper produces an extra $1 this turn.
-Courtyard,2,Intrigue,Action,$2,+3 Cards\nPut a card from your hand on top of your deck.
-Duke,2,Intrigue,Victory,$5,Worth 1VP per Duchy you have.
-Great Hall,2,Intrigue,Action-Victory,$3,+1 Card\n+1 Action\dWorth 1VP
-Harem,2,Intrigue,Treasure-Victory,$6,Worth $2\nWorth 2VP
-Ironworks,2,Intrigue,Action,$4,"Gain a card costing up to $4. If it is an...\nAction card, +1 Action\nTreasure card, +$1\nVictory card, +1 Card"
-Masquerade,2,Intrigue,Action,$3,+2 Cards\nEach player passes a card in their hand to the player on their left. Then you may trash a card from your hand.
-Mining Village,2,Intrigue,Action,$4,"+1 Card\n+2 Actions\nYou may trash this card immediately. If you do, +$2."
-Minion,2,Intrigue,Action-Attack,$5,"+1 Action\nChoose one: +$2; or discard your hand, +4 Cards, and each other player with at least 5 cards in hand discards his hand and draws 4 cards."
-Nobles,2,Intrigue,Action-Victory,$6,Choose one: +3 Cards; or +2 Actions.\dWorth 2VP
-Pawn,2,Intrigue,Action,$2,Choose two: +1 Card; +1 Action; +1 Buy; +$1.\n(The choices must be different.)
-Saboteur,2,Intrigue,Action-Attack,$5,Each other player reveals cards from the top of his deck until revealing one costing $3 or more. He trashes that card and may gain a card costing at most $2 less than it. He discards the other revealed cards.
-Scout,2,Intrigue,Action,$4,+1 Action\nReveal the top 4 cards of your deck. Put the revealed Victory cards into your hand. Put the other cards on top of your deck in any order.
-Secret Chamber,2,Intrigue,Action-Reaction,$2,"Discard any number of cards. +$1 per card discarded.\dWhen another player plays an Attack card, you may reveal this from your hand. If you do, +2 cards, then put 2 cards from your hand on top of your deck."
-Shanty Town,2,Intrigue,Action,$3,"+2 Actions\nReveal your hand.\nIf you have no Action cards in hand, +2 Cards."
-Steward,2,Intrigue,Action,$3,Choose one: +2 Cards; or +$2; or trash 2 cards from your hand.
-Swindler,2,Intrigue,Action-Attack,$3,+$2\nEach other player trashes the top card of his deck and gains a card with the same cost that you choose.
-Torturer,2,Intrigue,Action-Attack,$5,"+3 Cards\nEach other player chooses one: he discards 2 cards; or he gains a Curse card, putting it in his hand."
-Trading Post,2,Intrigue,Action,$5,"Trash 2 cards from your hand. If you do, gain a silver card; put it into your hand."
-Tribute,2,Intrigue,Action,$5,"The player to your left reveals then discards the top 2 cards of his deck. For each differently named card revealed, if it is an...\nAction Card, +2 Actions\nTreasure Card, +$2\nVictory Card, +2 Cards"
-Upgrade,2,Intrigue,Action,$5,+1 Card\n+1 Action\nTrash a card from your hand. Gain a card costing exactly $1 more than it.
-Wishing Well,2,Intrigue,Action,$3,"+1 Card\n+1 Action\nName a card, then reveal the top card of your deck. If it is the named card, put it in your hand."
-Ambassador,3,Seaside,Action-Attack,$3,Reveal a card from your hand. Return up to 2 copies of it from your hand to the Supply.\nThen each other player gains a copy of it.
-Bazaar,3,Seaside,Action,$5,+1 Card\n+2 Actions\n+$1.
-Caravan,3,Seaside,Action-Duration,$4,"+1 Card\n+1 Action\nAt the start of your next turn, +1 Card."
-Cutpurse,3,Seaside,Action-Attack,$4,+$2\nEach other player discards a Copper card (or reveals a hand with no Copper).
-Embargo,3,Seaside,Action,$2,"+$2\nTrash this card. Put an Embargo token on top of a Supply pile.\dWhen a player buys a card, he gains a Curse card per Embargo token on that pile."
-Explorer,3,Seaside,Action,$5,"You may reveal a Province card from your hand. If you do, gain a Gold card, putting it into your hand. Otherwise, gain a Silver card, putting it into your hand."
-Fishing Village,3,Seaside,Action-Duration,$3,+2 Actions\n+$1\nAt the start of your next turn: +1 Action; +$1.
-Ghost Ship,3,Seaside,Action-Attack,$5,+2 Cards\nEach other player with 4 or more cards in hand puts cards from his hand on top of his deck until he has 3 cards in his hand.
-Haven,3,Seaside,Action-Duration,$2,"+1 Card\n+1 Action\nSet aside a card from your hand face down. At the start of your next turn, put it into your hand."
-Island,3,Seaside,Action-Victory,$4,Set aside this and another card from your hand. Return them to your deck at the end of the game.\dWorth 2VP
-Lighthouse,3,Seaside,Action-Duration,$2,"+1 Action\nNow and at the start of your next turn: +$1.\dWhile this is in play, when another player plays an Attack card, it doesn't affect you."
-Lookout,3,Seaside,Action,$3,+1 Action\nLook at the top 3 cards of your deck. Trash one of them. Discard one of them. Put the other one on top of your deck.
-Merchant Ship,3,Seaside,Action-Duration,$5,Now and at the start of your next turn: +$2.
-Native Village,3,Seaside,Action,$2,+2 Actions\nChoose one: Set aside the top card of your deck face down on your Native Village mat; or put all the cards from your mat into your hand.\nYou may look at the cards on your mat at any time; return them to your deck at the end of the game.
-Navigator,3,Seaside,Action,$4,"+$2\nLook at the top 5 cards of your deck. Either discard all of them, or put them back on top of your deck in any order."
-Outpost,3,Seaside,Action-Duration,$5,You only draw 3 cards (instead of 5) in this turn's Clean-up phase. Take an extra turn after this one. This can't cause you to take more than two consecutive turns.
-Pearl Diver,3,Seaside,Action,$2,+1 Card\n+1 Action\nLook at the bottom card of your deck. You may put it on top.
-Pirate Ship,3,Seaside,Action-Attack,$4,"Choose one: Each other player reveals the top 2 cards of his deck, trashes a revealed Treasure that you choose, discards the rest, and if anyone trashed a Treasure you take a Coin token; or, +$1 per Coin token you've taken with Pirate Ships this game."
-Salvager,3,Seaside,Action,$4,+1 Buy\nTrash a card from your hand. +$ equal to its cost.
-Sea Hag,3,Seaside,Action-Attack,$4,"Each other player discards the top card of his deck, then gains a Curse card, putting it on top of his deck."
-Smugglers,3,Seaside,Action,$3,Gain a copy of a card costing up to $6 that the player to your right gained on his last turn.
-Tactician,3,Seaside,Action-Duration,$5,"Discard your hand. If you discarded any cards this way, then at the start of your next turn, +5 Cards; +1 Buy; and +1 Action."
-Treasure Map,3,Seaside,Action,$4,"Trash this and another copy of Treasure Map from your hand. If you do trash two Treasure Maps, gain 4 Gold cards, putting them on top of your deck."
-Treasury,3,Seaside,Action,$5,"+1 Card\n+1 Action\n+$1\dWhen you discard this from play, if you didn't buy a Victory card this turn, you may put this on top of your deck."
-Warehouse,3,Seaside,Action,$3,+3 Cards\n +1 Action\nDiscard 3 cards.
-Wharf,3,Seaside,Action-Duration,$5,Now and at the start of your next turn: +2 Cards\n+1 Buy.
-Alchemist,4,Alchemy,Action,$3Þ,"+2 Cards\n+1 Action\dWhen you discard this from play, you may put this on top of your deck if you have a Potion in play."
-Apothecary,4,Alchemy,Action,$2Þ,+1 Card\n+1 Action\nReveal the top 4 cards of your deck. Put the revealed Coppers and Potions into your hand. Put the other cards back on top in any order.
-Apprentice,4,Alchemy,Action,$5,+1 Action\nTrash a card from your hand. +1 Card per Coin it costs. +2 Cards if it has Þ in its cost.
-Familiar,4,Alchemy,Action-Attack,$3Þ,+1 Card\n+1 Action\nEach other player gains a curse.
-Golem,4,Alchemy,Action,$4Þ,"Reveal cards from your deck until you reveal 2 Action cards other than Golem Cards. Discard the other cards, then play the Action cards in either order."
-Herbalist,4,Alchemy,Action,$2,"+1 Buy\n+$1\dWhen you discard this from play, you may put one of your Treasures from play on top of your deck."
-Philosopher's Stone,4,Alchemy,Treasure,$3Þ,"When you play this, count your deck and discard pile. Worth $1 per 5 cards total between them (rounded down)."
-Possession,4,Alchemy,Action,$6Þ,"The player to your left takes an extra turn after this one, in which you can see all cards he can and make all decisions for him. Any cards he would gain on that turn, you gain instead; any cards of his that are trashed are set aside and returned to his discard pile at end of turn."
-Scrying Pool,4,Alchemy,Action-Attack,$2Þ,"+1 Action\nEach player (including you) reveals the top card of his deck and either discards it or puts it back, your choice. Then reveal cards from the top of your deck until revealing one that isn't an Action. Put all of your revealed cards into your han"
-Transmute,4,Alchemy,Action,$0Þ,"Trash a card from your hand. If it is an... Action card, gain a Duchy\nTreasure card, gain a Transmute\nVictory card, gain a Gold"
-University,4,Alchemy,Action,$2Þ,+2 Actions\nYou may gain an Action card costing up to $5.
-Vineyard,4,Alchemy,Victory,$0Þ,Worth 1VP for every 3 Action cards in your deck (rounded down).
-Bank,5,Prosperity,Treasure,$7,"When you play this, it's worth $1 per Treasure card you have in play (counting this)."
-Bishop,5,Prosperity,Action,$4,"+$1\n+1VP\nTrash a card from your hand. +VP equal to half its cost in coins, rounded down. Each other player may trash a card from his hand."
-City,5,Prosperity,Action,$5,"+1 Card\n+2 Actions\nIf there are one or more empty Supply piles, +1 Card. If there are two or more, +$1 and +1 Buy."
-Contraband,5,Prosperity,Treasure,$5,"Worth $3\n+1 Buy\nWhen you play this, the player to your left names a card. You can't buy that card this turn."
-Counting House,5,Prosperity,Action,$5,"Look through your discard pile, reveal any number of Copper cards from it, and put them into your hand."
-Expand,5,Prosperity,Action,$7,Trash a card from your hand. Gain a card costing up to $3 more than the trashed card.
-Forge,5,Prosperity,Action,$7,Trash any number of cards from your hand. Gain a card with cost exactly equal to the total cost in coins of the trashed cards.
-Goons,5,Prosperity,Action-Attack,$6,"+1 Buy\n+$2\nEach other player discards down to 3 cards in hand.\dWhile this is in play, when you buy a card, +1VP."
-Grand Market,5,Prosperity,Action,$6,+1 Card\n+1 Action\n+1 Buy\n+$2\dYou can't buy this if you have any Copper in play.
-Hoard,5,Prosperity,Treasure,$6,"Worth $2\dWhile this is in play, when you buy a Victory card, gain a Gold."
-King's Court,5,Prosperity,Action,$7,You may choose an Action card in your hand. Play it three times.
-Loan,5,Prosperity,Treasure,$3,"Worth $1\nWhen you play this, reveal cards from your deck until you reveal a Treasure. Discard it or trash it. Discard the other cards."
-Mint,5,Prosperity,Action,$5,"You may reveal a Treasure card from your hand. Gain a copy of it.\dWhen you buy this, trash all Treasures you have in play."
-Monument,5,Prosperity,Action,$4,+$2\n+1VP
-Mountebank,5,Prosperity,Action-Attack,$5,"+$2\nEach other player may discard a Curse. If he doesn't, he gains a Curse and a Copper."
-Peddler,5,Prosperity,Action,$8*,"+1 Card\n+1 Action\n+$1\dDuring your Buy phase, this costs $2 less per Action card you have in play, but not less than $0."
-Quarry,5,Prosperity,Treasure,$4,"Worth $1\dWhile this is in play, Action cards cost $2 less, but not less than $0."
-Rabble,5,Prosperity,Action-Attack,$5,"+3 Cards\nEach other player reveals the top 3 cards of his deck, discards the revealed Actions and Treasures, and puts the rest back on top in any order he chooses."
-Royal Seal,5,Prosperity,Treasure,$5,"Worth $2\dWhile this is in play, when you gain a card, you may put that card on top of your deck."
-Talisman,5,Prosperity,Treasure,$4,"Worth $1\dWhile this is in play, when you buy a card costing $4 or less that is not a Victory card, gain a copy of it."
-Trade Route,5,Prosperity,Action,$3,"+1 Buy\n+$1 per token on the Trade Route mat.\nTrash a card from your hand.\dSetup: Put a token on each Victory card Supply pile. When a card is gained from that pile, move the token to the Trade Route mat."
-Vault,5,Prosperity,Action,$5,"+2 Cards\nDiscard any number of cards. +$1 per card discarded. Each other player may discard 2 cards. If he does, he draws a card."
-Venture,5,Prosperity,Treasure,$5,"Worth $1\nWhen you play this, reveal cards from your deck until you reveal a Treasure. Discard the other cards. Play that Treasure."
-Watchtower,5,Prosperity,Action-Reaction,$3,"Draw until you have 6 cards in hand.\dWhen you gain a card, you may reveal this from your hand. If you do, either trash that card, or put it on top of your deck."
-Worker's Village,5,Prosperity,Action,$4,+1 Card\n+2 Actions\n+1 Buy
-Bag of Gold,6,Cornucopia,Action-Prize,$0*,"+1 Action\nGain a Gold, putting it on top of your deck.\n(This is not in the Supply.)"
-Diadem,6,Cornucopia,Treasure-Prize,$0*,"Worth $2\nWhen you play this, +$1 per unused Action you have (Action, not Action card).\n(This is not in the Supply.)"
-Fairgrounds,6,Cornucopia,Victory,$6,Worth 2VP for every 5 differently named cards in your deck (round down).
-Farming Village,6,Cornucopia,Action,$4,+2 Actions\nReveal cards from the top of your deck until you reveal an Action or Treasure card. Put that card into your hand and discard the other cards.
-Followers,6,Cornucopia,Action-Attack-Prize,$0*,+2 Cards\nGain an Estate. Each other player gains a Curse and discards down to 3 cards in hand.\n(This is not in the Supply.)
-Fortune Teller,6,Cornucopia,Action-Attack,$3,+$2\nEach other player reveals cards from the top of his deck until he reveals a Victory or Curse card. He puts it on top and discards the other revealed cards.
-Hamlet,6,Cornucopia,Action,$2,"+1 Card\n+1 Action\nYou may discard a card; if you do, +1 Action.\nYou may discard a card; if you do, +1 Buy."
-Harvest,6,Cornucopia,Action,$5,"Reveal the top 4 cards of your deck, then discard them. +$1 per differently named card revealed."
-Horn of Plenty,6,Cornucopia,Treasure,$5,"Worth $0\nWhen you play this, gain a card costing up to $1 per differently named card you have in play, counting this. If it's a Victory card, trash this."
-Horse Traders,6,Cornucopia,Action-Reaction,$4,"+1 Buy\n+$3\nDiscard 2 cards.\dWhen another player plays an Attack card, you may set this aside from your hand. If you do, then at the start of your next turn, +1 Card and return this to your hand."
-Hunting Party,6,Cornucopia,Action,$5,+1 Card\n+1 Action\nReveal your hand. Reveal cards from your deck until you reveal a card that isn't a duplicate of one in your hand. Put it into your hand and discard the rest.
-Jester,6,Cornucopia,Action-Attack,$5,"+$2\nEach other player discards the top card of his deck. If it's a Victory card he gains a Curse. Otherwise either he gains a copy of the discarded card or you do, your choice."
-Menagerie,6,Cornucopia,Action,$3,"+1 Action\nReveal your hand. If there are no duplicate cards in it, +3 Cards. Otherwise, +1 Card."
-Princess,6,Cornucopia,Action-Prize,$0*,"+1 Buy\dWhile this is in play, cards cost $2 less, but not less than $0.\n(This is not in the Supply.)"
-Remake,6,Cornucopia,Action,$4,"Do this twice: Trash a card from your hand, then gain a card costing exactly $1 more than the trashed card."
-Tournament,6,Cornucopia,Action,$4,"+1 Action\nEach player may reveal a Province from his hand.\nIf you do, discard it and gain a Prize (from the Prize pile) or a Duchy, putting it on top of your deck.\nIf no-one else does, +1 Card, +$1."
-Trusty Steed,6,Cornucopia,Action-Prize,$0*,Choose two: +2 Cards; or +2 Actions; or +$2; gain 4 Silvers and put your deck into your discard pile.
-Young Witch,6,Cornucopia,Action-Attack,$4,"+2 Cards\nDiscard 2 cards. Each other player may reveal a Bane card from his hand. If he doesn't, he gains a Curse.\dSetup: Add an extra Kingdom card pile costing $2 or $3 to the Supply. Cards from that pile are Bane cards."
-Border Village,7,Hinterlands,Action,$6,"+1 Card\n+2 Actions\dWhen you gain this, gain a card costing less than this."
-Cache,7,Hinterlands,Treasure,$5,"Worth $3\dWhen you gain this, gain two Coppers."
-Cartographer,7,Hinterlands,Action,$5,+1 Card\n+1 Action\nLook at the top 4 cards of your deck. Discard any number of them. Put the rest back on top in any order.
-Crossroads,7,Hinterlands,Action,$2,"Reveal your hand.\n+1 Card per Victory card revealed. If this is the first time you played a Crossroads this turn, +3 Actions."
-Develop,7,Hinterlands,Action,$3,"Trash a card from your hand.\nGain a card costing exactly $1 more than it and a card costing exactly $1 less than it, in either order, putting them on top of your deck."
-Duchess,7,Hinterlands,Action,$2,"+$2\nEach player (including you) looks at the top card of his deck, and discards it or puts it back.\dIn games using this, when you gain a Duchy, you may gain a Duchess."
-Embassy,7,Hinterlands,Action,$5,"+5 Cards\nDiscard 3 cards.\dWhen you gain this, each other player gains a Silver."
-Farmland,7,Hinterlands,Victory,$6,"Worth 2VP\dWhen you buy this, trash a card from your hand. Gain a card costing exactly $2 more than the trashed card."
-Fool's Gold,7,Hinterlands,Treasure-Reaction,$2,"If this is the first time you played a Fool's Gold this turn, this is worth $1, otherwise it's worth $4.\dWhen another player gains a Province, you may trash this from your hand. If you do, gain a Gold, putting it on your deck."
-Haggler,7,Hinterlands,Action,$5,"+$2\dWhile this is in play, when you buy a card, gain a card costing less than it that is not a Victory card."
-Highway,7,Hinterlands,Action,$5,"+1 Card\n+1 Action\dWhile this is in play, cards cost $1 less, but not less than $0."
-Ill-Gotten Gains,7,Hinterlands,Treasure,$5,"Worth $1\nWhen you play this, you may gain a Copper, putting it into your hand.\dWhen you gain this, each other player gains a Curse."
-Inn,7,Hinterlands,Action,$5,"+2 Cards\n+2 Actions\nDiscard 2 cards.\dWhen you gain this, look through your discard pile (including this), reveal any number of Action cards from it, and shuffle them into your deck."
-Jack of All Trades,7,Hinterlands,Action,$4,Gain a Silver.\nLook at the top card of your deck; discard it or put it back.\nDraw until you have 5 cards in hand.\nYou may trash a card from your hand that is not a Treasure.
-Mandarin,7,Hinterlands,Action,$5,"+$3\nPut a card from your hand on top of your deck.\dWhen you gain this, put all Treasures you have in play on top of your deck in any order."
-Margrave,7,Hinterlands,Action-Attack,$5,"+3 Cards\n+1 Buy\nEach other player draws a card, then discards down to 3 cards in hand."
-Noble Brigand,7,Hinterlands,Action-Attack,$4,"+$1\nWhen you buy this or play it, each other player reveals the top 2 cards of his deck, trashes a revealed Silver or Gold you choose, and discards the rest. If he didn't reveal a Treasure, he gains a Copper. You gain the trashed cards."
-Nomad Camp,7,Hinterlands,Action,$4,"+1 Buy\n+$2\dWhen you gain this, put it on top of your deck."
-Oasis,7,Hinterlands,Action,$3,+1 Card\n+1 Action\n+$1\nDiscard a card.
-Oracle,7,Hinterlands,Action-Attack,$3,"Each player (including you) reveals the top 2 cards of his deck, and you choose one: either he discards them, or he puts them back on top in an order he chooses.\n+2 Cards"
-Scheme,7,Hinterlands,Action,$3,"+1 Card\n+1 Action\nAt the start of Clean-up this turn, you may choose an Action card you have in play. If you discard it from play this turn, put it on your deck."
-Silk Road,7,Hinterlands,Victory,$4,Worth 1VP for every 4 Victory cards in your deck (round down).
-Spice Merchant,7,Hinterlands,Action,$4,"You may trash a Treasure from your hand. If you do, choose one:\n+2 Cards and +1 Action;\nor +$2 and +1 Buy."
-Stables,7,Hinterlands,Action,$5,"You may discard a Treasure. If you do, +3 Cards and +1 Action."
-Trader,7,Hinterlands,Action-Reaction,$4,"Trash a card from your hand. Gain a number of Silvers equal to its cost in coins.\dWhen you would gain a card, you may reveal this from your hand. If you do, instead, gain a silver."
-Tunnel,7,Hinterlands,Victory-Reaction,$3,"Worth 2VP\dWhen you discard this other than during a Clean-up phase, you may reveal it. If you do, gain a Gold."
-Colony,8,Base Cards,Victory,$11,Worth 10VP
-Copper,8,Base Cards,Treasure,$0,Worth $1
-Curse,8,Base Cards,Curse,$0,Worth -1VP
-Duchy,8,Base Cards,Victory,$5,Worth 3VP
-Estate,8,Base Cards,Victory,$2,Worth 1VP
-Gold,8,Base Cards,Treasure,$6,Worth $3
-Platinum,8,Base Cards,Treasure,$9,Worth $5
-Potion,8,Base Cards,Treasure,$4,Worth Þ
-Province,8,Base Cards,Victory,$8,Worth 6VP
-Silver,8,Base Cards,Treasure,$3,Worth $2
-Abandoned Mine,9,Dark Ages,Action-Ruins,$0,$1 
-Altar,9,Dark Ages,Action,$6,Trash a card from your hand. Gain a card costing up to $5.
-Armory,9,Dark Ages,Action,$4,Gain a card costing up to $4. Put it on top of your deck.
-Band of Misfits,9,Dark Ages,Action,$5,Play this as if it were an Action card in the Supply costing less than it that you choose.\nThis is that card until it leaves play.
-Bandit Camp,9,Dark Ages,Action,$5,+1 Card\n+2 Actions\nGain a Spoils from the Spoils pile.
-Beggar,9,Dark Ages,Action-Reaction,$2,"Gain 3 Coppers, putting them into your hand.\dWhen another player plays an Attack card, you may discard this. If you do, gain two Silvers, putting one on top of your deck."
-Catacombs,9,Dark Ages,Action,$5,"Look at the top 3 cards of your deck. Choose one: Put them into your hand; or discard them and +3 Cards.\dWhen you trash this, gain a cheaper card."
-Count,9,Dark Ages,Action,$5,Choose one: Discard 2 cards; put a card from your hand on top of your deck; or gain a Copper.\nChoose one: +$3; trash your hand; or gain a Duchy.
-Counterfeit,9,Dark Ages,Treasure,$5,"Worth $1\n+1 Buy\nWhen you play this, you may play a treasure from your hand twice. If you do, trash that treasure."
-Cultist,9,Dark Ages,Action-Attack-Looter,$5,"+2 Cards\nEach other player gains a Ruins. You may play a Cultist from your hand.\dWhen you trash this, +3 Cards."
-Dame Anna,9,Dark Ages,Action-Attack-Knight,$5,"You may trash up to 2 cards from your hand.\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
-Dame Josephine,9,Dark Ages,Action-Attack-Knight-Victory,$5,"Worth 2VP\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
-Dame Molly,9,Dark Ages,Action-Attack-Knight,$5,"+2 Actions.\nEach other player discards the top 2 cards of his deck, and trashes one of them costing from $3 to $6. If a Knight is trashed by this, trash this card."
-Dame Natalie,9,Dark Ages,Action-Attack-Knight,$5,"You may gain a card costing up to $3.\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
-Dame Sylvia,9,Dark Ages,Action-Attack-Knight,$5,"+$2\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
-Death Cart,9,Dark Ages,Action-Looter,$4,"+$5\nYou may trash an Action card from your hand. If you don't, trash this.\dWhen you gain this, gain 2 Ruins."
-Feodum,9,Dark Ages,Victory,$4,"Worth 1VP for every 3 Silvers in your deck.\dWhen you trash this, gain 3 Silvers."
-Forager,9,Dark Ages,Action,$3,+1 Action\n+1 Buy\nTrash a card from your hand. +$1 per differently named Treasure in the trash.
-Fortress,9,Dark Ages,Action,$4,"+1 Card\n+2 Actions\dWhen you trash this, put it into your hand."
-Graverobber,9,Dark Ages,Action,$5,"Choose one: Gain a card from the trash costing from $3 to $6, putting it on top of your deck; or trash an Action card from your hand and gain a card costing up to $3 more than it."
-Hermit,9,Dark Ages,Action,$3,"Look through your discard pile. You may trash a card from your discard pile or hand that is not a Treasure. Gain a card costing up to $3.\dWhen you discard this from play, if you didn't buy any cards this turn, trash this and gain a Madman from the Madman pile."
-Hovel,9,Dark Ages,Reaction-Shelter,$1,"When you buy a Victory card, you may trash this from your hand."
-Hunting Grounds,9,Dark Ages,Action,$6,"+4 Cards\dWhen you trash this, gain a Duchy or 3 Estates"
-Ironmonger,9,Dark Ages,Action,$4,"+1 Card\n+1 Action\nReveal the top card of your deck; you may discard it. Either way, if it is an...\nAction card, +1 Action\na Treasure card, +$1\na Victory card, +1 Card"
-Junk Dealer,9,Dark Ages,Action,$5,+1 Card\n+1 Action\n+$1\nTrash a card from your hand.
-Madman,9,Dark Ages,Action,$0*,"+2 Actions\nReturn this to the Madman pile. If you do, +1 Card per card in your hand.\n(This is not in the Supply.)"
-Marauder,9,Dark Ages,Action-Attack-Looter,$4,Gain a Spoils from the Spoils pile. Each other player gains a Ruins.
-Market Square,9,Dark Ages,Action-Reaction,$3,"+1 Card\n+1 Action\n+1 Buy\dWhen one of your cards is trashed, you may discard this from your hand. If you do, gain a Gold."
-Mercenary,9,Dark Ages,Action-Attack,$0*,"You may trash 2 cards from your hand. If you do, +2 Cards, + $2, and each other player discards down to 3 cards in hand.\n(This is not in the Supply.)"
-Mystic,9,Dark Ages,Action,$5,"+1 Action\n+$2\nName a card.\nReveal the top card of your deck. If it's the named card, put it into your hand."
-Necropolis,9,Dark Ages,Action-Shelter,$1,+2 Actions
-Overgrown Estate,9,Dark Ages,Victory-Shelter,$1,"Worth 0 VP\dWhen you trash this, +1 Card."
-Pillage,9,Dark Ages,Action-Attack,$5,Trash this. Each other player with 5 or more cards in hand reveals his hand and discards a card that you choose. Gain 2 Spoils.
-Poor House,9,Dark Ages,Action,$1,"+$4\nReveal your hand. -$1 per Treasure card in your hand, to a minimum of $0."
-Procession,9,Dark Ages,Action,$4,You may play an Action card from your hand twice. Trash it. Gain an Action card costing exactly $1 more than it.
-Rats,9,Dark Ages,Action,$4,"+1 Card\n+1 Action\nGain a Rats. Trash a card from your hand other than a Rats (or reveal a hand of all Rats).\dWhen you trash this, +1 Card."
-Rebuild,9,Dark Ages,Action,$5,+1 Action\nName a card. Reveal cards from the top of your deck until you reveal a Victory card that is not the named card. Discard the other cards. Trash the Victory card and gain a Victory card costing up to $3 more than it.
-Rogue,9,Dark Ages,Action-Attack,$5,"+$2\nIf there are any cards in the trash costing from $3 to $6, gain one of them. Otherwise, each other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest."
-Ruined Library,9,Dark Ages,Action-Ruins,$0,+1 Card
-Ruined Market,9,Dark Ages,Action-Ruins,$0,+1 Buy
-Ruined Village,9,Dark Ages,Action-Ruins,$0,+1 Action
-Sage,9,Dark Ages,Action,$3,+1 Action\nReveal cards from the top of your deck until you reveal one costing $3 or more. Put that card into your hand and discard the rest.
-Scavenger,9,Dark Ages,Action,$4,+$2\nYou may put your deck into your discard pile. Look through your discard pile and put one card from it on top of your deck.
-Sir Bailey,9,Dark Ages,Action-Attack-Knight,$5,"+1 Card\n+1 Action\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
-Sir Destry,9,Dark Ages,Action-Attack-Knight,$5,"+2 Cards\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
-Sir Martin,9,Dark Ages,Action-Attack-Knight,$4,"+2 Buys\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
-Sir Michael,9,Dark Ages,Action-Attack-Knight,$5,"Each other player discards down to 3 cards in hand.\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
-Sir Vander,9,Dark Ages,Action-Attack-Knight,$5,"Each other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card.\dWhen you trash this, gain a Gold."
-Spoils,9,Dark Ages,Treasure,$0*,"Worth $3\nWhen you play this, return it to the pile.\n(This is not in the Supply.)"
-Squire,9,Dark Ages,Action,$2,"+$1\nChoose one: +2 Actions; or +2 Buys; or gain a Silver.\dWhen you trash this, gain an Attack card."
-Storeroom,9,Dark Ages,Action,$3,+1 Buy\nDiscard any number of cards. +1 Card per card discarded. Discard any number of cards. +$1 per card discarded the second time.
-Survivors,9,Dark Ages,Action-Ruins,$0,Look at the top 2 cards of your deck. Discard them or put them back in any order.
-Urchin,9,Dark Ages,Action-Attack,$3,"+1 Card\n+1 Action\nEach other player discards down to 4 cards in hand.\dWhen you play another Attack card with this in play, you may trash this. If you do, gain a Mercenary from the Mercenary pile."
-Vagrant,9,Dark Ages,Action,$2,"+1 Card\n+1 Action\nReveal the top card of your deck. If it's a Victory card, Curse, Ruins, or Shelter, put it into your hand."
-Wandering Minstrel,9,Dark Ages,Action,$4,+1 Card\n+2 Actions\nReveal the top 3 cards of your deck. Put the Actions back on top in any order and discard the rest.
-Advisor,10,Guilds,Action,$4,+1 Action\nReveal the top 3 cards of your deck. The player to your left chooses one of them. Discard that card. Put the other cards into your hand.
-Baker,10,Guilds,Action,$5,+1 Card\n+1 Action\nTake a Coin token.\dSetup: Each player takes a Coin token.
-Butcher,10,Guilds,Action,$5,"Take 2 Coin tokens. You may trash a card from your hand and then pay any number of Coin tokens. If you did trash a card, gain a card with a cost of up to the cost of the trashed card plus the number of Coin tokens you paid."
-Candlestick Maker,10,Guilds,Action,$2,+1 Action\n+1 Buy\nTake a Coin token.
-Doctor,10,Guilds,Action,$3+,"Name a card. Reveal the top 3 cards of your deck. Trash the matches. Put the rest back on top in any order.\dWhen you buy this, you may overpay for it. For each $1 you overpaid, look at the top card of your deck; trash it, discard it, or put it back."
-Herald,10,Guilds,Action,$4+,"+1 Card\n+1 Action\nReveal the top card of your deck. If it is an Action, play it.\dWhen you buy this, you may overpay for it. For each $1 you overpaid, look through your discard pile and put a card from it on top of your deck."
-Journeyman,10,Guilds,Action,$5,Name a card. Reveal cards from the top of your deck until you reveal 3 cards that are not the named card. Put those cards into your hand and discard the rest.
-Masterpiece,10,Guilds,Treasure,$3+,"Worth $1\dWhen you buy this, you may overpay for it. If you do, gain a Silver per $1 you overpaid."
-Merchant Guild,10,Guilds,Action,$5,"+1 Buy\n+$1.\dWhile this is in play, when you buy a card, take a Coin token."
-Plaza,10,Guilds,Action,$4,"+1 Card. +2 Actions. You may discard a Treasure card. If you do, take a Coin token."
-Soothsayer,10,Guilds,Action-Attack,$5,Gain a Gold. Each other player gains a Curse. Each player who did draws a card.
-Stonemason,10,Guilds,Action,$2+,"Trash a card from your hand. Gain 2 cards each costing less than it.\dWhen you buy this, you may overpay for it. If you do, gain 2 Action cards each costing the amount you overpaid."
-Taxman,10,Guilds,Action-Attack,$4,"You may trash a Treasure from your hand. Each other player with 5 or more cards in hand discards a copy of it (or reveals a hand without it). Gain a Treasure card costing up to $3 more than the trashed card, putting it on top of your deck."
-Alms,11,Adventures,Event,$0,"Once per turn: If you have no Treasures in play, gain a card costing up to $4."
-Amulet,11,Adventures,Action-Duration,$3,"Now and at the start of your next turn, choose one: +$1; or trash a card from your hand; or gain a Silver."
-Artificer,11,Adventures,Action,$5,"+1 Action\n+1 Card\n+$1\nDiscard any number of cards. You may gain a card costing exactly $1 per card discarded, putting it on top of your deck."
-Ball,11,Adventures,Event,$5,Take your -$1 token. Gain 2 cards each costing up to $4.
-Bonfire,11,Adventures,Event,$3,Trash up to 2 cards you have in play.
-Borrow,11,Adventures,Event,$0,"+1 Buy\nOnce per turn: If your -1 Card token isn't on your deck, put it there and +$1."
-Bridge Troll,11,Adventures,Action-Attack-Duration,$5,"Each other player takes his -$1 token. Now and at the start of your next turn:\n+1 Buy\dWhile this is in play, cards cost $1 less on your turns, but not less than $0."
-Caravan Guard,11,Adventures,Action-Duration-Reaction,$3,"+1 Card\n+1 Action\nAt the start of your next turn, +$1.\dWhen another player plays an Attack card, you may play this from your hand. (+1 Action has no effect if it's not your turn.)"
-Champion,11,Adventures,Action-Duration,$6*,"+1 Action\nFor the rest of the game, when another player plays an Attack, it doesn't affect you, and when you play an Action, +1 Action.\n(This stays in play. This is not in the Supply.)"
-Coin of the Realm,11,Adventures,Treasure-Reserve,$2,"Worth $1\nWhen you play this, put it on your Tavern mat.\dDirectly after resolving an Action, you may call this, for +2 Actions."
-Disciple,11,Adventures,Action-Traveller,$5*,"You may play an Action card from your hand twice. Gain a copy of it.\dWhen you discard this from play, you may exchange it for a Teacher.\n(This is not in the Supply.)"
-Distant Lands,11,Adventures,Action-Reserve-Victory,$5,Put this on your Tavern mat.\dWorth 4VP if on your Tavern mat at the end of the game (otherwise worth 0VP).
-Dungeon,11,Adventures,Action-Duration,$3,"+1 Action\nNow and at the start of your next turn: +2 Cards, then discard 2 cards."
-Duplicate,11,Adventures,Action-Reserve,$4,"Put this on your Tavern mat.\dWhen you gain a card costing up to $6, you may call this, to gain a copy of that card."
-Expedition,11,Adventures,Event,$3,Draw 2 extra cards for your next hand.
-Ferry,11,Adventures,Event,$3,"Move your -$2 cost token to an Action Supply pile (cards from that pile cost $2 less on your turns, but not less than $0)."
-Fugitive,11,Adventures,Action-Traveller,$4*,"+2 Cards\n+1 Action\nDiscard a card.\dWhen you discard this from play, you may exchange it for a Disciple.\n(This is not in the Supply.)"
-Gear,11,Adventures,Action-Duration,$3,"+2 Cards\nSet aside up to 2 cards from your hand face down. At the start of your next turn, put them into your hand."
-Giant,11,Adventures,Action-Attack,$5,"Turn your Journey token over (it starts face up). If it's face down, +$1. If it's face up, +$5, and each other player reveals the top card of his deck, trashes it if it costs from $3 to $6, and otherwise discards it and gains a Curse."
-Guide,11,Adventures,Action-Reserve,$3,"+1 Card\n+1 Action\nPut this on your Tavern mat.\dAt the start of your turn, you may call this, to discard your hand and draw 5 cards."
-Haunted Woods,11,Adventures,Action-Attack-Duration,$5,"Until you next turn, when any other player buys a card, he puts his hand on top of his deck in any order.\nAt the start of your next turn:\n+3 Cards"
-Hero,11,Adventures,Action-Traveller,$5*,"+$2\nGain a Treasure.\dWhen you discard this from play, you may exchange it for a Champion.\n(This is not in the Supply.)"
-Hireling,11,Adventures,Action-Duration,$6,At the start of each of your turns for the rest of the game:\d+1 Card\d(This stays in play.)
-Inheritance,11,Adventures,Event,$7,Once per game: Set aside a non-Victory Action card from the Supply costing up to $4. Move your Estate token to it (your Estates gain the abilities and types of that card).
-Lost Arts,11,Adventures,Event,$5,"Move your +1 Action token to an Action Supply pile (when you play a card from that pile, you first get +1 Action)."
-Lost City,11,Adventures,Action,$5,"+2 Cards\n+2 Actions\dWhen you gain this, each other player draws a card."
-Magpie,11,Adventures,Action,$4,"+1 Card\n+1 Action\nReveal the top card of your deck. If it's a Treasure, put it into your hand. If it's an Action or Victory card, gain a Magpie."
-Messenger,11,Adventures,Action,$4,"+1 Buy\n+$2\nYou may put your deck into your discard pile.\dWhen this is your first buy in a turn, gain a card costing up to $4, and each other player gains a copy of it."
-Miser,11,Adventures,Action,$4,Choose one: Put a Copper from your hand onto your Tavern mat; or +$1 per Copper on your Tavern mat.
-Mission,11,Adventures,Event,$4,"Once per turn: If the previous turn wasn't yours, take another turn after this one, in which you can't buy cards."
-Page,11,Adventures,Action-Traveller,$2,"+1 Card\n+1 Action\dWhen you discard this from play, you may exchange it for a Treasure Hunter."
-Pathfinding,11,Adventures,Event,$8,"Move your +1 Card token to an Action Supply pile (when you play a card from that pile, you first get +1 Card)."
-Peasant,11,Adventures,Action-Traveller,$2,"+1 Buy\n+$1\dWhen you discard this from play, you may exchange it for a Soldier."
-Pilgrimage,11,Adventures,Event,$4,"Once per turn: Turn your Journey token over (it starts face up); then if it's face up, choose up to 3 differently named cards you have in play and gain a copy of each."
-Plan,11,Adventures,Event,$3,"Move your Trashing token to an Action Supply pile (when you buy a card from that pile, you may trash a card from your hand.)"
-Port,11,Adventures,Action,$4,"+1 Card\n+2 Actions\dWhen you buy this, gain another Port."
-Quest,11,Adventures,Event,$0,"You may discard an Attack, two Curses, or six cards. If you do, gain a Gold."
-Raid,11,Adventures,Event,$5,Gain a Silver per Silver you have in play. Each other player puts his -1 Card token on his deck.
-Ranger,11,Adventures,Action,$4,"+1 Buy\nTurn your Journey token over (it starts face up). If it's face up, +5 Cards."
-Ratcatcher,11,Adventures,Action-Reserve,$2,"+1 Card\n+1 Action\nPut this on your Tavern mat.\dAt the start of your turn, you may call this to trash a card from your hand."
-Raze,11,Adventures,Action,$2,+1 Action\nTrash this or a card from your hand. Look at a number of cards from the top of your deck equal to the cost in $ of the trashed card. Put one into your hand and discard the rest.
-Relic,11,Adventures,Treasure-Attack,$5,"Worth $2\nWhen you play this, each other player puts his -1 Card token on his deck."
-Royal Carriage,11,Adventures,Action-Reserve,$5,"+1 Action\nPut this on your Tavern mat.\dDirectly after resolving an Action, if it's still in play, you may call this, to replay that Action."
-Save,11,Adventures,Event,$1,"+1 Buy\nOnce per turn: Set aside a card from your hand, and put it into your hand at end of turn (after drawing)."
-Scouting Party,11,Adventures,Event,$2,+1 Buy\nLook at the top 5 cards of your deck. Discard 3 of them and put the rest back on top of your deck in any order.
-Seaway,11,Adventures,Event,$5,"Gain an Action card costing up to $4. Move your +1 Buy token to its pile (when you play a card from that pile, you first get +1 Buy)."
-Soldier,11,Adventures,Action-Attack-Traveller,$3*,"+$2\n+$1 per other Attack you have in play. Each other player with 4 or more cards in hand discards a card.\dWhen you discard this from play, you may exchange it for a Fugitive.\n(This is not in the Supply)"
-Storyteller,11,Adventures,Action,$5,+1 Action\n+$1\nPlay up to 3 Treasures from your hand. Pay all of your $; +1 Card per $ paid.
-Swamp Hag,11,Adventures,Action-Attack-Duration,$5,"Until your next turn, when any other player buys a card, he gains a Curse.\nAt the start of your next turn:\n+$3"
-Teacher,11,Adventures,Action-Reserve,$6*,"Put this on your Tavern mat.\dAt the start of your turn, you may call this, to move your +1 Card, +1 Action, +1 Buy, or +$1 token to an Action Supply pile you have no token on (when you play a card from that pile you first get that bonus).\n(This is not in the Supply.)"
-Trade,11,Adventures,Event,$5,Trash up to 2 cards from your hand.\nGain a Silver per card you trashed.
-Training,11,Adventures,Event,$6,"Move your +$1 token to an Action Supply pile (when you play a card from that pile, you first get +$1)."
-Transmogrify,11,Adventures,Action-Reserve,$4,"+1 Action\nPut this on your Tavern mat.\nAt the start of your turn, you may call this, to trash a card from your hand, gain a card costing up to $1 more than it, and put that card into your hand."
-Travelling Fair,11,Adventures,Event,$2,"+2 Buys\nWhen you gain a card this turn, you may put it on top of your deck."
-Treasure Hunter,11,Adventures,Action-Traveller,$3*,"+1 Action\n+$1\nGain a Silver per card the player to your right gained in his last turn.\dWhen you discard this from play, you may exchange it for a Warrior.\n(This is not in the Supply.)"
-Treasure Trove,11,Adventures,Treasure,$5,"Worth $2\nWhen you play this, gain a Gold and a Copper."
-Warrior,11,Adventures,Action-Attack-Traveller,$4*,"+2 Cards\nFor each Traveller you have in play (including this) each other player discards the top card of his deck and trashes it if it costs $3 or $4.\dWhen you discard this from play, you may exchange it for a Hero.\n(This is not in the Supply.)"
-Wine Merchant,11,Adventures,Action-Reserve,$5,"+1 Buy\n+$4\nPut this on your Tavern mat.\dAt the end of your Buy phase, if you have at least $2 unspent, you may discard this from your Tavern mat."
-City Quarter,12,Empires,Action,$0,+2 Actions\nReveal your hand. +1 Card per Action card revealed.
-Engineer,12,Empires,Action,$0,"Gain a card costing up to 4 Coins. You may trash this. If you do, gain a card costing up to 4 Coins."
-Overlord,12,Empires,Action,$0,Play this as if it were an Action card in the Supply costing up to 5 Coins. This is that card until it leaves play.
-Royal Blacksmith,12,Empires,Action,$0,+5 Cards\nReveal your hand; discard the Coppers.
-Encampment/Plunder,12,Empires,Action,$2,"This pile starts the game with 5 copies of Encampment on top, then 5 copies of Plunder. Only the top card of the pile can be gained or bought."
-Patrician/Emporium,12,Empires,Action,$2,"This pile starts the game with 5 copies of Patrician on top, then 5 copies of Emporium. Only the top card of the pile can be gained or bought."
-Settlers/Bustling Village,12,Empires,Action,$2,"This pile starts the game with 5 copies of Settlers on top, then 5 copies of Bustling Village. Only the top card of the pile can be gained or bought."
-Castles,12,Empires,Victory - Castle,$3,"Sort the castle pile by cost, putting the more expensive Castles on the bottom. For a 2-player game, use only one of each Castle. Only the top card of the pile may be gained or bought."
-Catapult/Rocks,12,Empires,Action - Attack,$3,"This pile starts the game with 5 copies of Catapult on top, then 5 copies of Rocks. Only the top card of the pile can be gained or bought."
-Chariot Race,12,Empires,Action,$3,+1 Action
-Enchantress,12,Empires,Action - Attack - Duration,$3,"Until your next turn, the first time each other player plays an Action card on their turn, they get +1 Card and +1 Action instead of following its instructions.\nAt the start of your next turn,\n+1 Cards"
-Farmer's Market,12,Empires,Action - Gathering,$3,"+1 Buy\nIf there are 4 Victory or more on the Farmer's Market Supply pile, take them and trash this. Otherwise, add 1 Victory to the pile and then +1 Coin per 1 Victory on the pile."
-Gladiator/Fortune,12,Empires,Action,$3,"This pile starts the game with 5 copies of Gladiator on top, then 5 copies of Fortune. Only the top card of the pile can be gained or bought."
-Sacrifice,12,Empires,Action,$4,"Trash a card from your hand. If it's an…\nAction card, +1 Cards, +2 Actions\nTreasure card, +2 Coins\nVictory card, +2 Victory"
-Temple,12,Empires,Action - Gathering,$4,"+1 Victory\nTrash from 1 to 3 differently named cards from your hand. Add 1 Victory to the Temple Supply pile.\dWhen you gain this, take all the Victory from the Temple Supply pile."
-Villa,12,Empires,Action,$4,"+2 Actions\n+1 Buy\n+1 Coin\dWhen you gain this, put it into your hand, +1 Action, and if it's your Buy phase return to your Action phase."
-Archive,12,Empires,Action - Duration,$5,"+1 Action\nSet aside the top 3 cards of your deck face down (you may look at them). Now and at the start of your next two turns, put one into your hand."
-Capital,12,Empires,Treasure,$5,"6 Coins\n+1 Buy\dWhen you discard this from play, take 6 Debt, and then you may pay off Debt."
-Charm,12,Empires,Treasure,$5,"When you play this, choose one: +1 Buy and +2 Coins; or the next time you buy a card this turn, you may also gain a differently named card with the same cost."
-Crown,12,Empires,Action - Treasure,$5,"If it's your Action phase, you may play an Action from your hand twice. If it's your Buy phase, you may play a Treasure from your hand twice."
-Forum,12,Empires,Action,$5,"+1 Card\n+1 Action\nDiscard 2 cards.\dWhen you buy this, +1 Buy."
-Groundskeeper,12,Empires,Action,$5,"+1 Card\n+1 Action\dWhile this is in play, when you gain a Victory card, +1 Victory."
-Legionary,12,Empires,Action - Attack,$5,"+3 Coins\nYou may reveal a Gold from your hand. If you do, each other player discards down to 2 cards in hand, then draws a card."
-Wild Hunt,12,Empires,Action - Gathering,$5,"Choose one: +3 Cards and add 1 Victory to the Wild Hunt Supply pile; or gain an Estate, and if you do, take the Victory from the pile."
-Advance,12,Empires,Event,$0,"You may trash an Action card from your hand. If you do, gain an Action card costing up to 6 Coins."
-Annex,12,Empires,Event,$0,Look through your discard pile. Shuffle all but up to 5 cards from it into your deck. Gain a Duchy.
-Donate,12,Empires,Event,$0,"After this turn, put all cards from your deck and discard pile into your hand, trash any number, shuffle your hand into your deck, then draw 5 cards."
-Triumph,12,Empires,Event,$0,"Gain an Estate.\nIf you did, +1 Victory per card you've gained this turn."
-Delve,12,Empires,Event,$2,+1 Buy\nGain a Silver.
-Tax,12,Empires,Event,$2,"Add 2 Debt to a Supply pile.\dSetup: Add 1 Debt to each Supply pile. When a player buys a card, they take the Debt from its pile."
-Banquet,12,Empires,Event,$3,Gain 2 Coppers and a non-Victory card costing up to 5 Coins.
-Ritual,12,Empires,Event,$4,"Gain a Curse. If you do, trash a card from your hand. +1 Victory per 1 Coin it cost."
-Salt the Earth,12,Empires,Event,$4,+1 Victory\nTrash a Victory card from the Supply.
-Wedding,12,Empires,Event,$4,+1 Victory\nGain a Gold.
-Windfall,12,Empires,Event,$5,"If your deck and discard pile are empty, gain 3 Golds."
-Conquest,12,Empires,Event,$6,Gain 2 Silvers.\n+1 Victory per Silver you've gained this turn.
-Dominate,12,Empires,Event,$14,"Gain a Province. If you do, +9 Victory"
-Aqueduct,12,Empires,Landmark,$0,"When you gain a Treasure, move 1 Victory from its pile to this.\nWhen you gain a Victory card, take the Victory from this.\dSetup: Put 8 Victory on the Silver and Gold piles."
-Arena,12,Empires,Landmark,$0,"At the start of your Buy phase, you may discard an Action card. If you do, take 2 Victory from here.\dSetup: Put 6 Victory here per player."
-Bandit Fort,12,Empires,Landmark,$0,"When scoring, -2 Victory for each Silver and each Gold you have."
-Basilica,12,Empires,Landmark,$0,"When you buy a card, if you have 2 Coins or more left, take 2 Victory from here.\dSetup: Plus 6 Victory here per player."
-Baths,12,Empires,Landmark,$0,"When you end your turn without having gained a card, take 2 Victory from here.\dSetup: Put 6 Victory here per player."
-Battlefield,12,Empires,Landmark,$0,"When you gain a Victory card, take 2 Victory from here.\dSetup: Put 6 Victory here per player."
-Colonnade,12,Empires,Landmark,$0,"When you buy an Action card, if you have a copy of it in play, take 2 Victory from here.\dSetup: Put 6 Victory here per player."
-Defiled Shrine,12,Empires,Landmark,$0,"When you gain an Action, move 1 Victory from its pile to this. When you buy a Curse, take the Victory from this.\dSetup: Put 2 Victory on each non-Gathering Action Supply pile."
-Fountain,12,Empires,Landmark,$0,"When scoring, 15 Victory if you have at least 10 Coppers."
-Keep,12,Empires,Landmark,$0,"When scoring, 5 Victory per differently named Treasure you have, that you have more copies of than each other player, or tied for most."
-Labyrinth,12,Empires,Landmark,$0,"When you gain a 2nd card in one of your turns, take 2 Victory from here.\dSetup: Put 6 Victory here per player."
-Mountain Pass,12,Empires,Landmark,$0,"When you are the first player to gain a Province, after that turn, each player bids once, up to 40 Debt, ending with you. High bidder gets +8 Victory and takes the Debt they bid."
-Museum,12,Empires,Landmark,$0,"When scoring, 2 Victory per differently named card you have."
-Obelisk,12,Empires,Landmark,$0,"When scoring, 2 Victory per card you have from the chosen pile.\dSetup: Choose a random Action Supply pile."
-Orchard,12,Empires,Landmark,$0,"When scoring, 4 Victory per differently named Action card you have 3 or more copies of."
-Palace,12,Empires,Landmark,$0,"When scoring, 3 Victory per set you have of Copper - Silver - Gold."
-Tomb,12,Empires,Landmark,$0,"When you trash a card, +1 Victory."
-Tower,12,Empires,Landmark,$0,"When scoring, 1 Victory per non-Victory card you have from an empty Supply pile."
-Triumphal Arch,12,Empires,Landmark,$0,"When scoring, 3 Victory per copy you have of the 2nd most common Action card among your cards (if it's a tie, count either)."
-Wall,12,Empires,Landmark,$0,"When scoring, -1 Victory per card you have after the first 15."
-Wolf Den,12,Empires,Landmark,$0,"When scoring, -3 Victory per card you have exactly one copy of."
+card_name,set_num,set_name,type,is_kingdom_card,cost,card_text
+Black Market,0,Promo,Action,1,$3,"+$2\nReveal the top 3 cards of the Black Market deck. You may buy one of them immediately. Put the unbought cards on the bottom of the Black Market deck in any order.\d(Before the game, make a Black Market deck out of one copy of each Kingdom card not in "
+Envoy,0,Promo,Action,1,$4,Reveal the top 5 cards of your deck. The player to your left chooses one for you to discard. Draw the rest.
+Governor,0,Promo,Action,1,$5,+1 Action\nChoose one; you get the version in parentheses: Each player gets +1 (+3) Cards; or each player gains a Silver (Gold); or each player may trash a card from his hand and gain a card costing exactly $1 ($2) more.
+Prince,0,Promo,Action,1,$8,"You may set this aside. If you do, set aside an Action card from your hand costing up to $4. At the start of each of your turns, play that Action, setting it aside again when you discard it from play. (Stop playing it if you fail to set it aside on a turn you play it.)"
+Stash,0,Promo,Treasure,1,$5,"Worth $2\dWhen you shuffle, you may put this anywhere in your deck."
+Summon,0,Promo,Event,0,$?,Allows the buyer to gain a cheap Action card and play it immediately at the start of their next turn.
+Walled Village,0,Promo,Action,1,$4,"+1 Card\n+2 Actions\dAt the start of Clean-up, if you have this and no more than one other Action card in play, you may put this on top of your deck."
+Adventurer,1,Dominion,Action,1,$6,Reveal cards from your deck until you reveal 2 Treasure cards. Put those Treasure cards in your hand and discard the other revealed cards.
+Bureaucrat,1,Dominion,Action-Attack,1,$4,Gain a silver card; put it on top of your deck. Each other player reveals a Victory card from his hand and puts it on his deck (or reveals a hand with no Victory cards).
+Cellar,1,Dominion,Action,1,$2,+1 Action\nDiscard any number of cards.\n+1 Card per card discarded.
+Chancellor,1,Dominion,Action,1,$3,+$2\nYou may immediately put your deck into your discard pile.
+Chapel,1,Dominion,Action,1,$2,Trash up to 4 cards from your hand.
+Council Room,1,Dominion,Action,1,$5,+4 Cards\n+1 Buy\nEach other player draws a card.
+Feast,1,Dominion,Action,1,$4,Trash this card. Gain a card costing up to $5.
+Festival,1,Dominion,Action,1,$5,+2 Actions\n+1 Buy\n+$2.
+Gardens,1,Dominion,Victory,1,$4,Worth 1VP for every 10 cards in your deck (rounded down).
+Laboratory,1,Dominion,Action,1,$5,+2 Cards\n+1 Action.
+Library,1,Dominion,Action,1,$5,"Draw until you have 7 cards in hand. You may set aside any Action cards drawn this way, as you draw them; discard the set aside cards after you finish drawing."
+Market,1,Dominion,Action,1,$5,+1 Card\n+1 Action\n+1 Buy\n+$1.
+Militia,1,Dominion,Action-Attack,1,$4,+$2\nEach other player discards down to 3 cards in his hand.
+Mine,1,Dominion,Action,1,$5,Trash a Treasure card from your hand. Gain a Treasure card costing up to $3 more; put it into your hand.
+Moat,1,Dominion,Action-Reaction,1,$2,"+2 Cards\dWhen another player plays an Attack card, you may reveal this from your hand. If you do, you are unaffected by that Attack."
+Moneylender,1,Dominion,Action,1,$4,"Trash a Copper from your hand. If you do, +$3."
+Remodel,1,Dominion,Action,1,$4,Trash a card from your hand. Gain a card costing up to $2 more than the trashed card.
+Smithy,1,Dominion,Action,1,$4,+3 Cards
+Spy,1,Dominion,Action-Attack,1,$4,"+1 Card\n+1 Action\nEach player (including you) reveals the top card of his deck and either discards it or puts it back, your choice."
+Thief,1,Dominion,Action-Attack,1,$4,"Each other player reveals the top 2 cards of his deck. If they revealed any Treasure cards, they trash one of them that you choose. You may gain any or all of these trashed cards. They discard the other revealed cards."
+Throne Room,1,Dominion,Action,1,$4,Choose an Action card in your hand. Play it twice.
+Village,1,Dominion,Action,1,$3,+1 Card\n+2 Actions
+Witch,1,Dominion,Action-Attack,1,$5,+2 Cards\nEach other player gains a Curse card.
+Woodcutter,1,Dominion,Action,1,$3,+1 Buy\n+$2
+Workshop,1,Dominion,Action,1,$3,Gain a card costing up to $4.
+Baron,2,Intrigue,Action,1,$4,"+1 Buy\nYou may discard an Estate card. If you do, +$4.\nOtherwise, gain an Estate card."
+Bridge,2,Intrigue,Action,1,$4,"+1 Buy\n+$1\nAll cards (including cards in players' hands) cost $1 less this turn, but not less than $0."
+Conspirator,2,Intrigue,Action,1,$4,+$2\nIf you've played 3 or more Actions this turn (counting this): +1 Card; +1 Action.
+Coppersmith,2,Intrigue,Action,1,$4,Copper produces an extra $1 this turn.
+Courtyard,2,Intrigue,Action,1,$2,+3 Cards\nPut a card from your hand on top of your deck.
+Duke,2,Intrigue,Victory,1,$5,Worth 1VP per Duchy you have.
+Great Hall,2,Intrigue,Action-Victory,1,$3,+1 Card\n+1 Action\dWorth 1VP
+Harem,2,Intrigue,Treasure-Victory,1,$6,Worth $2\nWorth 2VP
+Ironworks,2,Intrigue,Action,1,$4,"Gain a card costing up to $4. If it is an...\nAction card, +1 Action\nTreasure card, +$1\nVictory card, +1 Card"
+Masquerade,2,Intrigue,Action,1,$3,+2 Cards\nEach player passes a card in their hand to the player on their left. Then you may trash a card from your hand.
+Mining Village,2,Intrigue,Action,1,$4,"+1 Card\n+2 Actions\nYou may trash this card immediately. If you do, +$2."
+Minion,2,Intrigue,Action-Attack,1,$5,"+1 Action\nChoose one: +$2; or discard your hand, +4 Cards, and each other player with at least 5 cards in hand discards his hand and draws 4 cards."
+Nobles,2,Intrigue,Action-Victory,1,$6,Choose one: +3 Cards; or +2 Actions.\dWorth 2VP
+Pawn,2,Intrigue,Action,1,$2,Choose two: +1 Card; +1 Action; +1 Buy; +$1.\n(The choices must be different.)
+Saboteur,2,Intrigue,Action-Attack,1,$5,Each other player reveals cards from the top of his deck until revealing one costing $3 or more. He trashes that card and may gain a card costing at most $2 less than it. He discards the other revealed cards.
+Scout,2,Intrigue,Action,1,$4,+1 Action\nReveal the top 4 cards of your deck. Put the revealed Victory cards into your hand. Put the other cards on top of your deck in any order.
+Secret Chamber,2,Intrigue,Action-Reaction,1,$2,"Discard any number of cards. +$1 per card discarded.\dWhen another player plays an Attack card, you may reveal this from your hand. If you do, +2 cards, then put 2 cards from your hand on top of your deck."
+Shanty Town,2,Intrigue,Action,1,$3,"+2 Actions\nReveal your hand.\nIf you have no Action cards in hand, +2 Cards."
+Steward,2,Intrigue,Action,1,$3,Choose one: +2 Cards; or +$2; or trash 2 cards from your hand.
+Swindler,2,Intrigue,Action-Attack,1,$3,+$2\nEach other player trashes the top card of his deck and gains a card with the same cost that you choose.
+Torturer,2,Intrigue,Action-Attack,1,$5,"+3 Cards\nEach other player chooses one: he discards 2 cards; or he gains a Curse card, putting it in his hand."
+Trading Post,2,Intrigue,Action,1,$5,"Trash 2 cards from your hand. If you do, gain a silver card; put it into your hand."
+Tribute,2,Intrigue,Action,1,$5,"The player to your left reveals then discards the top 2 cards of his deck. For each differently named card revealed, if it is an...\nAction Card, +2 Actions\nTreasure Card, +$2\nVictory Card, +2 Cards"
+Upgrade,2,Intrigue,Action,1,$5,+1 Card\n+1 Action\nTrash a card from your hand. Gain a card costing exactly $1 more than it.
+Wishing Well,2,Intrigue,Action,1,$3,"+1 Card\n+1 Action\nName a card, then reveal the top card of your deck. If it is the named card, put it in your hand."
+Ambassador,3,Seaside,Action-Attack,1,$3,Reveal a card from your hand. Return up to 2 copies of it from your hand to the Supply.\nThen each other player gains a copy of it.
+Bazaar,3,Seaside,Action,1,$5,+1 Card\n+2 Actions\n+$1.
+Caravan,3,Seaside,Action-Duration,1,$4,"+1 Card\n+1 Action\nAt the start of your next turn, +1 Card."
+Cutpurse,3,Seaside,Action-Attack,1,$4,+$2\nEach other player discards a Copper card (or reveals a hand with no Copper).
+Embargo,3,Seaside,Action,1,$2,"+$2\nTrash this card. Put an Embargo token on top of a Supply pile.\dWhen a player buys a card, he gains a Curse card per Embargo token on that pile."
+Explorer,3,Seaside,Action,1,$5,"You may reveal a Province card from your hand. If you do, gain a Gold card, putting it into your hand. Otherwise, gain a Silver card, putting it into your hand."
+Fishing Village,3,Seaside,Action-Duration,1,$3,+2 Actions\n+$1\nAt the start of your next turn: +1 Action; +$1.
+Ghost Ship,3,Seaside,Action-Attack,1,$5,+2 Cards\nEach other player with 4 or more cards in hand puts cards from his hand on top of his deck until he has 3 cards in his hand.
+Haven,3,Seaside,Action-Duration,1,$2,"+1 Card\n+1 Action\nSet aside a card from your hand face down. At the start of your next turn, put it into your hand."
+Island,3,Seaside,Action-Victory,1,$4,Set aside this and another card from your hand. Return them to your deck at the end of the game.\dWorth 2VP
+Lighthouse,3,Seaside,Action-Duration,1,$2,"+1 Action\nNow and at the start of your next turn: +$1.\dWhile this is in play, when another player plays an Attack card, it doesn't affect you."
+Lookout,3,Seaside,Action,1,$3,+1 Action\nLook at the top 3 cards of your deck. Trash one of them. Discard one of them. Put the other one on top of your deck.
+Merchant Ship,3,Seaside,Action-Duration,1,$5,Now and at the start of your next turn: +$2.
+Native Village,3,Seaside,Action,1,$2,+2 Actions\nChoose one: Set aside the top card of your deck face down on your Native Village mat; or put all the cards from your mat into your hand.\nYou may look at the cards on your mat at any time; return them to your deck at the end of the game.
+Navigator,3,Seaside,Action,1,$4,"+$2\nLook at the top 5 cards of your deck. Either discard all of them, or put them back on top of your deck in any order."
+Outpost,3,Seaside,Action-Duration,1,$5,You only draw 3 cards (instead of 5) in this turn's Clean-up phase. Take an extra turn after this one. This can't cause you to take more than two consecutive turns.
+Pearl Diver,3,Seaside,Action,1,$2,+1 Card\n+1 Action\nLook at the bottom card of your deck. You may put it on top.
+Pirate Ship,3,Seaside,Action-Attack,1,$4,"Choose one: Each other player reveals the top 2 cards of his deck, trashes a revealed Treasure that you choose, discards the rest, and if anyone trashed a Treasure you take a Coin token; or, +$1 per Coin token you've taken with Pirate Ships this game."
+Salvager,3,Seaside,Action,1,$4,+1 Buy\nTrash a card from your hand. +$ equal to its cost.
+Sea Hag,3,Seaside,Action-Attack,1,$4,"Each other player discards the top card of his deck, then gains a Curse card, putting it on top of his deck."
+Smugglers,3,Seaside,Action,1,$3,Gain a copy of a card costing up to $6 that the player to your right gained on his last turn.
+Tactician,3,Seaside,Action-Duration,1,$5,"Discard your hand. If you discarded any cards this way, then at the start of your next turn, +5 Cards; +1 Buy; and +1 Action."
+Treasure Map,3,Seaside,Action,1,$4,"Trash this and another copy of Treasure Map from your hand. If you do trash two Treasure Maps, gain 4 Gold cards, putting them on top of your deck."
+Treasury,3,Seaside,Action,1,$5,"+1 Card\n+1 Action\n+$1\dWhen you discard this from play, if you didn't buy a Victory card this turn, you may put this on top of your deck."
+Warehouse,3,Seaside,Action,1,$3,+3 Cards\n +1 Action\nDiscard 3 cards.
+Wharf,3,Seaside,Action-Duration,1,$5,Now and at the start of your next turn: +2 Cards\n+1 Buy.
+Alchemist,4,Alchemy,Action,1,$3,"+2 Cards\n+1 Action\dWhen you discard this from play, you may put this on top of your deck if you have a Potion in play."
+Apothecary,4,Alchemy,Action,1,$2,+1 Card\n+1 Action\nReveal the top 4 cards of your deck. Put the revealed Coppers and Potions into your hand. Put the other cards back on top in any order.
+Apprentice,4,Alchemy,Action,1,$5,+1 Action\nTrash a card from your hand. +1 Card per Coin it costs. +2 Cards if it has  in its cost.
+Familiar,4,Alchemy,Action-Attack,1,$3,+1 Card\n+1 Action\nEach other player gains a curse.
+Golem,4,Alchemy,Action,1,$4,"Reveal cards from your deck until you reveal 2 Action cards other than Golem Cards. Discard the other cards, then play the Action cards in either order."
+Herbalist,4,Alchemy,Action,1,$2,"+1 Buy\n+$1\dWhen you discard this from play, you may put one of your Treasures from play on top of your deck."
+Philosopher's Stone,4,Alchemy,Treasure,1,$3,"When you play this, count your deck and discard pile. Worth $1 per 5 cards total between them (rounded down)."
+Possession,4,Alchemy,Action,1,$6,"The player to your left takes an extra turn after this one, in which you can see all cards he can and make all decisions for him. Any cards he would gain on that turn, you gain instead; any cards of his that are trashed are set aside and returned to his discard pile at end of turn."
+Scrying Pool,4,Alchemy,Action-Attack,1,$2,"+1 Action\nEach player (including you) reveals the top card of his deck and either discards it or puts it back, your choice. Then reveal cards from the top of your deck until revealing one that isn't an Action. Put all of your revealed cards into your han"
+Transmute,4,Alchemy,Action,1,$0,"Trash a card from your hand. If it is an... Action card, gain a Duchy\nTreasure card, gain a Transmute\nVictory card, gain a Gold"
+University,4,Alchemy,Action,1,$2,+2 Actions\nYou may gain an Action card costing up to $5.
+Vineyard,4,Alchemy,Victory,1,$0,Worth 1VP for every 3 Action cards in your deck (rounded down).
+Bank,5,Prosperity,Treasure,1,$7,"When you play this, it's worth $1 per Treasure card you have in play (counting this)."
+Bishop,5,Prosperity,Action,1,$4,"+$1\n+1VP\nTrash a card from your hand. +VP equal to half its cost in coins, rounded down. Each other player may trash a card from his hand."
+City,5,Prosperity,Action,1,$5,"+1 Card\n+2 Actions\nIf there are one or more empty Supply piles, +1 Card. If there are two or more, +$1 and +1 Buy."
+Contraband,5,Prosperity,Treasure,1,$5,"Worth $3\n+1 Buy\nWhen you play this, the player to your left names a card. You can't buy that card this turn."
+Counting House,5,Prosperity,Action,1,$5,"Look through your discard pile, reveal any number of Copper cards from it, and put them into your hand."
+Expand,5,Prosperity,Action,1,$7,Trash a card from your hand. Gain a card costing up to $3 more than the trashed card.
+Forge,5,Prosperity,Action,1,$7,Trash any number of cards from your hand. Gain a card with cost exactly equal to the total cost in coins of the trashed cards.
+Goons,5,Prosperity,Action-Attack,1,$6,"+1 Buy\n+$2\nEach other player discards down to 3 cards in hand.\dWhile this is in play, when you buy a card, +1VP."
+Grand Market,5,Prosperity,Action,1,$6,+1 Card\n+1 Action\n+1 Buy\n+$2\dYou can't buy this if you have any Copper in play.
+Hoard,5,Prosperity,Treasure,1,$6,"Worth $2\dWhile this is in play, when you buy a Victory card, gain a Gold."
+King's Court,5,Prosperity,Action,1,$7,You may choose an Action card in your hand. Play it three times.
+Loan,5,Prosperity,Treasure,1,$3,"Worth $1\nWhen you play this, reveal cards from your deck until you reveal a Treasure. Discard it or trash it. Discard the other cards."
+Mint,5,Prosperity,Action,1,$5,"You may reveal a Treasure card from your hand. Gain a copy of it.\dWhen you buy this, trash all Treasures you have in play."
+Monument,5,Prosperity,Action,1,$4,+$2\n+1VP
+Mountebank,5,Prosperity,Action-Attack,1,$5,"+$2\nEach other player may discard a Curse. If he doesn't, he gains a Curse and a Copper."
+Peddler,5,Prosperity,Action,1,$8*,"+1 Card\n+1 Action\n+$1\dDuring your Buy phase, this costs $2 less per Action card you have in play, but not less than $0."
+Quarry,5,Prosperity,Treasure,1,$4,"Worth $1\dWhile this is in play, Action cards cost $2 less, but not less than $0."
+Rabble,5,Prosperity,Action-Attack,1,$5,"+3 Cards\nEach other player reveals the top 3 cards of his deck, discards the revealed Actions and Treasures, and puts the rest back on top in any order he chooses."
+Royal Seal,5,Prosperity,Treasure,1,$5,"Worth $2\dWhile this is in play, when you gain a card, you may put that card on top of your deck."
+Talisman,5,Prosperity,Treasure,1,$4,"Worth $1\dWhile this is in play, when you buy a card costing $4 or less that is not a Victory card, gain a copy of it."
+Trade Route,5,Prosperity,Action,1,$3,"+1 Buy\n+$1 per token on the Trade Route mat.\nTrash a card from your hand.\dSetup: Put a token on each Victory card Supply pile. When a card is gained from that pile, move the token to the Trade Route mat."
+Vault,5,Prosperity,Action,1,$5,"+2 Cards\nDiscard any number of cards. +$1 per card discarded. Each other player may discard 2 cards. If he does, he draws a card."
+Venture,5,Prosperity,Treasure,1,$5,"Worth $1\nWhen you play this, reveal cards from your deck until you reveal a Treasure. Discard the other cards. Play that Treasure."
+Watchtower,5,Prosperity,Action-Reaction,1,$3,"Draw until you have 6 cards in hand.\dWhen you gain a card, you may reveal this from your hand. If you do, either trash that card, or put it on top of your deck."
+Worker's Village,5,Prosperity,Action,1,$4,+1 Card\n+2 Actions\n+1 Buy
+Bag of Gold,6,Cornucopia,Action-Prize,1,$0*,"+1 Action\nGain a Gold, putting it on top of your deck.\n(This is not in the Supply.)"
+Diadem,6,Cornucopia,Treasure-Prize,1,$0*,"Worth $2\nWhen you play this, +$1 per unused Action you have (Action, not Action card).\n(This is not in the Supply.)"
+Fairgrounds,6,Cornucopia,Victory,1,$6,Worth 2VP for every 5 differently named cards in your deck (round down).
+Farming Village,6,Cornucopia,Action,1,$4,+2 Actions\nReveal cards from the top of your deck until you reveal an Action or Treasure card. Put that card into your hand and discard the other cards.
+Followers,6,Cornucopia,Action-Attack-Prize,1,$0*,+2 Cards\nGain an Estate. Each other player gains a Curse and discards down to 3 cards in hand.\n(This is not in the Supply.)
+Fortune Teller,6,Cornucopia,Action-Attack,1,$3,+$2\nEach other player reveals cards from the top of his deck until he reveals a Victory or Curse card. He puts it on top and discards the other revealed cards.
+Hamlet,6,Cornucopia,Action,1,$2,"+1 Card\n+1 Action\nYou may discard a card; if you do, +1 Action.\nYou may discard a card; if you do, +1 Buy."
+Harvest,6,Cornucopia,Action,1,$5,"Reveal the top 4 cards of your deck, then discard them. +$1 per differently named card revealed."
+Horn of Plenty,6,Cornucopia,Treasure,1,$5,"Worth $0\nWhen you play this, gain a card costing up to $1 per differently named card you have in play, counting this. If it's a Victory card, trash this."
+Horse Traders,6,Cornucopia,Action-Reaction,1,$4,"+1 Buy\n+$3\nDiscard 2 cards.\dWhen another player plays an Attack card, you may set this aside from your hand. If you do, then at the start of your next turn, +1 Card and return this to your hand."
+Hunting Party,6,Cornucopia,Action,1,$5,+1 Card\n+1 Action\nReveal your hand. Reveal cards from your deck until you reveal a card that isn't a duplicate of one in your hand. Put it into your hand and discard the rest.
+Jester,6,Cornucopia,Action-Attack,1,$5,"+$2\nEach other player discards the top card of his deck. If it's a Victory card he gains a Curse. Otherwise either he gains a copy of the discarded card or you do, your choice."
+Menagerie,6,Cornucopia,Action,1,$3,"+1 Action\nReveal your hand. If there are no duplicate cards in it, +3 Cards. Otherwise, +1 Card."
+Princess,6,Cornucopia,Action-Prize,1,$0*,"+1 Buy\dWhile this is in play, cards cost $2 less, but not less than $0.\n(This is not in the Supply.)"
+Remake,6,Cornucopia,Action,1,$4,"Do this twice: Trash a card from your hand, then gain a card costing exactly $1 more than the trashed card."
+Tournament,6,Cornucopia,Action,1,$4,"+1 Action\nEach player may reveal a Province from his hand.\nIf you do, discard it and gain a Prize (from the Prize pile) or a Duchy, putting it on top of your deck.\nIf no-one else does, +1 Card, +$1."
+Trusty Steed,6,Cornucopia,Action-Prize,1,$0*,Choose two: +2 Cards; or +2 Actions; or +$2; gain 4 Silvers and put your deck into your discard pile.
+Young Witch,6,Cornucopia,Action-Attack,1,$4,"+2 Cards\nDiscard 2 cards. Each other player may reveal a Bane card from his hand. If he doesn't, he gains a Curse.\dSetup: Add an extra Kingdom card pile costing $2 or $3 to the Supply. Cards from that pile are Bane cards."
+Border Village,7,Hinterlands,Action,1,$6,"+1 Card\n+2 Actions\dWhen you gain this, gain a card costing less than this."
+Cache,7,Hinterlands,Treasure,1,$5,"Worth $3\dWhen you gain this, gain two Coppers."
+Cartographer,7,Hinterlands,Action,1,$5,+1 Card\n+1 Action\nLook at the top 4 cards of your deck. Discard any number of them. Put the rest back on top in any order.
+Crossroads,7,Hinterlands,Action,1,$2,"Reveal your hand.\n+1 Card per Victory card revealed. If this is the first time you played a Crossroads this turn, +3 Actions."
+Develop,7,Hinterlands,Action,1,$3,"Trash a card from your hand.\nGain a card costing exactly $1 more than it and a card costing exactly $1 less than it, in either order, putting them on top of your deck."
+Duchess,7,Hinterlands,Action,1,$2,"+$2\nEach player (including you) looks at the top card of his deck, and discards it or puts it back.\dIn games using this, when you gain a Duchy, you may gain a Duchess."
+Embassy,7,Hinterlands,Action,1,$5,"+5 Cards\nDiscard 3 cards.\dWhen you gain this, each other player gains a Silver."
+Farmland,7,Hinterlands,Victory,1,$6,"Worth 2VP\dWhen you buy this, trash a card from your hand. Gain a card costing exactly $2 more than the trashed card."
+Fool's Gold,7,Hinterlands,Treasure-Reaction,1,$2,"If this is the first time you played a Fool's Gold this turn, this is worth $1, otherwise it's worth $4.\dWhen another player gains a Province, you may trash this from your hand. If you do, gain a Gold, putting it on your deck."
+Haggler,7,Hinterlands,Action,1,$5,"+$2\dWhile this is in play, when you buy a card, gain a card costing less than it that is not a Victory card."
+Highway,7,Hinterlands,Action,1,$5,"+1 Card\n+1 Action\dWhile this is in play, cards cost $1 less, but not less than $0."
+Ill-Gotten Gains,7,Hinterlands,Treasure,1,$5,"Worth $1\nWhen you play this, you may gain a Copper, putting it into your hand.\dWhen you gain this, each other player gains a Curse."
+Inn,7,Hinterlands,Action,1,$5,"+2 Cards\n+2 Actions\nDiscard 2 cards.\dWhen you gain this, look through your discard pile (including this), reveal any number of Action cards from it, and shuffle them into your deck."
+Jack of All Trades,7,Hinterlands,Action,1,$4,Gain a Silver.\nLook at the top card of your deck; discard it or put it back.\nDraw until you have 5 cards in hand.\nYou may trash a card from your hand that is not a Treasure.
+Mandarin,7,Hinterlands,Action,1,$5,"+$3\nPut a card from your hand on top of your deck.\dWhen you gain this, put all Treasures you have in play on top of your deck in any order."
+Margrave,7,Hinterlands,Action-Attack,1,$5,"+3 Cards\n+1 Buy\nEach other player draws a card, then discards down to 3 cards in hand."
+Noble Brigand,7,Hinterlands,Action-Attack,1,$4,"+$1\nWhen you buy this or play it, each other player reveals the top 2 cards of his deck, trashes a revealed Silver or Gold you choose, and discards the rest. If he didn't reveal a Treasure, he gains a Copper. You gain the trashed cards."
+Nomad Camp,7,Hinterlands,Action,1,$4,"+1 Buy\n+$2\dWhen you gain this, put it on top of your deck."
+Oasis,7,Hinterlands,Action,1,$3,+1 Card\n+1 Action\n+$1\nDiscard a card.
+Oracle,7,Hinterlands,Action-Attack,1,$3,"Each player (including you) reveals the top 2 cards of his deck, and you choose one: either he discards them, or he puts them back on top in an order he chooses.\n+2 Cards"
+Scheme,7,Hinterlands,Action,1,$3,"+1 Card\n+1 Action\nAt the start of Clean-up this turn, you may choose an Action card you have in play. If you discard it from play this turn, put it on your deck."
+Silk Road,7,Hinterlands,Victory,1,$4,Worth 1VP for every 4 Victory cards in your deck (round down).
+Spice Merchant,7,Hinterlands,Action,1,$4,"You may trash a Treasure from your hand. If you do, choose one:\n+2 Cards and +1 Action;\nor +$2 and +1 Buy."
+Stables,7,Hinterlands,Action,1,$5,"You may discard a Treasure. If you do, +3 Cards and +1 Action."
+Trader,7,Hinterlands,Action-Reaction,1,$4,"Trash a card from your hand. Gain a number of Silvers equal to its cost in coins.\dWhen you would gain a card, you may reveal this from your hand. If you do, instead, gain a silver."
+Tunnel,7,Hinterlands,Victory-Reaction,1,$3,"Worth 2VP\dWhen you discard this other than during a Clean-up phase, you may reveal it. If you do, gain a Gold."
+Colony,8,Base Cards,Victory,0,$11,Worth 10VP
+Copper,8,Base Cards,Treasure,0,$0,Worth $1
+Curse,8,Base Cards,Curse,0,$0,Worth -1VP
+Duchy,8,Base Cards,Victory,0,$5,Worth 3VP
+Estate,8,Base Cards,Victory,0,$2,Worth 1VP
+Gold,8,Base Cards,Treasure,0,$6,Worth $3
+Platinum,8,Base Cards,Treasure,0,$9,Worth $5
+Potion,8,Base Cards,Treasure,0,$4,Worth 
+Province,8,Base Cards,Victory,0,$8,Worth 6VP
+Silver,8,Base Cards,Treasure,0,$3,Worth $2
+Abandoned Mine,9,Dark Ages,Action-Ruins,1,$0,$1 
+Altar,9,Dark Ages,Action,1,$6,Trash a card from your hand. Gain a card costing up to $5.
+Armory,9,Dark Ages,Action,1,$4,Gain a card costing up to $4. Put it on top of your deck.
+Band of Misfits,9,Dark Ages,Action,1,$5,Play this as if it were an Action card in the Supply costing less than it that you choose.\nThis is that card until it leaves play.
+Bandit Camp,9,Dark Ages,Action,1,$5,+1 Card\n+2 Actions\nGain a Spoils from the Spoils pile.
+Beggar,9,Dark Ages,Action-Reaction,1,$2,"Gain 3 Coppers, putting them into your hand.\dWhen another player plays an Attack card, you may discard this. If you do, gain two Silvers, putting one on top of your deck."
+Catacombs,9,Dark Ages,Action,1,$5,"Look at the top 3 cards of your deck. Choose one: Put them into your hand; or discard them and +3 Cards.\dWhen you trash this, gain a cheaper card."
+Count,9,Dark Ages,Action,1,$5,Choose one: Discard 2 cards; put a card from your hand on top of your deck; or gain a Copper.\nChoose one: +$3; trash your hand; or gain a Duchy.
+Counterfeit,9,Dark Ages,Treasure,1,$5,"Worth $1\n+1 Buy\nWhen you play this, you may play a treasure from your hand twice. If you do, trash that treasure."
+Cultist,9,Dark Ages,Action-Attack-Looter,1,$5,"+2 Cards\nEach other player gains a Ruins. You may play a Cultist from your hand.\dWhen you trash this, +3 Cards."
+Dame Anna,9,Dark Ages,Action-Attack-Knight,1,$5,"You may trash up to 2 cards from your hand.\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
+Dame Josephine,9,Dark Ages,Action-Attack-Knight-Victory,1,$5,"Worth 2VP\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
+Dame Molly,9,Dark Ages,Action-Attack-Knight,1,$5,"+2 Actions.\nEach other player discards the top 2 cards of his deck, and trashes one of them costing from $3 to $6. If a Knight is trashed by this, trash this card."
+Dame Natalie,9,Dark Ages,Action-Attack-Knight,1,$5,"You may gain a card costing up to $3.\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
+Dame Sylvia,9,Dark Ages,Action-Attack-Knight,1,$5,"+$2\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
+Death Cart,9,Dark Ages,Action-Looter,1,$4,"+$5\nYou may trash an Action card from your hand. If you don't, trash this.\dWhen you gain this, gain 2 Ruins."
+Feodum,9,Dark Ages,Victory,1,$4,"Worth 1VP for every 3 Silvers in your deck.\dWhen you trash this, gain 3 Silvers."
+Forager,9,Dark Ages,Action,1,$3,+1 Action\n+1 Buy\nTrash a card from your hand. +$1 per differently named Treasure in the trash.
+Fortress,9,Dark Ages,Action,1,$4,"+1 Card\n+2 Actions\dWhen you trash this, put it into your hand."
+Graverobber,9,Dark Ages,Action,1,$5,"Choose one: Gain a card from the trash costing from $3 to $6, putting it on top of your deck; or trash an Action card from your hand and gain a card costing up to $3 more than it."
+Hermit,9,Dark Ages,Action,1,$3,"Look through your discard pile. You may trash a card from your discard pile or hand that is not a Treasure. Gain a card costing up to $3.\dWhen you discard this from play, if you didn't buy any cards this turn, trash this and gain a Madman from the Madman pile."
+Hovel,9,Dark Ages,Reaction-Shelter,1,$1,"When you buy a Victory card, you may trash this from your hand."
+Hunting Grounds,9,Dark Ages,Action,1,$6,"+4 Cards\dWhen you trash this, gain a Duchy or 3 Estates"
+Ironmonger,9,Dark Ages,Action,1,$4,"+1 Card\n+1 Action\nReveal the top card of your deck; you may discard it. Either way, if it is an...\nAction card, +1 Action\na Treasure card, +$1\na Victory card, +1 Card"
+Junk Dealer,9,Dark Ages,Action,1,$5,+1 Card\n+1 Action\n+$1\nTrash a card from your hand.
+Madman,9,Dark Ages,Action,1,$0*,"+2 Actions\nReturn this to the Madman pile. If you do, +1 Card per card in your hand.\n(This is not in the Supply.)"
+Marauder,9,Dark Ages,Action-Attack-Looter,1,$4,Gain a Spoils from the Spoils pile. Each other player gains a Ruins.
+Market Square,9,Dark Ages,Action-Reaction,1,$3,"+1 Card\n+1 Action\n+1 Buy\dWhen one of your cards is trashed, you may discard this from your hand. If you do, gain a Gold."
+Mercenary,9,Dark Ages,Action-Attack,1,$0*,"You may trash 2 cards from your hand. If you do, +2 Cards, + $2, and each other player discards down to 3 cards in hand.\n(This is not in the Supply.)"
+Mystic,9,Dark Ages,Action,1,$5,"+1 Action\n+$2\nName a card.\nReveal the top card of your deck. If it's the named card, put it into your hand."
+Necropolis,9,Dark Ages,Action-Shelter,1,$1,+2 Actions
+Overgrown Estate,9,Dark Ages,Victory-Shelter,1,$1,"Worth 0 VP\dWhen you trash this, +1 Card."
+Pillage,9,Dark Ages,Action-Attack,1,$5,Trash this. Each other player with 5 or more cards in hand reveals his hand and discards a card that you choose. Gain 2 Spoils.
+Poor House,9,Dark Ages,Action,1,$1,"+$4\nReveal your hand. -$1 per Treasure card in your hand, to a minimum of $0."
+Procession,9,Dark Ages,Action,1,$4,You may play an Action card from your hand twice. Trash it. Gain an Action card costing exactly $1 more than it.
+Rats,9,Dark Ages,Action,1,$4,"+1 Card\n+1 Action\nGain a Rats. Trash a card from your hand other than a Rats (or reveal a hand of all Rats).\dWhen you trash this, +1 Card."
+Rebuild,9,Dark Ages,Action,1,$5,+1 Action\nName a card. Reveal cards from the top of your deck until you reveal a Victory card that is not the named card. Discard the other cards. Trash the Victory card and gain a Victory card costing up to $3 more than it.
+Rogue,9,Dark Ages,Action-Attack,1,$5,"+$2\nIf there are any cards in the trash costing from $3 to $6, gain one of them. Otherwise, each other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest."
+Ruined Library,9,Dark Ages,Action-Ruins,1,$0,+1 Card
+Ruined Market,9,Dark Ages,Action-Ruins,1,$0,+1 Buy
+Ruined Village,9,Dark Ages,Action-Ruins,1,$0,+1 Action
+Sage,9,Dark Ages,Action,1,$3,+1 Action\nReveal cards from the top of your deck until you reveal one costing $3 or more. Put that card into your hand and discard the rest.
+Scavenger,9,Dark Ages,Action,1,$4,+$2\nYou may put your deck into your discard pile. Look through your discard pile and put one card from it on top of your deck.
+Sir Bailey,9,Dark Ages,Action-Attack-Knight,1,$5,"+1 Card\n+1 Action\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
+Sir Destry,9,Dark Ages,Action-Attack-Knight,1,$5,"+2 Cards\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
+Sir Martin,9,Dark Ages,Action-Attack-Knight,1,$4,"+2 Buys\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
+Sir Michael,9,Dark Ages,Action-Attack-Knight,1,$5,"Each other player discards down to 3 cards in hand.\nEach other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card."
+Sir Vander,9,Dark Ages,Action-Attack-Knight,1,$5,"Each other player reveals the top 2 cards of his deck, trashes one of them costing from $3 to $6, and discards the rest. If a Knight is trashed by this, trash this card.\dWhen you trash this, gain a Gold."
+Spoils,9,Dark Ages,Treasure,1,$0*,"Worth $3\nWhen you play this, return it to the pile.\n(This is not in the Supply.)"
+Squire,9,Dark Ages,Action,1,$2,"+$1\nChoose one: +2 Actions; or +2 Buys; or gain a Silver.\dWhen you trash this, gain an Attack card."
+Storeroom,9,Dark Ages,Action,1,$3,+1 Buy\nDiscard any number of cards. +1 Card per card discarded. Discard any number of cards. +$1 per card discarded the second time.
+Survivors,9,Dark Ages,Action-Ruins,1,$0,Look at the top 2 cards of your deck. Discard them or put them back in any order.
+Urchin,9,Dark Ages,Action-Attack,1,$3,"+1 Card\n+1 Action\nEach other player discards down to 4 cards in hand.\dWhen you play another Attack card with this in play, you may trash this. If you do, gain a Mercenary from the Mercenary pile."
+Vagrant,9,Dark Ages,Action,1,$2,"+1 Card\n+1 Action\nReveal the top card of your deck. If it's a Victory card, Curse, Ruins, or Shelter, put it into your hand."
+Wandering Minstrel,9,Dark Ages,Action,1,$4,+1 Card\n+2 Actions\nReveal the top 3 cards of your deck. Put the Actions back on top in any order and discard the rest.
+Advisor,10,Guilds,Action,1,$4,+1 Action\nReveal the top 3 cards of your deck. The player to your left chooses one of them. Discard that card. Put the other cards into your hand.
+Baker,10,Guilds,Action,1,$5,+1 Card\n+1 Action\nTake a Coin token.\dSetup: Each player takes a Coin token.
+Butcher,10,Guilds,Action,1,$5,"Take 2 Coin tokens. You may trash a card from your hand and then pay any number of Coin tokens. If you did trash a card, gain a card with a cost of up to the cost of the trashed card plus the number of Coin tokens you paid."
+Candlestick Maker,10,Guilds,Action,1,$2,+1 Action\n+1 Buy\nTake a Coin token.
+Doctor,10,Guilds,Action,1,$3+,"Name a card. Reveal the top 3 cards of your deck. Trash the matches. Put the rest back on top in any order.\dWhen you buy this, you may overpay for it. For each $1 you overpaid, look at the top card of your deck; trash it, discard it, or put it back."
+Herald,10,Guilds,Action,1,$4+,"+1 Card\n+1 Action\nReveal the top card of your deck. If it is an Action, play it.\dWhen you buy this, you may overpay for it. For each $1 you overpaid, look through your discard pile and put a card from it on top of your deck."
+Journeyman,10,Guilds,Action,1,$5,Name a card. Reveal cards from the top of your deck until you reveal 3 cards that are not the named card. Put those cards into your hand and discard the rest.
+Masterpiece,10,Guilds,Treasure,1,$3+,"Worth $1\dWhen you buy this, you may overpay for it. If you do, gain a Silver per $1 you overpaid."
+Merchant Guild,10,Guilds,Action,1,$5,"+1 Buy\n+$1.\dWhile this is in play, when you buy a card, take a Coin token."
+Plaza,10,Guilds,Action,1,$4,"+1 Card. +2 Actions. You may discard a Treasure card. If you do, take a Coin token."
+Soothsayer,10,Guilds,Action-Attack,1,$5,Gain a Gold. Each other player gains a Curse. Each player who did draws a card.
+Stonemason,10,Guilds,Action,1,$2+,"Trash a card from your hand. Gain 2 cards each costing less than it.\dWhen you buy this, you may overpay for it. If you do, gain 2 Action cards each costing the amount you overpaid."
+Taxman,10,Guilds,Action-Attack,1,$4,"You may trash a Treasure from your hand. Each other player with 5 or more cards in hand discards a copy of it (or reveals a hand without it). Gain a Treasure card costing up to $3 more than the trashed card, putting it on top of your deck."
+Alms,11,Adventures,Event,0,$0,"Once per turn: If you have no Treasures in play, gain a card costing up to $4."
+Amulet,11,Adventures,Action-Duration,1,$3,"Now and at the start of your next turn, choose one: +$1; or trash a card from your hand; or gain a Silver."
+Artificer,11,Adventures,Action,1,$5,"+1 Action\n+1 Card\n+$1\nDiscard any number of cards. You may gain a card costing exactly $1 per card discarded, putting it on top of your deck."
+Ball,11,Adventures,Event,0,$5,Take your -$1 token. Gain 2 cards each costing up to $4.
+Bonfire,11,Adventures,Event,0,$3,Trash up to 2 cards you have in play.
+Borrow,11,Adventures,Event,0,$0,"+1 Buy\nOnce per turn: If your -1 Card token isn't on your deck, put it there and +$1."
+Bridge Troll,11,Adventures,Action-Attack-Duration,1,$5,"Each other player takes his -$1 token. Now and at the start of your next turn:\n+1 Buy\dWhile this is in play, cards cost $1 less on your turns, but not less than $0."
+Caravan Guard,11,Adventures,Action-Duration-Reaction,1,$3,"+1 Card\n+1 Action\nAt the start of your next turn, +$1.\dWhen another player plays an Attack card, you may play this from your hand. (+1 Action has no effect if it's not your turn.)"
+Champion,11,Adventures,Action-Duration,1,$6*,"+1 Action\nFor the rest of the game, when another player plays an Attack, it doesn't affect you, and when you play an Action, +1 Action.\n(This stays in play. This is not in the Supply.)"
+Coin of the Realm,11,Adventures,Treasure-Reserve,1,$2,"Worth $1\nWhen you play this, put it on your Tavern mat.\dDirectly after resolving an Action, you may call this, for +2 Actions."
+Disciple,11,Adventures,Action-Traveller,1,$5*,"You may play an Action card from your hand twice. Gain a copy of it.\dWhen you discard this from play, you may exchange it for a Teacher.\n(This is not in the Supply.)"
+Distant Lands,11,Adventures,Action-Reserve-Victory,1,$5,Put this on your Tavern mat.\dWorth 4VP if on your Tavern mat at the end of the game (otherwise worth 0VP).
+Dungeon,11,Adventures,Action-Duration,1,$3,"+1 Action\nNow and at the start of your next turn: +2 Cards, then discard 2 cards."
+Duplicate,11,Adventures,Action-Reserve,1,$4,"Put this on your Tavern mat.\dWhen you gain a card costing up to $6, you may call this, to gain a copy of that card."
+Expedition,11,Adventures,Event,0,$3,Draw 2 extra cards for your next hand.
+Ferry,11,Adventures,Event,0,$3,"Move your -$2 cost token to an Action Supply pile (cards from that pile cost $2 less on your turns, but not less than $0)."
+Fugitive,11,Adventures,Action-Traveller,1,$4*,"+2 Cards\n+1 Action\nDiscard a card.\dWhen you discard this from play, you may exchange it for a Disciple.\n(This is not in the Supply.)"
+Gear,11,Adventures,Action-Duration,1,$3,"+2 Cards\nSet aside up to 2 cards from your hand face down. At the start of your next turn, put them into your hand."
+Giant,11,Adventures,Action-Attack,1,$5,"Turn your Journey token over (it starts face up). If it's face down, +$1. If it's face up, +$5, and each other player reveals the top card of his deck, trashes it if it costs from $3 to $6, and otherwise discards it and gains a Curse."
+Guide,11,Adventures,Action-Reserve,1,$3,"+1 Card\n+1 Action\nPut this on your Tavern mat.\dAt the start of your turn, you may call this, to discard your hand and draw 5 cards."
+Haunted Woods,11,Adventures,Action-Attack-Duration,1,$5,"Until you next turn, when any other player buys a card, he puts his hand on top of his deck in any order.\nAt the start of your next turn:\n+3 Cards"
+Hero,11,Adventures,Action-Traveller,1,$5*,"+$2\nGain a Treasure.\dWhen you discard this from play, you may exchange it for a Champion.\n(This is not in the Supply.)"
+Hireling,11,Adventures,Action-Duration,1,$6,At the start of each of your turns for the rest of the game:\d+1 Card\d(This stays in play.)
+Inheritance,11,Adventures,Event,0,$7,Once per game: Set aside a non-Victory Action card from the Supply costing up to $4. Move your Estate token to it (your Estates gain the abilities and types of that card).
+Lost Arts,11,Adventures,Event,0,$5,"Move your +1 Action token to an Action Supply pile (when you play a card from that pile, you first get +1 Action)."
+Lost City,11,Adventures,Action,1,$5,"+2 Cards\n+2 Actions\dWhen you gain this, each other player draws a card."
+Magpie,11,Adventures,Action,1,$4,"+1 Card\n+1 Action\nReveal the top card of your deck. If it's a Treasure, put it into your hand. If it's an Action or Victory card, gain a Magpie."
+Messenger,11,Adventures,Action,1,$4,"+1 Buy\n+$2\nYou may put your deck into your discard pile.\dWhen this is your first buy in a turn, gain a card costing up to $4, and each other player gains a copy of it."
+Miser,11,Adventures,Action,1,$4,Choose one: Put a Copper from your hand onto your Tavern mat; or +$1 per Copper on your Tavern mat.
+Mission,11,Adventures,Event,0,$4,"Once per turn: If the previous turn wasn't yours, take another turn after this one, in which you can't buy cards."
+Page,11,Adventures,Action-Traveller,1,$2,"+1 Card\n+1 Action\dWhen you discard this from play, you may exchange it for a Treasure Hunter."
+Pathfinding,11,Adventures,Event,0,$8,"Move your +1 Card token to an Action Supply pile (when you play a card from that pile, you first get +1 Card)."
+Peasant,11,Adventures,Action-Traveller,1,$2,"+1 Buy\n+$1\dWhen you discard this from play, you may exchange it for a Soldier."
+Pilgrimage,11,Adventures,Event,0,$4,"Once per turn: Turn your Journey token over (it starts face up); then if it's face up, choose up to 3 differently named cards you have in play and gain a copy of each."
+Plan,11,Adventures,Event,0,$3,"Move your Trashing token to an Action Supply pile (when you buy a card from that pile, you may trash a card from your hand.)"
+Port,11,Adventures,Action,1,$4,"+1 Card\n+2 Actions\dWhen you buy this, gain another Port."
+Quest,11,Adventures,Event,0,$0,"You may discard an Attack, two Curses, or six cards. If you do, gain a Gold."
+Raid,11,Adventures,Event,0,$5,Gain a Silver per Silver you have in play. Each other player puts his -1 Card token on his deck.
+Ranger,11,Adventures,Action,1,$4,"+1 Buy\nTurn your Journey token over (it starts face up). If it's face up, +5 Cards."
+Ratcatcher,11,Adventures,Action-Reserve,1,$2,"+1 Card\n+1 Action\nPut this on your Tavern mat.\dAt the start of your turn, you may call this to trash a card from your hand."
+Raze,11,Adventures,Action,1,$2,+1 Action\nTrash this or a card from your hand. Look at a number of cards from the top of your deck equal to the cost in $ of the trashed card. Put one into your hand and discard the rest.
+Relic,11,Adventures,Treasure-Attack,1,$5,"Worth $2\nWhen you play this, each other player puts his -1 Card token on his deck."
+Royal Carriage,11,Adventures,Action-Reserve,1,$5,"+1 Action\nPut this on your Tavern mat.\dDirectly after resolving an Action, if it's still in play, you may call this, to replay that Action."
+Save,11,Adventures,Event,0,$1,"+1 Buy\nOnce per turn: Set aside a card from your hand, and put it into your hand at end of turn (after drawing)."
+Scouting Party,11,Adventures,Event,0,$2,+1 Buy\nLook at the top 5 cards of your deck. Discard 3 of them and put the rest back on top of your deck in any order.
+Seaway,11,Adventures,Event,0,$5,"Gain an Action card costing up to $4. Move your +1 Buy token to its pile (when you play a card from that pile, you first get +1 Buy)."
+Soldier,11,Adventures,Action-Attack-Traveller,1,$3*,"+$2\n+$1 per other Attack you have in play. Each other player with 4 or more cards in hand discards a card.\dWhen you discard this from play, you may exchange it for a Fugitive.\n(This is not in the Supply)"
+Storyteller,11,Adventures,Action,1,$5,+1 Action\n+$1\nPlay up to 3 Treasures from your hand. Pay all of your $; +1 Card per $ paid.
+Swamp Hag,11,Adventures,Action-Attack-Duration,1,$5,"Until your next turn, when any other player buys a card, he gains a Curse.\nAt the start of your next turn:\n+$3"
+Teacher,11,Adventures,Action-Reserve,1,$6*,"Put this on your Tavern mat.\dAt the start of your turn, you may call this, to move your +1 Card, +1 Action, +1 Buy, or +$1 token to an Action Supply pile you have no token on (when you play a card from that pile you first get that bonus).\n(This is not in the Supply.)"
+Trade,11,Adventures,Event,0,$5,Trash up to 2 cards from your hand.\nGain a Silver per card you trashed.
+Training,11,Adventures,Event,0,$6,"Move your +$1 token to an Action Supply pile (when you play a card from that pile, you first get +$1)."
+Transmogrify,11,Adventures,Action-Reserve,1,$4,"+1 Action\nPut this on your Tavern mat.\nAt the start of your turn, you may call this, to trash a card from your hand, gain a card costing up to $1 more than it, and put that card into your hand."
+Travelling Fair,11,Adventures,Event,0,$2,"+2 Buys\nWhen you gain a card this turn, you may put it on top of your deck."
+Treasure Hunter,11,Adventures,Action-Traveller,1,$3*,"+1 Action\n+$1\nGain a Silver per card the player to your right gained in his last turn.\dWhen you discard this from play, you may exchange it for a Warrior.\n(This is not in the Supply.)"
+Treasure Trove,11,Adventures,Treasure,1,$5,"Worth $2\nWhen you play this, gain a Gold and a Copper."
+Warrior,11,Adventures,Action-Attack-Traveller,1,$4*,"+2 Cards\nFor each Traveller you have in play (including this) each other player discards the top card of his deck and trashes it if it costs $3 or $4.\dWhen you discard this from play, you may exchange it for a Hero.\n(This is not in the Supply.)"
+Wine Merchant,11,Adventures,Action-Reserve,1,$5,"+1 Buy\n+$4\nPut this on your Tavern mat.\dAt the end of your Buy phase, if you have at least $2 unspent, you may discard this from your Tavern mat."
+City Quarter,12,Empires,Action,1,$0,+2 Actions\nReveal your hand. +1 Card per Action card revealed.
+Engineer,12,Empires,Action,1,$0,"Gain a card costing up to 4 Coins. You may trash this. If you do, gain a card costing up to 4 Coins."
+Overlord,12,Empires,Action,1,$0,Play this as if it were an Action card in the Supply costing up to 5 Coins. This is that card until it leaves play.
+Royal Blacksmith,12,Empires,Action,1,$0,+5 Cards\nReveal your hand; discard the Coppers.
+Encampment/Plunder,12,Empires,Action,1,$2,"This pile starts the game with 5 copies of Encampment on top, then 5 copies of Plunder. Only the top card of the pile can be gained or bought."
+Patrician/Emporium,12,Empires,Action,1,$2,"This pile starts the game with 5 copies of Patrician on top, then 5 copies of Emporium. Only the top card of the pile can be gained or bought."
+Settlers/Bustling Village,12,Empires,Action,1,$2,"This pile starts the game with 5 copies of Settlers on top, then 5 copies of Bustling Village. Only the top card of the pile can be gained or bought."
+Castles,12,Empires,Victory-Castle,1,$3,"Sort the castle pile by cost, putting the more expensive Castles on the bottom. For a 2-player game, use only one of each Castle. Only the top card of the pile may be gained or bought."
+Catapult/Rocks,12,Empires,Action-Attack,1,$3,"This pile starts the game with 5 copies of Catapult on top, then 5 copies of Rocks. Only the top card of the pile can be gained or bought."
+Chariot Race,12,Empires,Action,1,$3,+1 Action
+Enchantress,12,Empires,Action-Attack-Duration,1,$3,"Until your next turn, the first time each other player plays an Action card on their turn, they get +1 Card and +1 Action instead of following its instructions.\nAt the start of your next turn,\n+1 Cards"
+Farmer's Market,12,Empires,Action-Gathering,1,$3,"+1 Buy\nIf there are 4 Victory or more on the Farmer's Market Supply pile, take them and trash this. Otherwise, add 1 Victory to the pile and then +1 Coin per 1 Victory on the pile."
+Gladiator/Fortune,12,Empires,Action,1,$3,"This pile starts the game with 5 copies of Gladiator on top, then 5 copies of Fortune. Only the top card of the pile can be gained or bought."
+Sacrifice,12,Empires,Action,1,$4,"Trash a card from your hand. If it's an\nAction card, +1 Cards, +2 Actions\nTreasure card, +2 Coins\nVictory card, +2 Victory"
+Temple,12,Empires,Action-Gathering,1,$4,"+1 Victory\nTrash from 1 to 3 differently named cards from your hand. Add 1 Victory to the Temple Supply pile.\dWhen you gain this, take all the Victory from the Temple Supply pile."
+Villa,12,Empires,Action,1,$4,"+2 Actions\n+1 Buy\n+1 Coin\dWhen you gain this, put it into your hand, +1 Action, and if it's your Buy phase return to your Action phase."
+Archive,12,Empires,Action-Duration,1,$5,"+1 Action\nSet aside the top 3 cards of your deck face down (you may look at them). Now and at the start of your next two turns, put one into your hand."
+Capital,12,Empires,Treasure,1,$5,"6 Coins\n+1 Buy\dWhen you discard this from play, take 6 Debt, and then you may pay off Debt."
+Charm,12,Empires,Treasure,1,$5,"When you play this, choose one: +1 Buy and +2 Coins; or the next time you buy a card this turn, you may also gain a differently named card with the same cost."
+Crown,12,Empires,Action-Treasure,1,$5,"If it's your Action phase, you may play an Action from your hand twice. If it's your Buy phase, you may play a Treasure from your hand twice."
+Forum,12,Empires,Action,1,$5,"+1 Card\n+1 Action\nDiscard 2 cards.\dWhen you buy this, +1 Buy."
+Groundskeeper,12,Empires,Action,1,$5,"+1 Card\n+1 Action\dWhile this is in play, when you gain a Victory card, +1 Victory."
+Legionary,12,Empires,Action-Attack,1,$5,"+3 Coins\nYou may reveal a Gold from your hand. If you do, each other player discards down to 2 cards in hand, then draws a card."
+Wild Hunt,12,Empires,Action-Gathering,1,$5,"Choose one: +3 Cards and add 1 Victory to the Wild Hunt Supply pile; or gain an Estate, and if you do, take the Victory from the pile."
+Advance,12,Empires,Event,0,$0,"You may trash an Action card from your hand. If you do, gain an Action card costing up to 6 Coins."
+Annex,12,Empires,Event,0,$0,Look through your discard pile. Shuffle all but up to 5 cards from it into your deck. Gain a Duchy.
+Donate,12,Empires,Event,0,$0,"After this turn, put all cards from your deck and discard pile into your hand, trash any number, shuffle your hand into your deck, then draw 5 cards."
+Triumph,12,Empires,Event,0,$0,"Gain an Estate.\nIf you did, +1 Victory per card you've gained this turn."
+Delve,12,Empires,Event,0,$2,+1 Buy\nGain a Silver.
+Tax,12,Empires,Event,0,$2,"Add 2 Debt to a Supply pile.\dSetup: Add 1 Debt to each Supply pile. When a player buys a card, they take the Debt from its pile."
+Banquet,12,Empires,Event,0,$3,Gain 2 Coppers and a non-Victory card costing up to 5 Coins.
+Ritual,12,Empires,Event,0,$4,"Gain a Curse. If you do, trash a card from your hand. +1 Victory per 1 Coin it cost."
+Salt the Earth,12,Empires,Event,0,$4,+1 Victory\nTrash a Victory card from the Supply.
+Wedding,12,Empires,Event,0,$4,+1 Victory\nGain a Gold.
+Windfall,12,Empires,Event,0,$5,"If your deck and discard pile are empty, gain 3 Golds."
+Conquest,12,Empires,Event,0,$6,Gain 2 Silvers.\n+1 Victory per Silver you've gained this turn.
+Dominate,12,Empires,Event,0,$14,"Gain a Province. If you do, +9 Victory"
+Aqueduct,12,Empires,Landmark,0,$0,"When you gain a Treasure, move 1 Victory from its pile to this.\nWhen you gain a Victory card, take the Victory from this.\dSetup: Put 8 Victory on the Silver and Gold piles."
+Arena,12,Empires,Landmark,0,$0,"At the start of your Buy phase, you may discard an Action card. If you do, take 2 Victory from here.\dSetup: Put 6 Victory here per player."
+Bandit Fort,12,Empires,Landmark,0,$0,"When scoring, -2 Victory for each Silver and each Gold you have."
+Basilica,12,Empires,Landmark,0,$0,"When you buy a card, if you have 2 Coins or more left, take 2 Victory from here.\dSetup: Plus 6 Victory here per player."
+Baths,12,Empires,Landmark,0,$0,"When you end your turn without having gained a card, take 2 Victory from here.\dSetup: Put 6 Victory here per player."
+Battlefield,12,Empires,Landmark,0,$0,"When you gain a Victory card, take 2 Victory from here.\dSetup: Put 6 Victory here per player."
+Colonnade,12,Empires,Landmark,0,$0,"When you buy an Action card, if you have a copy of it in play, take 2 Victory from here.\dSetup: Put 6 Victory here per player."
+Defiled Shrine,12,Empires,Landmark,0,$0,"When you gain an Action, move 1 Victory from its pile to this. When you buy a Curse, take the Victory from this.\dSetup: Put 2 Victory on each non-Gathering Action Supply pile."
+Fountain,12,Empires,Landmark,0,$0,"When scoring, 15 Victory if you have at least 10 Coppers."
+Keep,12,Empires,Landmark,0,$0,"When scoring, 5 Victory per differently named Treasure you have, that you have more copies of than each other player, or tied for most."
+Labyrinth,12,Empires,Landmark,0,$0,"When you gain a 2nd card in one of your turns, take 2 Victory from here.\dSetup: Put 6 Victory here per player."
+Mountain Pass,12,Empires,Landmark,0,$0,"When you are the first player to gain a Province, after that turn, each player bids once, up to 40 Debt, ending with you. High bidder gets +8 Victory and takes the Debt they bid."
+Museum,12,Empires,Landmark,0,$0,"When scoring, 2 Victory per differently named card you have."
+Obelisk,12,Empires,Landmark,0,$0,"When scoring, 2 Victory per card you have from the chosen pile.\dSetup: Choose a random Action Supply pile."
+Orchard,12,Empires,Landmark,0,$0,"When scoring, 4 Victory per differently named Action card you have 3 or more copies of."
+Palace,12,Empires,Landmark,0,$0,"When scoring, 3 Victory per set you have of Copper-Silver-Gold."
+Tomb,12,Empires,Landmark,0,$0,"When you trash a card, +1 Victory."
+Tower,12,Empires,Landmark,0,$0,"When scoring, 1 Victory per non-Victory card you have from an empty Supply pile."
+Triumphal Arch,12,Empires,Landmark,0,$0,"When scoring, 3 Victory per copy you have of the 2nd most common Action card among your cards (if it's a tie, count either)."
+Wall,12,Empires,Landmark,0,$0,"When scoring, -1 Victory per card you have after the first 15."
+Wolf Den,12,Empires,Landmark,0,$0,"When scoring, -3 Victory per card you have exactly one copy of."
+Druid,13,Nocturne,Action-Fate,1,$2,"+1 Buy\nReceive one of the set aside, Boons, leaving it there.\dSetup: Set aside the top 3 Boons, face-up."
+Faithful Hound,13,Nocturne,Action-Reaction,1,$2,"+2 Cards\dWhen you discard this other than during Clean-up, you may set it aside, and put it into your hand at end of turn."
+Guardian,13,Nocturne,Night-Duration,1,$2,"Until your next turn, when another player plays an Attack card, it doesnt affect you. At the start of your next turn, +$1.\dThis is gained to your hand (instead of your discard pile)."
+Monastery,13,Nocturne,Night,1,$2,"For each card youve gained this turn, you may trash a card from your hand or a Copper you have in play."
+Pixie,13,Nocturne,Action-Fate,1,$2,+1 Card\n+1 Action\nDiscard the top Boon. You may trash this to receive that Boon twice.\n(When this is in the supply each player replaces one starting copper with Heirloom: Goat)
+Goat,13,Nocturne,Treasure-Heirloom,1,$2,"Worth $1\nWhen you play this, you may trash a card from your hand."
+Tracker,13,Nocturne,Action-Fate,1,$2,"+$1.\nReceive a Boon.\nWhile this is in play, when you gain a card, you may put that card onto your deck.\n(When this is in the supply each player replaces one starting copper with Heirloom: Pouch)"
+Pouch,13,Nocturne,Treasure-Heirloom,1,$2,$1\n+1 Buy
+Changeling,13,Nocturne,Night,1,$3,"$3\nNight\nTrash this. Gain a copy of a card you have in play.\dIn games using this, when you gain a card costing $3 or more, you may exchange it for a Changeling."
+Fool,13,Nocturne,Action-Fate,1,$3,"If you arent the player with Lost in the Woods, take it, take 3 Boons, and receive the Boons in any order.\n(When this is in the supply each player replaces one starting copper with Heirloom: Lucky Coin)"
+Lucky Coin,13,Nocturne,Treasure-Heirloom,1,$3,"Worth $1\nWhen you play this, gain a Silver."
+Ghost Town,13,Nocturne,Night-Duration,1,$3,"At the start of your next turn, +1 Card and +1 Action.\dThis is gained to your hand (instead of your discard pile)."
+Leprechaun,13,Nocturne,Action-Doom,1,$3,"Gain a Gold. If you have exactly 7 cards, gain a Wish from its pile. Otherwise, receive a Hex."
+Night Watchman,13,Nocturne,Night,1,$3,"Look at the top 5 cards of your deck, discard any number, and put the rest back in any order.\dThis is gained to your hand (instead of your discard pile)."
+Secret Cave,13,Nocturne,Action-Duration,1,$3,"+1 Card\n+1 Action\nYou may discard 3 cards. If you did, then at the start of your next turn: +$3.\n(When this is in the supply each player replaces one starting copper with Heirloom: Magic Lamp)"
+Magic Lamp,13,Nocturne,Treasure-Heirloom,1,$0,"$1\dWhen you play this, if there are at least 6 cards that you have exactly 1 copy of in play, trash this. If you do, gain 3 Wishes from their pile."
+Bard,13,Nocturne,Action-Fate,1,$4,+$2\nReceive a Boon.
+Blessed Village,13,Nocturne,Action-Fate,1,$4,"+1 Card\n+1 Action\nWhen you gain this, take a Boon. Receive it now or at the start of your next turn."
+Cemetery,13,Nocturne,Victory,1,$4,"Worth 2VP\dWhen you gain this, trash up to 4 cards from your hand.\n(When this is in the supply each player replaces one starting copper with Heirloom: Haunted Mirror)"
+Haunted Mirror,13,Nocturne,Treasure-Heirloom,1,$0,"Worth $1\dWhen you trash this, you may discard an Action card, to gain a Ghost from its pile."
+Conclave,13,Nocturne,Action,1,$4,"+$2.\nYou may play an Action card from your hand that you dont have a copy of in play. If you do, +1 Action."
+Devils Workshop,13,Nocturne,Night,1,$4,"If the number of cards you gained this turn is:\n2+, gain an Imp from its pile;\n1, gain a card costing up to $4;\n0 gain a Gold."
+Imp,13,Nocturne,Action-Spirit,1,$2*,+2 Cards\nYou may play an Action card from your hand that you dont have a copy of in play.\n(This is not in the supply).
+Exorcist,13,Nocturne,Night,1,$4,Trash a card from your hand. Gain a cheaper Spirit from one of the Spirit Piles.
+Necromancer,13,Nocturne,Action,1,$4,Play a face-up non-Duration Action card from the trash leaving it there and turning it face down for the turn.\dSetup: Put the 3 Zombies into the trash.
+Zombie Apprentice,13,Nocturne,Action-Zombie,1,$3,You may trash an Action card from your hand for +3 Cards and +1 Action.
+Zombie Mason,13,Nocturne,Action-Zombie,1,$3,Trash the top card of your deck. You may gain a card costing up to $1 more than it.
+Zombie Spy,13,Nocturne,Action-Zombie,1,$3,+1 Card\n+1 Action\nLook at the top card of your deck. Discard it or put it back.
+Shepherd,13,Nocturne,Action,1,$4,"+1 Action\nDiscard any number of Victory cards, revealing them. +2 Cards per card discarded.\n(When this is in the supply each player replaces one starting copper with Heirloom: Pasture)"
+Pasture,13,Nocturne,Treasure-Victory-Heirloom,1,$2,Worth $1\dWorth 1VP per Estate you have.
+Skulk,13,Nocturne,Action-Attack-Doom,1,$4,"+1 Buy\nEach other player receives the next Hex.\dWhen you gain this, gain a Gold."
+Cobbler,13,Nocturne,Night-Duration,1,$5,"At the start of your next turn, gain a card to hand costing up to $4."
+Crypt,13,Nocturne,Night-Duration,1,$5,"Set aside any number of Treasures you have in play (under this). While any remain, at the start of each of your turns, put one of them into your hand."
+Cursed Village,13,Nocturne,Action-Doom,1,$5,"+2 Actions\nDraw until you have 6 cards in hand.\dWhen you gain this, receive a Hex."
+Den of Sin,13,Nocturne,Night-Duration,1,$5,At the start of your next turn: +2 Cards.\dThis is gained to your hand (instead of your discard pile).
+Idol,13,Nocturne,Treasure-Attack-Fate,1,$5,"When you play this, if you then have an odd number of Idols in play, receive a Boon; if an even number, each other player gains a Curse."
+Pooka,13,Nocturne,Action,1,$5,You may trash a Treasure other than Cursed Gold from your hand for +4 Cards.\n(When this is in the supply each player replaces one starting copper with Heirloom: Cursed Gold)
+Cursed Gold,13,Nocturne,Treasure-Heirloom,1,$4,"Worth $3\nWhen you play this, gain a Curse."
+Sacred Grove,13,Nocturne,Action-Fate,1,$5,"+1 Buy\n+$3\nReceive a Boon. If it doesnt give +$1, each other player may receive it."
+Tormentor,13,Nocturne,Action-Attack-Doom,1,$5,"+$2\nIf you have no other cards in play, gain an Imp from its pile. Otherwise, each other player receives the next Hex."
+Tragic Hero,13,Nocturne,Action,1,$5,"+3 Cards\n+1 Buy\nIf you have 8 or more cards in hand (after drawing), trash this and gain a Treasure."
+Vampire,13,Nocturne,Night-Attack-Doom,1,$5,Each other player receives the next Hex. Gain a card costing up to $5 other than a Vampire. Exchange this for a Bat.
+Bat,13,Nocturne,Night,1,$2*,"Trash up to 2 cards from your hand. If you trashed at least one, exchange this for a Vampire.\n(This is not in the Supply.)"
+Werewolf,13,Nocturne,Action-Attack-Night-Doom,1,$5,"If its your Night phase, each other player receives the next Hex. Otherwise, +3 Cards."
+Raider,13,Nocturne,Night-Attack-Duration,1,$6,"Each other player with 5 or more cards in hand discards a copy of a card you have in play (or reveals they cant).\nAt the start of your next turn, +$3"
+Wish,13,Nocturne,Action,1,$0*,"+1 Action\nReturn this to its pile. If you did, gain a card to your hand costing up to $6.\n(This is not in the Supply.)"
+Will-O-Wisp,13,Nocturne,Action-Spirit,1,$0*,"+1 Card\n+1 Action\nReveal the top card of your deck. If it costs $2 or less, put it into your hand.\n(This is not in the Supply.)"
+Imp,13,Nocturne,Action-Spirit,1,$2*,+2 Cards\nYou may play an Action card from your hand that you dont have a copy of in play.\n(This is not in the supply).
+Ghost,13,Nocturne,Night-Duration-Spirit,1,$4*,"Reveal cards from your deck until you reveal an Action. Discard the other cards and set aside the Action. At the start of your next turn, play it twice.\n(This is not in the Supply.)"
+The Earths Gift,13,Nocturne,Boon,0,0,You may discard a Treasure card to gain a card costing up to $4.
+The Fields Gift,13,Nocturne,Boon,0,0,+1 Action\n+$1\n(Keep this until Clean-up.)
+The Flames Gift,13,Nocturne,Boon,0,0,You may trash a card from your hand.
+,13,Nocturne,Boon,0,0,+1 Buy\n+1 $1\n(Keep this until Clean-up.)
+The Moons Gift,13,Nocturne,Boon,0,0,"Look through your discard pile, you may put a card from it onto your deck."
+The Mountains Gift,13,Nocturne,Boon,0,0,Gain a Silver.
+The Rivers Gift.,13,Nocturne,Boon,0,0,+1 Card at the end of this turn.\n(Keep this until Clean-up.)
+The Seas Gift,13,Nocturne,Boon,0,0,+1 Card.
+The Skys Gift,13,Nocturne,Boon,0,0,You may discard 3 cards to gain a Gold.
+The Suns Gift,13,Nocturne,Boon,0,0,Look at the top 4 cards of your deck. Discard any number of them and put the rest back in any order.
+The Swamps Gift,13,Nocturne,Boon,0,0,Gain a Will-O-Wisp from its pile.
+The Winds Gift,13,Nocturne,Boon,0,0,+2 Cards. Discard 2 cards.
+Bad Omens,13,Nocturne,Hex,0,0,Put your deck into your discard pile. Look through it and put 2 Coppers from it onto your deck (or reveal you cant.)
+Delusion,13,Nocturne,Hex,0,0,"If you dont have Deluded or Envious, take Deluded."
+Deluded,13,Nocturne,State,0,0,"At the start of your Buy phase, return this, and you cant buy Actions this turn."
+Envy,13,Nocturne,Hex,0,0,"If you dont have Envious or Deluded, take Envious."
+Envious,13,Nocturne,State,0,0,"At the start of your Buy phase, return this, and Silver and Gold make $1 this turn."
+Famine,13,Nocturne,Hex,0,0,Reveal the top 3 cards of your deck. Discard the Actions. Shuffle the rest into your deck.
+Fear,13,Nocturne,Hex,0,0,"If you have at least 5 cards in hand, discard an Action or Treasure (or reveal you cant.)"
+Greed,13,Nocturne,Hex,0,0,Gain a Copper onto your deck.
+Haunting,13,Nocturne,Hex,0,0,"If you have at least 4 cards in hand, put one of them onto your deck."
+Locusts,13,Nocturne,Hex,0,0,"Trash the top card of your deck. If its Copper or Estate, gain a Curse. Otherwise, gain a cheaper card that shares a type with it."
+Misery,13,Nocturne,Hex,0,0,"If this is your first Misery this game, take Miserable. Otherwise, flip it over to Twice Miserable."
+Miserable,13,Nocturne,State,0,0,Worth -2VP
+Twice Miserable,13,Nocturne,State,0,0,Worth -4VP
+Plague,13,Nocturne,Hex,0,0,Gain a Curse to your hand.
+Poverty,13,Nocturne,Hex,0,0,Discard down to 3 cards in hand.
+War,13,Nocturne,Hex,0,0,Reveal cards from your deck until revealing one costing $3 or $4. Trash it and discard the rest.
+Lost in the Woods,13,Nocturne,State,0,0,"At the start of your turn, you may discard a card to receive a Boon."
+Border Guard,14,Renaissance,Action,1,$2,"Reveal the top 2 cards of your deck. Put one into your hand and discard the other. If both were Actions, take the Lantern or Horn."
+Ducat,14,Renaissance,Treasure,1,$2,"+1 Coffers\n+1 Buy\dWhen you gain this, you may trash a Copper from your hand."
+Lackeys,14,Renaissance,Action,1,$2,"+2 Cards\dWhen you gain this, +2 Villagers."
+Acting Troupe,14,Renaissance,Action,1,$3,+4 Villagers\nTrash this.
+Cargo Ship,14,Renaissance,Action-Duration,1,$3,"+$2\nOnce this turn, when you gain a card, you may set it aside face up (on this). At the start of your next turn, put it into your hand."
+Experiment,14,Renaissance,Action,1,$3,"+2 Cards\n+1 Action\nReturn this to the supply.\dWhen you gain this, gain another Experiment (that doesnt come with another)."
+Improve,14,Renaissance,Action,1,$3,"+$2\dAt the start of Clean-up, you may trash an Action card you would discard from play this turn, to gain a card costing exactly $1 more than it."
+Flag Bearer,14,Renaissance,Action,1,$4,"+$2\dWhen you gain or trash this, take the Flag."
+Hideout,14,Renaissance,Action,1,$4,"+1 Card\n+2 Actions\nTrash a card from your hand. If its a Victory card, gain a Curse."
+Inventor,14,Renaissance,Action,1,$4,"Gain a card costing up to $4, then cards cost $1 less this turn (but not less than $0)."
+Mountain Village,14,Renaissance,Action,1,$4,"+2 Actions\nLook through your discard pile and put a card from it into your hand; if you cant, +1 Card."
+Patron,14,Renaissance,Action-Reaction,1,$4,"+1 Villager\n+$2\dWhen something causes you to reveal this (using the word reveal), +1 Coffers."
+Priest,14,Renaissance,Action,1,$4,"+$2\nTrash a card from your hand. For the rest of this turn, when you trash a card, +$2."
+Research,14,Renaissance,Action-Duration,1,$4,"+1 Action\nTrash a card from your hand. Per $1 it costs, set aside a card from your deck face down (on this). At the start of your next turn, put those cards into your hand."
+Silk Merchant,14,Renaissance,Action,1,$4,"+2 Cards\n+1 Buy\dWhen you gain or trash this, +1 Coffers and +1 Villager."
+Old Witch,14,Renaissance,Action-Attack,1,$5,+3 Cards\nEach other player gains a Curse and may trash a Curse from their hand.
+Recruiter,14,Renaissance,Action,1,$5,+2 Cards\nTrash a card from your hand. +1 Villager per $1 it costs.
+Scepter,14,Renaissance,Treasure,1,$5,"When you play this, chose one: +$2; or replay an Action card you played this turn thats still in play."
+Scholar,14,Renaissance,Action,1,$5,Discard your hand.\n+7 Cards.
+Sculptor,14,Renaissance,Action,1,$5,"Gain a card to your hand costing up to $4. If its a Treasure, +1 Villager."
+Seer,14,Renaissance,Action,1,$5,+1 Card\n+1 Action\nReveal the top 3 cards of your deck. Put the ones costing from $2 to $4 into your hand. Put the rest back in any order.
+Spices,14,Renaissance,Treasure,1,$5,"$2\n+1 Buy\dWhen you gain this, +2 Coffers."
+Swashbuckler,14,Renaissance,Action,1,$5,"+3 Cards\nIf your discard pile has any cards in it: +1 Coffers, then if you have at least 4 Coffers tokens, take the Treasure Chest."
+Treasurer,14,Renaissance,Action,1,$5,+$3\nChoose one: Trash a Treasure from your hand; or gain a Treasure from the trash to your hand; or take the Key.
+Villain,14,Renaissance,Action-Attack,1,$5,+2 Coffers\nEach other player with 5 or more cards in hand discards one costing $2 or more (or reveals they cant).
+Flag,14,Renaissance,Artifact,0,0,"When drawing your hand, +1 Card."
+Horn,14,Renaissance,Artifact,0,0,"Once per turn, when you discard a Border Guard from play, you may put it onto your deck."
+Key,14,Renaissance,Artifact,0,0,"At the start of your turn, +$1."
+Lantern,14,Renaissance,Artifact,0,0,Your Border Guards reveal 3 cards and discard 2. (It takes all 3 being Actions to take the Horn.)
+Treasure Chest,14,Renaissance,Artifact,0,0,"At the start of your Buy phase, gain a Gold."
+Cathedral,14,Renaissance,Project,0,$3,"At the start of your turn, trash a card from your hand."
+City Gate,14,Renaissance,Project,0,$3,"At the start of your turn, +1 Card, then put a card from your hand onto your deck."
+Pageant,14,Renaissance,Project,0,$3,"At the end of your Buy phase, you may pay $1 for +1 Coffers."
+Sewers,14,Renaissance,Project,0,$3,"When you trash a card other than with this, you may trash a card from your hand."
+Start Chart,14,Renaissance,Project,0,$3,"When you shuffle, you may pick one of the cards to go on top."
+Exploration,14,Renaissance,Project,0,$4,"At the end of your Buy phase, if you didnt buy any cards, +1 Coffers and +1 Villager."
+Fair,14,Renaissance,Project,0,$4,"At the start of your turn, +1 Buy."
+Silos,14,Renaissance,Project,0,$4,"At the start of your turn, discard any number of Coppers, revealed, and draw that many cards."
+Sinister Plot,14,Renaissance,Project,0,$4,"At the start of your turn, add a token here, or remove your tokens here for +1 Card each."
+Academy,14,Renaissance,Project,0,$5,"When you gain an Action card, +1 Villager."
+Capitalism,14,Renaissance,Project,0,$5,"During your turns, Actions with +$ amounts in their text are also Treasures."
+Fleet,14,Renaissance,Project,0,$5,"After the game ends, theres an extra round of turns just for players with this."
+Guildhall,14,Renaissance,Project,0,$5,"When you gain a Treasure, +1 Coffers."
+Piazza,14,Renaissance,Project,0,$5,"At the start of your turn, reveal the top card of your deck. If its an Action, play it."
+Road Network,14,Renaissance,Project,0,$5,"When another player gains a Victory card, +1 Card."
+Barracks,14,Renaissance,Project,0,$6,"At the start of your turn, +1 Action."
+Crop Rotation,14,Renaissance,Project,0,$6,"At the start of your turn, you may discard a Victory card for +2 Cards."
+Innovation,14,Renaissance,Project,0,$6,"The first time you gain an Action card in each of your turns, you may set it aside. If you do, play it."
+Canal,14,Renaissance,Project,0,$7,"During your turns, cards cost $1 less, but not less than $0."
+Citadel,14,Renaissance,Project,0,$8,"The first time you play an Action card during each of your turns, play it again afterwards."
