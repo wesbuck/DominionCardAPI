@@ -48,7 +48,7 @@ def test_random_request(api_client, get_or_create_token):
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.get(url)
    assert response.status_code == 200
-   assert len(response.data) == 8
+   assert len(response.data) == 9
 
 # Test that CardSet gets 10 Cards
 @pytest.mark.django_db
@@ -63,12 +63,13 @@ def test_cardset_request(api_client, get_or_create_token):
 # Test that Card/[id] gets the correct stuff
 @pytest.mark.django_db
 def test_specific_card_request(api_client, get_or_create_token):
-   should_be = {'id': 1, 'uuid': '40f9bff1-9ab9-4856-b04f-aace09668e21', 'card_name': 'Black Market', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'cost': '$3', 'card_text': '+$2\\nReveal the top 3 cards of the Black Market deck. You may buy one of them immediately. Put the unbought cards on the bottom of the Black Market deck in any order.\\d(Before the game, make a Black Market deck out of one copy of each Kingdom card not in '}
+   should_be = {'id': 2, 'uuid': '11356037-c8d8-4217-83d9-3703aea6ead7', 'card_name': 'Envoy', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'is_kingdom_card': True, 'cost': '$4', 'card_text': 'Reveal the top 5 cards of your deck. The player to your left chooses one for you to discard. Draw the rest.'}
    token = get_or_create_token
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
-   response = api_client.get('/cards/1/')
+   response = api_client.get('/cards/2/')
+   print(response.data)
    assert response.status_code == 200
-   assert len(response.data) == 8
+   assert len(response.data) == 9
    assert response.data == should_be
 
 # Test that POST card works
@@ -80,4 +81,4 @@ def test_card_creation(api_client, get_or_create_token):
    response = api_client.post('/cards/')
    print(response.data)
    assert response.status_code == 201
-   assert len(response.data) == 8
+   assert len(response.data) == 9
