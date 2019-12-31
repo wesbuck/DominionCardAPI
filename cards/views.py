@@ -71,11 +71,11 @@ class CardSet(APIView):
         output = [d['fields'] for d in raw_data]  # extract inner 'fields' dicts
         return Response(json.loads(json.dumps(output)))
 
-# get all cards
+# get all kingdom cards
 class All(APIView):
 
     def get(self, request):
-        cards = Card.objects.all()
+        cards = Card.objects.all().filter(is_kingdom_card=1)
         raw_data = json.loads(serializers.serialize('json', cards))
         output = [d['fields'] for d in raw_data]  # extract inner 'fields' dicts
         return Response(json.loads(json.dumps(output)))
