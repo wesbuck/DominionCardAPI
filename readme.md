@@ -1,5 +1,10 @@
 # Dominion Card API
 
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/v/release/wesbuck/DominionCardAPI)](https://github.com/wesbuck/DominionCardAPI/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.org/wesbuck/DominionCardAPI.svg?branch=master)](https://travis-ci.org/wesbuck/DominionCardAPI)
+[![codecov](https://codecov.io/gh/wesbuck/DominionCardAPI/branch/master/graph/badge.svg)](https://codecov.io/gh/wesbuck/DominionCardAPI)
+
 Full-featured Dominion Kingdom Card API written in Python using Django's REST framework. 
 This API is intended to power companion apps for the board game Dominion and allows you to quickly 
 and easily obtain card sets and card details for the Kingdom Cards used to play the game.
@@ -192,7 +197,7 @@ If you don't want to use the `requirements.txt` option [detailed above](#install
 
 Install [django](https://www.djangoproject.com/download/):
 ```
-pip install Django>=3.0.2
+pip install Django==3.0
 ```
 
 Install required django tools: 
