@@ -1,7 +1,9 @@
 # Dominion Card API
 
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/v/release/wesbuck/DominionCardAPI)](https://github.com/wesbuck/DominionCardAPI/releases)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Docs](https://img.shields.io/badge/docs-Postman-EF5B25.svg)](https://documenter.getpostman.com/view/5603098/RWguxcDR)
+[![GitHub License](https://img.shields.io/github/license/wesbuck/DominionCardAPI)](https://opensource.org/licenses/MIT)
+![GitHub top language](https://img.shields.io/github/languages/top/wesbuck/DominionCardAPI)
 [![Build Status](https://travis-ci.org/wesbuck/DominionCardAPI.svg?branch=master)](https://travis-ci.org/wesbuck/DominionCardAPI)
 [![codecov](https://codecov.io/gh/wesbuck/DominionCardAPI/branch/master/graph/badge.svg)](https://codecov.io/gh/wesbuck/DominionCardAPI)
 
