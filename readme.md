@@ -192,7 +192,7 @@ If you don't want to use the `requirements.txt` option [detailed above](#install
 
 Install [django](https://www.djangoproject.com/download/):
 ```
-pip install Django==3.0
+pip install Django>=3.0.2
 ```
 
 Install required django tools: 
