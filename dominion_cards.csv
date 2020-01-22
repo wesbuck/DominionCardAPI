@@ -379,7 +379,6 @@ Cemetery,13,Nocturne,Victory,1,$4,"Worth 2VP\dWhen you gain this, trash up to 4 
 Haunted Mirror,13,Nocturne,Treasure-Heirloom,1,$0,"Worth $1\dWhen you trash this, you may discard an Action card, to gain a Ghost from its pile."
 Conclave,13,Nocturne,Action,1,$4,"+$2.\nYou may play an Action card from your hand that you dont have a copy of in play. If you do, +1 Action."
 Devils Workshop,13,Nocturne,Night,1,$4,"If the number of cards you gained this turn is:\n2+, gain an Imp from its pile;\n1, gain a card costing up to $4;\n0 gain a Gold."
-Imp,13,Nocturne,Action-Spirit,1,$2*,+2 Cards\nYou may play an Action card from your hand that you dont have a copy of in play.\n(This is not in the supply).
 Exorcist,13,Nocturne,Night,1,$4,Trash a card from your hand. Gain a cheaper Spirit from one of the Spirit Piles.
 Necromancer,13,Nocturne,Action,1,$4,Play a face-up non-Duration Action card from the trash leaving it there and turning it face down for the turn.\dSetup: Put the 3 Zombies into the trash.
 Zombie Apprentice,13,Nocturne,Action-Zombie,1,$3,You may trash an Action card from your hand for +3 Cards and +1 Action.
