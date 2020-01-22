@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="Dominion Card API",
-    version="1.1.1",
+    version="1.1.2",
     author="Wes Buck",
     description="Dominion Kingdom Card API intended to power companion apps for the board game Dominion.",
     long_description=long_description,
