@@ -405,18 +405,18 @@ Wish,13,Nocturne,Action,1,$0*,"+1 Action\nReturn this to its pile. If you did, g
 Will-O-Wisp,13,Nocturne,Action-Spirit,1,$0*,"+1 Card\n+1 Action\nReveal the top card of your deck. If it costs $2 or less, put it into your hand.\n(This is not in the Supply.)"
 Imp,13,Nocturne,Action-Spirit,1,$2*,+2 Cards\nYou may play an Action card from your hand that you dont have a copy of in play.\n(This is not in the supply).
 Ghost,13,Nocturne,Night-Duration-Spirit,1,$4*,"Reveal cards from your deck until you reveal an Action. Discard the other cards and set aside the Action. At the start of your next turn, play it twice.\n(This is not in the Supply.)"
-The Earths Gift,13,Nocturne,Boon,0,0,You may discard a Treasure card to gain a card costing up to $4.
-The Fields Gift,13,Nocturne,Boon,0,0,+1 Action\n+$1\n(Keep this until Clean-up.)
-The Flames Gift,13,Nocturne,Boon,0,0,You may trash a card from your hand.
-,13,Nocturne,Boon,0,0,+1 Buy\n+1 $1\n(Keep this until Clean-up.)
-The Moons Gift,13,Nocturne,Boon,0,0,"Look through your discard pile, you may put a card from it onto your deck."
-The Mountains Gift,13,Nocturne,Boon,0,0,Gain a Silver.
-The Rivers Gift.,13,Nocturne,Boon,0,0,+1 Card at the end of this turn.\n(Keep this until Clean-up.)
-The Seas Gift,13,Nocturne,Boon,0,0,+1 Card.
-The Skys Gift,13,Nocturne,Boon,0,0,You may discard 3 cards to gain a Gold.
-The Suns Gift,13,Nocturne,Boon,0,0,Look at the top 4 cards of your deck. Discard any number of them and put the rest back in any order.
-The Swamps Gift,13,Nocturne,Boon,0,0,Gain a Will-O-Wisp from its pile.
-The Winds Gift,13,Nocturne,Boon,0,0,+2 Cards. Discard 2 cards.
+The Earth's Gift,13,Nocturne,Boon,0,0,You may discard a Treasure card to gain a card costing up to $4.
+The Field's Gift,13,Nocturne,Boon,0,0,+1 Action\n+$1\n(Keep this until Clean-up.)
+The Flame's Gift,13,Nocturne,Boon,0,0,You may trash a card from your hand.
+The Forest's Gift,13,Nocturne,Boon,0,0,+1 Buy\n+1 $1\n(Keep this until Clean-up.)
+The Moon's Gift,13,Nocturne,Boon,0,0,"Look through your discard pile, you may put a card from it onto your deck."
+The Mountain's Gift,13,Nocturne,Boon,0,0,Gain a Silver.
+The River's Gift.,13,Nocturne,Boon,0,0,+1 Card at the end of this turn.\n(Keep this until Clean-up.)
+The Sea's Gift,13,Nocturne,Boon,0,0,+1 Card.
+The Sky's Gift,13,Nocturne,Boon,0,0,You may discard 3 cards to gain a Gold.
+The Sun's Gift,13,Nocturne,Boon,0,0,Look at the top 4 cards of your deck. Discard any number of them and put the rest back in any order.
+The Swamp's Gift,13,Nocturne,Boon,0,0,Gain a Will-O-Wisp from its pile.
+The Wind's Gift,13,Nocturne,Boon,0,0,+2 Cards. Discard 2 cards.
 Bad Omens,13,Nocturne,Hex,0,0,Put your deck into your discard pile. Look through it and put 2 Coppers from it onto your deck (or reveal you cant.)
 Delusion,13,Nocturne,Hex,0,0,"If you dont have Deluded or Envious, take Deluded."
 Deluded,13,Nocturne,State,0,0,"At the start of your Buy phase, return this, and you cant buy Actions this turn."
