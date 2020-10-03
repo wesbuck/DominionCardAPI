@@ -1,9 +1,11 @@
 from django.db import models
-
+import uuid
 
 # Create your models here.
 class Card(models.Model):
-    uuid = models.CharField(max_length=128, null=True)
+    uuid = models.CharField(max_length=64, null=True, default=uuid.uuid4, unique=True, error_messages={
+        'unique': 'The uuid already exists'
+    }) #, editable=False)
     card_name = models.CharField(max_length=64, null=False, unique=True, error_messages={
         'unique': 'The card name already exists'
     })

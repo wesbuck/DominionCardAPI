@@ -97,26 +97,24 @@ def test_specific_card_request(api_client, get_or_create_token):
    token = get_or_create_token
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.get('/cards/2/')
-   # print(response.data)
    assert response.status_code == 200
    assert len(response.data) == 9
    assert response.data == should_be
 
 # Test that POST card works
 @pytest.mark.django_db
-def test_card_creation(api_client, get_or_create_token):
+def test_card_creation_basic(api_client, get_or_create_token):
    new_card = { 'uuid': '82f9bcc1-9ab9-4856-b04f-aace09668e21', 'card_name': 'New Card', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'cost': '$3', 'card_text': 'Sample Card Text'}
    token = get_or_create_token
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.post('/cards/', new_card)
-   # print(response.data)
    assert response.status_code == 201
    assert len(response.data) == 9
    assert response.data['card_name'] == new_card['card_name']
 
-# Test that POST card disallows duplicate cards
+# Test that POST card disallows duplicate card names
 @pytest.mark.django_db
-def test_card_creation(api_client, get_or_create_token):
+def test_card_creation_dup_name(api_client, get_or_create_token):
    new_card = { 'uuid': '82f9bcc1-9ab9-4856-b04f-aace09668e21', 'card_name': 'Envoy', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'cost': '$3', 'card_text': 'Sample Card Text'}
    token = get_or_create_token
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
@@ -124,17 +122,40 @@ def test_card_creation(api_client, get_or_create_token):
    assert response.status_code == 400
    assert 'The card name already exists' in response.data['card_name']
 
-# Test that POST card requires required fields
+# Test that POST card disallows duplicate uuids
 @pytest.mark.django_db
-def test_card_creation(api_client, get_or_create_token):
-   new_card = { 'card_name': 'Newer Card'}
+def test_card_creation_dup_uuid(api_client, get_or_create_token):
+   new_card = { 'uuid': '11356037-c8d8-4217-83d9-3703aea6ead7', 'card_name': 'Test Card', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'cost': '$3', 'card_text': 'Sample Card Text'}
    token = get_or_create_token
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.post('/cards/', new_card)
    print(response.data)
+   assert response.status_code == 400
+   assert 'The uuid already exists' in response.data['uuid']
+
+# Test that POST card requires required fields
+@pytest.mark.django_db
+def test_card_creation_required(api_client, get_or_create_token):
+   new_card = { 'card_name': 'Newer Card'}
+   token = get_or_create_token
+   api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
+   response = api_client.post('/cards/', new_card)
    assert response.status_code == 400
    assert 'This field is required.' in response.data['set_num']
    assert 'This field is required.' in response.data['set_name']
    assert 'This field is required.' in response.data['type']
    assert 'This field is required.' in response.data['cost']
    assert 'This field is required.' in response.data['card_text']
+
+# Test that POST card auto-assigns uuid
+@pytest.mark.django_db
+def test_card_creation_assign_uuid(api_client, get_or_create_token):
+   new_card = { 'card_name': 'Newest Card', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'cost': '$3', 'card_text': 'Sample Card Text'}
+   token = get_or_create_token
+   api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
+   response = api_client.post('/cards/', new_card)
+   # print(response.data)
+   assert response.status_code == 201
+   assert len(response.data) == 9
+   assert response.data['card_name'] == new_card['card_name']
+   assert len(response.data['uuid']) == 36
