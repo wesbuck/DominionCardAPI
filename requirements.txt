@@ -22,7 +22,7 @@ pytest==5.3.2
 pytest-cov==2.10.1
 pytest-django==3.7.0
 pytz==2019.3
-requests==2.22.0
+requests==2.24.0
 six==1.15.0
 sqlparse==0.3.0
 urllib3==1.25.10
