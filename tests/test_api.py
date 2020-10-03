@@ -48,7 +48,7 @@ def test_root_request(api_client, get_or_create_token):
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.get(url)
    assert response.status_code == 200
-   assert response.data['Documentation'] == 'https://documenter.getpostman.com/view/5603098/RWguxcDR'
+   assert 'https://documenter.getpostman.com/view/' in response.data['Documentation']
 
 # Test that Random gets some data and returns properly
 @pytest.mark.django_db
@@ -115,9 +115,10 @@ def test_card_creation_basic(api_client, get_or_create_token):
 # Test that POST card disallows duplicate card names
 @pytest.mark.django_db
 def test_card_creation_dup_name(api_client, get_or_create_token):
-   new_card = { 'uuid': '82f9bcc1-9ab9-4856-b04f-aace09668e21', 'card_name': 'Envoy', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'cost': '$3', 'card_text': 'Sample Card Text'}
+   new_card = { 'card_name': 'Test Card', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'cost': '$3', 'card_text': 'Sample Card Text'}
    token = get_or_create_token
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
+   api_client.post('/cards/', new_card)
    response = api_client.post('/cards/', new_card)
    assert response.status_code == 400
    assert 'The card name already exists' in response.data['card_name']
@@ -125,11 +126,12 @@ def test_card_creation_dup_name(api_client, get_or_create_token):
 # Test that POST card disallows duplicate uuids
 @pytest.mark.django_db
 def test_card_creation_dup_uuid(api_client, get_or_create_token):
-   new_card = { 'uuid': '11356037-c8d8-4217-83d9-3703aea6ead7', 'card_name': 'Test Card', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'cost': '$3', 'card_text': 'Sample Card Text'}
+   new_card1 = { 'uuid': '82f9bcc1-9ab9-4856-b04f-aace09668e21', 'card_name': 'Test Card 1', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'cost': '$3', 'card_text': 'Sample Card Text'}
+   new_card2 = { 'uuid': '82f9bcc1-9ab9-4856-b04f-aace09668e21', 'card_name': 'Test Card 2', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'cost': '$3', 'card_text': 'Sample Card Text'}
    token = get_or_create_token
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
-   response = api_client.post('/cards/', new_card)
-   print(response.data)
+   api_client.post('/cards/', new_card1)
+   response = api_client.post('/cards/', new_card2)
    assert response.status_code == 400
    assert 'The uuid already exists' in response.data['uuid']
 
