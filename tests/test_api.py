@@ -87,7 +87,7 @@ def test_specific_card_request(api_client, get_or_create_token):
    token = get_or_create_token
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.get('/cards/2/')
-   print(response.data)
+   # print(response.data)
    assert response.status_code == 200
    assert len(response.data) == 9
    assert response.data == should_be
@@ -99,6 +99,7 @@ def test_card_creation(api_client, get_or_create_token):
    token = get_or_create_token
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.post('/cards/', new_card)
-   print(response.data)
+   # print(response.data)
    assert response.status_code == 201
    assert len(response.data) == 9
+   assert response.data['card_name'] == new_card['card_name']
