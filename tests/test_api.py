@@ -123,3 +123,18 @@ def test_card_creation(api_client, get_or_create_token):
    response = api_client.post('/cards/', new_card)
    assert response.status_code == 400
    assert 'The card name already exists' in response.data['card_name']
+
+# Test that POST card requires required fields
+@pytest.mark.django_db
+def test_card_creation(api_client, get_or_create_token):
+   new_card = { 'card_name': 'Newer Card'}
+   token = get_or_create_token
+   api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
+   response = api_client.post('/cards/', new_card)
+   print(response.data)
+   assert response.status_code == 400
+   assert 'This field is required.' in response.data['set_num']
+   assert 'This field is required.' in response.data['set_name']
+   assert 'This field is required.' in response.data['type']
+   assert 'This field is required.' in response.data['cost']
+   assert 'This field is required.' in response.data['card_text']
