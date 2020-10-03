@@ -21,7 +21,7 @@ pyparsing==2.4.7
 pytest==6.1.0
 pytest-cov==2.10.1
 pytest-django==3.10.0
-pytz==2019.3
+pytz==2020.1
 requests==2.24.0
 six==1.15.0
 sqlparse==0.3.0
