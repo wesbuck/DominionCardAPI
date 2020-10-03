@@ -40,6 +40,16 @@ def test_unauthed_request(api_client):
    response = api_client.get(url)
    assert response.status_code == 401
 
+# Test for 200 response when accessing root
+@pytest.mark.django_db
+def test_root_request(api_client, get_or_create_token):
+   url = ''
+   token = get_or_create_token
+   api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
+   response = api_client.get(url)
+   assert response.status_code == 200
+   assert response.data['Documentation'] == 'https://documenter.getpostman.com/view/5603098/RWguxcDR'
+
 # Test that Random gets some data and returns properly
 @pytest.mark.django_db
 def test_random_request(api_client, get_or_create_token):
