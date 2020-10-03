@@ -113,3 +113,13 @@ def test_card_creation(api_client, get_or_create_token):
    assert response.status_code == 201
    assert len(response.data) == 9
    assert response.data['card_name'] == new_card['card_name']
+
+# Test that POST card disallows duplicate cards
+@pytest.mark.django_db
+def test_card_creation(api_client, get_or_create_token):
+   new_card = { 'uuid': '82f9bcc1-9ab9-4856-b04f-aace09668e21', 'card_name': 'Envoy', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'cost': '$3', 'card_text': 'Sample Card Text'}
+   token = get_or_create_token
+   api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
+   response = api_client.post('/cards/', new_card)
+   assert response.status_code == 400
+   assert 'The card name already exists' in response.data['card_name']

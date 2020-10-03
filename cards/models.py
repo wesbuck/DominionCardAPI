@@ -4,7 +4,9 @@ from django.db import models
 # Create your models here.
 class Card(models.Model):
     uuid = models.CharField(max_length=128, null=True)
-    card_name = models.CharField(max_length=64, null=True)
+    card_name = models.CharField(max_length=64, null=True, unique=True, error_messages={
+        'unique': 'The card name already exists'
+    })
     set_num = models.IntegerField(null=True)
     set_name = models.CharField(max_length=32, null=True)
     type = models.CharField(max_length=64, null=True)
