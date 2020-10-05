@@ -97,7 +97,7 @@ def test_specific_card_request(api_client, get_or_create_token):
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.get('/cards/2/')
    assert response.status_code == 200
-   assert len(response.data) == 9
+   assert len(response.data) == 10
 
 # Test that POST card works
 @pytest.mark.django_db
@@ -107,7 +107,7 @@ def test_card_creation_basic(api_client, get_or_create_token):
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.post('/cards/', test_card)
    assert response.status_code == 201
-   assert len(response.data) == 9
+   assert len(response.data) == 10
    fields = ['uuid', 'card_name', 'set_num', 'set_name', 'type', 'cost', 'card_text']
    for x in fields:
       assert response.data[x] == test_card[x]
@@ -156,7 +156,7 @@ def test_card_creation_assign_uuid(api_client, get_or_create_token):
    response = api_client.post('/cards/', test_card)
    # print(response.data)
    assert response.status_code == 201
-   assert len(response.data) == 9
+   assert len(response.data) == 10
    assert response.data['card_name'] == test_card['card_name']
    assert len(response.data['uuid']) == 36
 
@@ -169,7 +169,7 @@ def test_get_created_card(api_client, get_or_create_token):
    new_card = api_client.post('/cards/', test_card)
    response = api_client.get('/cards/' + str(new_card.data['id']) + '/')
    assert response.status_code == 200
-   assert len(response.data) == 9
+   assert len(response.data) == 10
    fields = ['uuid', 'card_name', 'set_num', 'set_name', 'type', 'cost', 'card_text']
    for x in fields:
       assert response.data[x] == test_card[x]
