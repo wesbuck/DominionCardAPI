@@ -83,6 +83,8 @@ def test_cardset_request(api_client, get_or_create_token):
    response = api_client.get(url)
    assert response.status_code == 200
    assert len(response.data) == 10
+   for x in range(10):
+      assert len(response.data[x]) == 9
 
 # Test that All gets all Cards
 @pytest.mark.django_db
@@ -92,7 +94,7 @@ def test_all_request(api_client, get_or_create_token):
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.get(url)
    assert response.status_code == 200
-   assert len(response.data) >= 360
+   assert len(response.data[1]) == 9
 
 # Test that Card/[id] gets the correct stuff
 @pytest.mark.django_db
@@ -102,6 +104,7 @@ def test_specific_card_request(api_client, get_or_create_token):
    response = api_client.get('/cards/2/')
    assert response.status_code == 200
    assert len(response.data) == 10
+   assert response.data['source'] == 'csv'
 
 ### POST ###
 
@@ -199,6 +202,7 @@ def test_delete_protected_card(api_client, get_or_create_token):
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.delete('/cards/2/')
    assert response.status_code == 400
+   assert 'Only manually created cards can be deleted.' in response.data
 
 ### PATCH ###
 
@@ -225,6 +229,7 @@ def test_patch_protected_card(api_client, get_or_create_token):
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.patch('/cards/2/', updated_card)
    assert response.status_code == 400
+   assert 'Only manually created cards can be updated.' in response.data
 
 ### PUT ###
 
@@ -251,3 +256,4 @@ def test_put_protected_card(api_client, get_or_create_token):
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.put('/cards/2/', updated_card)
    assert response.status_code == 400
+   assert 'Only manually created cards can be updated.' in response.data

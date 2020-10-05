@@ -134,13 +134,13 @@ To recreate the `test_data.json` file, run:
 ```
 python manage.py dumpdata --natural-foreign --exclude auth.permission --exclude contenttypes --indent 4 > tests/test_data.json
 ```
-> NOTE: You will likely need to update the tests in `tests/test_api.py` to work with your updated database data.
+> NOTE: The tests in `tests/test_api_card.py` requires at least 10 properly-formatted cards & one must have `id=2` and `source=csv`.
 
 To recreate the `test_users.json` file, run:
 ```
 python manage.py dumpdata auth.User --indent 4 > tests/test_users.json
 ```
-> NOTE: You will likely need to update the tests in `tests/test_auth.py` to work with your updated user data.
+> NOTE: You may need to update the tests in `tests/test_auth.py` to work with your updated user data.
 
 ### Continuous Integration
 
