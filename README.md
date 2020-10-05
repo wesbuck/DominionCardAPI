@@ -103,7 +103,12 @@ If you need to ingest the CSV file again, you should first flush the database:
 ```
 python manage.py flush
 ```
-
+Or delete & re-create the database:
+```
+rm db.sqlite3
+python manage.py migrate
+python manage.py ingest_csv dominion_cards.csv
+```
 ### VS Code
 
 If you plan to use VS Code with the Python extension installed, you'll also want to install `pylint-django`:
