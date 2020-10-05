@@ -16,6 +16,7 @@ class Command(BaseCommand):
             reader = csv.DictReader(datafile)
             for row in reader:
                 row['uuid'] = uuid.uuid4()
+                row['source'] = 'csv'
                 card = Card()
                 for field, data in row.items():
                     if '' != data:  # only ingest fields with data
