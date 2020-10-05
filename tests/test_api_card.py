@@ -4,6 +4,8 @@ from django.urls import reverse
 from django.core.management import call_command
 from rest_framework.authtoken.models import Token
 
+### Fixtures ###
+
 @pytest.fixture
 def api_client():
    from rest_framework.test import APIClient
@@ -32,6 +34,8 @@ def get_or_create_token(db, create_user):
    user = create_user()
    token, _ = Token.objects.get_or_create(user=user)
    return token
+
+### GET ###
 
 # Test for 401 Unauthorized Error when no Token is present
 @pytest.mark.django_db
@@ -98,6 +102,8 @@ def test_specific_card_request(api_client, get_or_create_token):
    response = api_client.get('/cards/2/')
    assert response.status_code == 200
    assert len(response.data) == 10
+
+### POST ###
 
 # Test that POST card works
 @pytest.mark.django_db
@@ -173,3 +179,75 @@ def test_get_created_card(api_client, get_or_create_token):
    fields = ['uuid', 'card_name', 'set_num', 'set_name', 'type', 'cost', 'card_text']
    for x in fields:
       assert response.data[x] == test_card[x]
+
+### DELETE ###
+
+# Test that Card/[id] can DELETE after POST
+@pytest.mark.django_db
+def test_delete_created_card(api_client, get_or_create_token):
+   test_card = { 'uuid': '82f9bcc1-9ab9-4856-b04f-aace09668e21', 'card_name': 'Test Card', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'cost': '$3', 'card_text': 'Sample Card Text'}
+   token = get_or_create_token
+   api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
+   new_card = api_client.post('/cards/', test_card)
+   response = api_client.delete('/cards/' + str(new_card.data['id']) + '/')
+   assert response.status_code == 204
+
+# Ensure 'csv' source cannot be deleted
+@pytest.mark.django_db
+def test_delete_protected_card(api_client, get_or_create_token):
+   token = get_or_create_token
+   api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
+   response = api_client.delete('/cards/2/')
+   assert response.status_code == 400
+
+### PATCH ###
+
+# Test that Card/[id] can PATCH after POST
+@pytest.mark.django_db
+def test_patch_created_card(api_client, get_or_create_token):
+   test_card = { 'card_name': 'Test Card', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'cost': '$3', 'card_text': 'Sample Card Text'}
+   token = get_or_create_token
+   api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
+   new_card = api_client.post('/cards/', test_card)
+   
+   updated_card = { 'card_name': 'Patched Card', 'set_num': 3, 'set_name': 'Base', 'type': 'Deploy', 'cost': '$2', 'card_text': 'Updated Card Text'}
+   response = api_client.patch('/cards/' + str(new_card.data['id']) + '/', updated_card)
+   assert response.status_code == 200
+   fields = ['card_name', 'set_num', 'set_name', 'type', 'cost', 'card_text']
+   for x in fields:
+      assert response.data[x] == updated_card[x]
+
+# Ensure 'csv' source cannot be patched
+@pytest.mark.django_db
+def test_patch_protected_card(api_client, get_or_create_token):
+   updated_card = { 'card_name': 'Patched Card', 'set_num': 3, 'set_name': 'Base', 'type': 'Deploy', 'cost': '$2', 'card_text': 'Updated Card Text'}
+   token = get_or_create_token
+   api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
+   response = api_client.patch('/cards/2/', updated_card)
+   assert response.status_code == 400
+
+### PUT ###
+
+# Test that Card/[id] can PUT after POST
+@pytest.mark.django_db
+def test_put_created_card(api_client, get_or_create_token):
+   test_card = { 'card_name': 'Test Card', 'set_num': 0, 'set_name': 'Promo', 'type': 'Action', 'cost': '$3', 'card_text': 'Sample Card Text'}
+   token = get_or_create_token
+   api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
+   new_card = api_client.post('/cards/', test_card)
+   
+   updated_card = { 'card_name': 'Patched Card', 'set_num': 3, 'set_name': 'Base', 'type': 'Deploy', 'cost': '$2', 'card_text': 'Updated Card Text'}
+   response = api_client.put('/cards/' + str(new_card.data['id']) + '/', updated_card)
+   assert response.status_code == 200
+   fields = ['card_name', 'set_num', 'set_name', 'type', 'cost', 'card_text']
+   for x in fields:
+      assert response.data[x] == updated_card[x]
+
+# Ensure 'csv' source cannot be updated
+@pytest.mark.django_db
+def test_put_protected_card(api_client, get_or_create_token):
+   updated_card = { 'card_name': 'Patched Card', 'set_num': 3, 'set_name': 'Base', 'type': 'Deploy', 'cost': '$2', 'card_text': 'Updated Card Text'}
+   token = get_or_create_token
+   api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
+   response = api_client.put('/cards/2/', updated_card)
+   assert response.status_code == 400
