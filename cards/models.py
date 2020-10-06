@@ -9,7 +9,6 @@ class Card(models.Model):
     card_name = models.CharField(max_length=64, null=False, unique=True, error_messages={
         'unique': 'The card name already exists'
     })
-    set_num = models.IntegerField(null=False)
     set_name = models.CharField(max_length=32, null=False)
     type = models.CharField(max_length=64, null=False)
     is_kingdom_card = models.BooleanField(null=False)
