@@ -101,7 +101,6 @@ def test_cardset_request(api_client, get_or_create_token, all_card_fields):
    response = api_client.get(url)
    assert response.status_code == 200
    assert len(response.data) == 10
-   print(response.data)
    for i in range(10):
       for x in all_card_fields:
          assert x in response.data[i]
@@ -192,7 +191,6 @@ def test_card_creation_required(api_client, get_or_create_token, editable_card_f
    api_client.credentials(HTTP_AUTHORIZATION='Token ' + token.key)
    response = api_client.post('/cards/', test_card)
    assert response.status_code == 400
-   print(response.data)
    for x in editable_card_fields:
       assert 'This field is required.' in response.data[x]
 
