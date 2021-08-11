@@ -144,7 +144,7 @@ python manage.py dumpdata auth.User --indent 4 > tests/test_users.json
 
 ### Continuous Integration
 
-Continuous integration (CI) testing is provided by [Travis CI](https://travis-ci.org/) and is automatically run upon each git check-in and merge.
+Continuous integration (CI) testing is provided by [GitHub Actions](https://github.com/wesbuck/DominionCardAPI/actions) and is automatically run upon each git push & pull request.
 
 ## Production
 
@@ -204,7 +204,7 @@ If you don't want to use the `requirements.txt` option [detailed above](#install
 
 Install [django](https://www.djangoproject.com/download/):
 ```
-pip install Django==3.0
+pip install Django
 ```
 
 Install required django tools: 
