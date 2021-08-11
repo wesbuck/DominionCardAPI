@@ -9,7 +9,7 @@ coverage==5.3
 Django==3.2.6
 django-cors-headers==3.5.0
 django-filter==2.4.0
-djangorestframework==3.12.1
+djangorestframework==3.12.4
 httpie==2.3.0
 idna==2.10
 more-itertools==8.5.0
