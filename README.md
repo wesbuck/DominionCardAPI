@@ -5,7 +5,6 @@
 [![GitHub License](https://img.shields.io/github/license/wesbuck/DominionCardAPI?logo=open-source-initiative)](https://opensource.org/licenses/MIT)
 [![GitHub top language](https://img.shields.io/github/languages/top/wesbuck/DominionCardAPI?logo=python)](https://github.com/wesbuck/DominionCardAPI/search?l=Python)
 [![GitHub Action Build Status](https://github.com/wesbuck/DominionCardAPI/actions/workflows/django.yml/badge.svg)](https://github.com/wesbuck/DominionCardAPI/actions)
-[![Travis Build Status](https://img.shields.io/travis/wesbuck/DominionCardAPI?logo=travis)](https://travis-ci.org/wesbuck/DominionCardAPI)
 [![codecov](https://codecov.io/gh/wesbuck/DominionCardAPI/branch/master/graph/badge.svg)](https://codecov.io/gh/wesbuck/DominionCardAPI)
 
 Full-featured Dominion Kingdom Card API written in Python using Django's REST framework. 
