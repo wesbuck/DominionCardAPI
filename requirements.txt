@@ -7,7 +7,7 @@ codecov==2.1.10
 colorama==0.4.4
 coverage==5.3
 Django==3.2.6
-django-cors-headers==3.5.0
+django-cors-headers==3.7.0
 django-filter==2.4.0
 djangorestframework==3.12.4
 httpie==2.3.0
