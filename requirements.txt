@@ -10,7 +10,7 @@ Django==3.2.7
 django-cors-headers==3.8.0
 django-filter==2.4.0
 djangorestframework==3.12.4
-httpie==2.4.0
+httpie==2.5.0
 idna==3.2
 more-itertools==8.9.0
 packaging==21.0
