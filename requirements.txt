@@ -14,7 +14,7 @@ httpie==2.5.0
 idna==3.2
 more-itertools==8.9.0
 packaging==21.0
-pluggy==0.13.1
+pluggy==1.0.0
 py==1.10.0
 Pygments==2.10.0
 pyparsing==2.4.7
