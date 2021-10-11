@@ -49,7 +49,7 @@ source venv/bin/activate (for Linux, Mac)
 source venv/Scripts/activate (for Windows)
 ```
 
-Install required packages (or do it the [old fashioned way](#manually-install-packages)):
+Install required packages:
 
 ```
 pip install -r requirements.txt
@@ -197,21 +197,6 @@ You can choose to disable the requirement for authentication by commenting out l
 ```
 #    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAuthenticated',),
 #    'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework.authentication.TokenAuthentication',),
-```
-### Manually Install Packages
-
-If you don't want to use the `requirements.txt` option [detailed above](#installing), you can manually install the python packages using these instructions.
-
-Install [django](https://www.djangoproject.com/download/):
-```
-pip install Django
-```
-
-Install required django tools: 
-```
-pip install djangorestframework
-pip install django-filter
-pip install httpie
 ```
 
 ## Usage Information
