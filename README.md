@@ -214,9 +214,33 @@ pip install django-filter
 pip install httpie
 ```
 
-## API Documentation
+## Usage Information
+
+### API Documentation
 
 View the complete [documentation for this API](https://documenter.getpostman.com/view/5603098/RWguxcDR).
+
+### Params
+
+The complete list of params returned in the results for all requests to this API:
+
+| Param | Type | Editable | Description |
+|--------|-------------|-----|---------------------------------------|
+| `id`   | *Integer* | No | The primary key of the card. |
+| `uuid` | *String* | No | Each card has a unique 36 character UUID4 identifier. |
+| `card_name` | *String* | Yes | The unique name of the card. |
+| `set_name` | *String* | Yes | The name of the expansion set this card is a part of. |
+| `type` | *String* | Yes | The type of card. |
+| `cost` | *String* | Yes | The cost of this card. |
+| `card_text` | *String* | Yes | The full description of the card. |
+| `is_kingdom_card` | *Boolean* | Yes | Whether or not this is a kingdom card. |
+| `source` | *String* | No | The original source of this card. |
+
+### Data Information
+
+* In the **cost** field, `Þ` represents "potion(s)".
+* In the **description** field, `\\n` denotes where a new line should be inserted.
+* In the **description** field, `\\d` denotes where a horizontal break should be inserted.
 
 ## Built With
 
